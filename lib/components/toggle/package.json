@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-toggle.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-toggle.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-toggle.js",
+  "esm5": "../../../esm5/lib/components/toggle/angular-react-fabric-lib-components-toggle.js",
+  "esm2015": "../../../esm2015/lib/components/toggle/angular-react-fabric-lib-components-toggle.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-toggle.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-toggle.js",
+  "typings": "angular-react-fabric-lib-components-toggle.d.ts",
+  "metadata": "angular-react-fabric-lib-components-toggle.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/toggle"
+}

@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-progress-indicator.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-progress-indicator.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-progress-indicator.js",
+  "esm5": "../../../esm5/lib/components/progress-indicator/angular-react-fabric-lib-components-progress-indicator.js",
+  "esm2015": "../../../esm2015/lib/components/progress-indicator/angular-react-fabric-lib-components-progress-indicator.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-progress-indicator.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-progress-indicator.js",
+  "typings": "angular-react-fabric-lib-components-progress-indicator.d.ts",
+  "metadata": "angular-react-fabric-lib-components-progress-indicator.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/progress-indicator"
+}

@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-panel.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-panel.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-panel.js",
+  "esm5": "../../../esm5/lib/components/panel/angular-react-fabric-lib-components-panel.js",
+  "esm2015": "../../../esm2015/lib/components/panel/angular-react-fabric-lib-components-panel.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-panel.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-panel.js",
+  "typings": "angular-react-fabric-lib-components-panel.d.ts",
+  "metadata": "angular-react-fabric-lib-components-panel.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/panel"
+}

@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-dropdown.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-dropdown.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-dropdown.js",
+  "esm5": "../../../esm5/lib/components/dropdown/angular-react-fabric-lib-components-dropdown.js",
+  "esm2015": "../../../esm2015/lib/components/dropdown/angular-react-fabric-lib-components-dropdown.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-dropdown.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-dropdown.js",
+  "typings": "angular-react-fabric-lib-components-dropdown.d.ts",
+  "metadata": "angular-react-fabric-lib-components-dropdown.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/dropdown"
+}

@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-hover-card.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-hover-card.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-hover-card.js",
+  "esm5": "../../../esm5/lib/components/hover-card/angular-react-fabric-lib-components-hover-card.js",
+  "esm2015": "../../../esm2015/lib/components/hover-card/angular-react-fabric-lib-components-hover-card.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-hover-card.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-hover-card.js",
+  "typings": "angular-react-fabric-lib-components-hover-card.d.ts",
+  "metadata": "angular-react-fabric-lib-components-hover-card.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/hover-card"
+}

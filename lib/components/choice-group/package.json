@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-choice-group.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-choice-group.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-choice-group.js",
+  "esm5": "../../../esm5/lib/components/choice-group/angular-react-fabric-lib-components-choice-group.js",
+  "esm2015": "../../../esm2015/lib/components/choice-group/angular-react-fabric-lib-components-choice-group.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-choice-group.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-choice-group.js",
+  "typings": "angular-react-fabric-lib-components-choice-group.d.ts",
+  "metadata": "angular-react-fabric-lib-components-choice-group.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/choice-group"
+}

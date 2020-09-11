@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-pickers.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-pickers.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-pickers.js",
+  "esm5": "../../../esm5/lib/components/pickers/angular-react-fabric-lib-components-pickers.js",
+  "esm2015": "../../../esm2015/lib/components/pickers/angular-react-fabric-lib-components-pickers.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-pickers.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-pickers.js",
+  "typings": "angular-react-fabric-lib-components-pickers.d.ts",
+  "metadata": "angular-react-fabric-lib-components-pickers.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/pickers"
+}

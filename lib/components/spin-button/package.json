@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-spin-button.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-spin-button.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-spin-button.js",
+  "esm5": "../../../esm5/lib/components/spin-button/angular-react-fabric-lib-components-spin-button.js",
+  "esm2015": "../../../esm2015/lib/components/spin-button/angular-react-fabric-lib-components-spin-button.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-spin-button.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-spin-button.js",
+  "typings": "angular-react-fabric-lib-components-spin-button.d.ts",
+  "metadata": "angular-react-fabric-lib-components-spin-button.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/spin-button"
+}

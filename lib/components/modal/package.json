@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-modal.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-modal.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-modal.js",
+  "esm5": "../../../esm5/lib/components/modal/angular-react-fabric-lib-components-modal.js",
+  "esm2015": "../../../esm2015/lib/components/modal/angular-react-fabric-lib-components-modal.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-modal.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-modal.js",
+  "typings": "angular-react-fabric-lib-components-modal.d.ts",
+  "metadata": "angular-react-fabric-lib-components-modal.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/modal"
+}

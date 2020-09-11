@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-persona.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-persona.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-persona.js",
+  "esm5": "../../../esm5/lib/components/persona/angular-react-fabric-lib-components-persona.js",
+  "esm2015": "../../../esm2015/lib/components/persona/angular-react-fabric-lib-components-persona.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-persona.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-persona.js",
+  "typings": "angular-react-fabric-lib-components-persona.d.ts",
+  "metadata": "angular-react-fabric-lib-components-persona.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/persona"
+}

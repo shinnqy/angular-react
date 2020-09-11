@@ -1,0 +1,45 @@
+import { ReactWrapperComponent } from '@angular-react/core';
+import { ChangeDetectorRef, ElementRef, EventEmitter, Renderer2, AfterContentInit } from '@angular/core';
+import { ICalendarProps } from 'office-ui-fabric-react/lib/Calendar';
+import { CalendarStringsDirective } from './directives/calendar-strings-directive.component';
+export declare class FabCalendarComponent extends ReactWrapperComponent<ICalendarProps> implements AfterContentInit {
+    protected reactNodeRef: ElementRef;
+    componentRef?: ICalendarProps['componentRef'];
+    className?: ICalendarProps['className'];
+    isMonthPickerVisible?: ICalendarProps['isMonthPickerVisible'];
+    isDayPickerVisible?: ICalendarProps['isDayPickerVisible'];
+    showMonthPickerAsOverlay?: ICalendarProps['showMonthPickerAsOverlay'];
+    today?: ICalendarProps['today'];
+    value?: ICalendarProps['value'];
+    firstDayOfWeek?: ICalendarProps['firstDayOfWeek'];
+    dateRangeType?: ICalendarProps['dateRangeType'];
+    autoNavigateOnSelection?: ICalendarProps['autoNavigateOnSelection'];
+    showGoToToday?: ICalendarProps['showGoToToday'];
+    strings: ICalendarProps['strings'];
+    highlightCurrentMonth?: ICalendarProps['highlightCurrentMonth'];
+    highlightSelectedMonth?: ICalendarProps['highlightSelectedMonth'];
+    navigationIcons?: ICalendarProps['navigationIcons'];
+    showWeekNumbers?: ICalendarProps['showWeekNumbers'];
+    firstWeekOfYear?: ICalendarProps['firstWeekOfYear'];
+    dateTimeFormatter?: ICalendarProps['dateTimeFormatter'];
+    minDate?: ICalendarProps['minDate'];
+    maxDate?: ICalendarProps['maxDate'];
+    restrictedDates?: ICalendarProps['restrictedDates'];
+    showSixWeeksByDefault?: ICalendarProps['showSixWeeksByDefault'];
+    workWeekDays?: ICalendarProps['workWeekDays'];
+    selectDateOnClick?: ICalendarProps['selectDateOnClick'];
+    showCloseButton?: ICalendarProps['showCloseButton'];
+    allFocusable?: ICalendarProps['allFocusable'];
+    yearPickerHidden?: ICalendarProps['yearPickerHidden'];
+    readonly onSelectDate: EventEmitter<{
+        date: Date;
+        selectedDateRangeArray?: Date[];
+    }>;
+    readonly onDismiss: EventEmitter<void>;
+    readonly calendarStringsDirective?: CalendarStringsDirective;
+    constructor(elementRef: ElementRef, changeDetectorRef: ChangeDetectorRef, renderer: Renderer2);
+    ngAfterContentInit(): void;
+    onSelectDateHandler(date: Date, selectedDateRangeArray?: Date[]): void;
+    onDismissHandler(): void;
+    private _initDirective;
+}

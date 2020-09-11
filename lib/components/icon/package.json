@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-icon.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-icon.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-icon.js",
+  "esm5": "../../../esm5/lib/components/icon/angular-react-fabric-lib-components-icon.js",
+  "esm2015": "../../../esm2015/lib/components/icon/angular-react-fabric-lib-components-icon.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-icon.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-icon.js",
+  "typings": "angular-react-fabric-lib-components-icon.d.ts",
+  "metadata": "angular-react-fabric-lib-components-icon.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/icon"
+}

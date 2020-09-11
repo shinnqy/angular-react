@@ -1,0 +1,7 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+export { FabProgressIndicatorComponent } from './progress-indicator.component';
+export { FabProgressIndicatorModule } from './progress-indicator.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL0Bhbmd1bGFyLXJlYWN0L2ZhYnJpYy9saWIvY29tcG9uZW50cy9wcm9ncmVzcy1pbmRpY2F0b3IvIiwic291cmNlcyI6WyJwdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7QUFBQSw4Q0FBYyxnQ0FBZ0MsQ0FBQztBQUMvQywyQ0FBYyw2QkFBNkIsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCAqIGZyb20gJy4vcHJvZ3Jlc3MtaW5kaWNhdG9yLmNvbXBvbmVudCc7XHJcbmV4cG9ydCAqIGZyb20gJy4vcHJvZ3Jlc3MtaW5kaWNhdG9yLm1vZHVsZSc7XHJcbiJdfQ==

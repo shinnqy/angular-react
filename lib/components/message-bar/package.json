@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-message-bar.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-message-bar.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-message-bar.js",
+  "esm5": "../../../esm5/lib/components/message-bar/angular-react-fabric-lib-components-message-bar.js",
+  "esm2015": "../../../esm2015/lib/components/message-bar/angular-react-fabric-lib-components-message-bar.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-message-bar.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-message-bar.js",
+  "typings": "angular-react-fabric-lib-components-message-bar.d.ts",
+  "metadata": "angular-react-fabric-lib-components-message-bar.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/message-bar"
+}

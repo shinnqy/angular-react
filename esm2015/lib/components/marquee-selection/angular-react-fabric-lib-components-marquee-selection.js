@@ -1,0 +1,10 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * Generated bundle index. Do not edit.
+ */
+export { FabMarqueeSelectionModule } from './public-api';
+export { FabMarqueeSelectionComponent as ɵa } from './marquee-selection.component';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYW5ndWxhci1yZWFjdC1mYWJyaWMtbGliLWNvbXBvbmVudHMtbWFycXVlZS1zZWxlY3Rpb24uanMiLCJzb3VyY2VSb290Ijoibmc6Ly9AYW5ndWxhci1yZWFjdC9mYWJyaWMvbGliL2NvbXBvbmVudHMvbWFycXVlZS1zZWxlY3Rpb24vIiwic291cmNlcyI6WyJhbmd1bGFyLXJlYWN0LWZhYnJpYy1saWItY29tcG9uZW50cy1tYXJxdWVlLXNlbGVjdGlvbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBSUEsMENBQWMsY0FBYyxDQUFDO0FBRTdCLE9BQU8sRUFBQyw0QkFBNEIsSUFBSSxFQUFFLEVBQUMsTUFBTSwrQkFBK0IsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogR2VuZXJhdGVkIGJ1bmRsZSBpbmRleC4gRG8gbm90IGVkaXQuXG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9wdWJsaWMtYXBpJztcblxuZXhwb3J0IHtGYWJNYXJxdWVlU2VsZWN0aW9uQ29tcG9uZW50IGFzIMm1YX0gZnJvbSAnLi9tYXJxdWVlLXNlbGVjdGlvbi5jb21wb25lbnQnOyJdfQ==

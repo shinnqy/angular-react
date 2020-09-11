@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-pivot.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-pivot.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-pivot.js",
+  "esm5": "../../../esm5/lib/components/pivot/angular-react-fabric-lib-components-pivot.js",
+  "esm2015": "../../../esm2015/lib/components/pivot/angular-react-fabric-lib-components-pivot.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-pivot.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-pivot.js",
+  "typings": "angular-react-fabric-lib-components-pivot.d.ts",
+  "metadata": "angular-react-fabric-lib-components-pivot.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/pivot"
+}

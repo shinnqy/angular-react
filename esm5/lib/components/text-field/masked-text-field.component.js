@@ -1,0 +1,43 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+import * as tslib_1 from "tslib";
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
+import { FabBaseTextFieldComponent } from './base-text-field.component';
+var FabMaskedTextFieldComponent = /** @class */ (function (_super) {
+    tslib_1.__extends(FabMaskedTextFieldComponent, _super);
+    function FabMaskedTextFieldComponent(elementRef, changeDetectorRef, renderer) {
+        return _super.call(this, elementRef, changeDetectorRef, renderer) || this;
+    }
+    FabMaskedTextFieldComponent.decorators = [
+        { type: Component, args: [{
+                    selector: 'fab-masked-text-field',
+                    exportAs: 'fabMaskedTextField',
+                    template: "\n    <MaskedTextField\n      #reactNode\n      [required]=\"required\"\n      [placeholder]=\"placeholder\"\n      [type]=\"type\"\n      [cols]=\"cols\"\n      [colSpan]=\"colSpan\"\n      [rows]=\"rows\"\n      [rowSpan]=\"rowSpan\"\n      [min]=\"min\"\n      [max]=\"max\"\n      [pattern]=\"pattern\"\n      [htmlFor]=\"htmlFor\"\n      [componentRef]=\"componentRef\"\n      [multiline]=\"multiline\"\n      [resizable]=\"resizable\"\n      [autoAdjustHeight]=\"autoAdjustHeight\"\n      [underlined]=\"underlined\"\n      [borderless]=\"borderless\"\n      [label]=\"label\"\n      [description]=\"description\"\n      [prefix]=\"prefix\"\n      [suffix]=\"suffix\"\n      [iconProps]=\"iconProps\"\n      [defaultValue]=\"defaultValue\"\n      [value]=\"value\"\n      [disabled]=\"disabled\"\n      [readOnly]=\"readOnly\"\n      [errorMessage]=\"errorMessage\"\n      [deferredValidationTime]=\"deferredValidationTime\"\n      [className]=\"className\"\n      [inputClassName]=\"inputClassName\"\n      [ariaLabel]=\"ariaLabel\"\n      [validateOnFocusIn]=\"validateOnFocusIn\"\n      [validateOnFocusOut]=\"validateOnFocusOut\"\n      [validateOnLoad]=\"validateOnLoad\"\n      [theme]=\"theme\"\n      [styles]=\"styles\"\n      [autoComplete]=\"autoComplete\"\n      [mask]=\"mask\"\n      [maskChar]=\"maskChar\"\n      [maskFormat]=\"maskFormat\"\n      [GetErrorMessage]=\"getErrorMessage\"\n      [RenderLabel]=\"renderLabel\"\n      [RenderDescription]=\"renderDescription\"\n      [RenderPrefix]=\"renderPrefix\"\n      [RenderSuffix]=\"renderSuffix\"\n      [Change]=\"onChangeHandler\"\n      [BeforeChange]=\"onBeforeChangeHandler\"\n      [NotifyValidationResult]=\"onNotifyValidationResultHandler\"\n      (onClick)=\"onClickHandler($event)\"\n      (onFocus)=\"onFocusHandler($event)\"\n      (onBlur)=\"onBlurHandler($event)\"\n    >\n    </MaskedTextField>\n  ",
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    styles: ['react-renderer']
+                }] }
+    ];
+    /** @nocollapse */
+    FabMaskedTextFieldComponent.ctorParameters = function () { return [
+        { type: ElementRef },
+        { type: ChangeDetectorRef },
+        { type: Renderer2 }
+    ]; };
+    FabMaskedTextFieldComponent.propDecorators = {
+        reactNodeRef: [{ type: ViewChild, args: ['reactNode', { static: true },] }]
+    };
+    return FabMaskedTextFieldComponent;
+}(FabBaseTextFieldComponent));
+export { FabMaskedTextFieldComponent };
+if (false) {
+    /**
+     * @type {?}
+     * @protected
+     */
+    FabMaskedTextFieldComponent.prototype.reactNodeRef;
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFza2VkLXRleHQtZmllbGQuY29tcG9uZW50LmpzIiwic291cmNlUm9vdCI6Im5nOi8vQGFuZ3VsYXItcmVhY3QvZmFicmljL2xpYi9jb21wb25lbnRzL3RleHQtZmllbGQvIiwic291cmNlcyI6WyJtYXNrZWQtdGV4dC1maWVsZC5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUdBLE9BQU8sRUFBRSx1QkFBdUIsRUFBRSxpQkFBaUIsRUFBRSxTQUFTLEVBQUUsVUFBVSxFQUFFLFNBQVMsRUFBRSxTQUFTLEVBQUUsTUFBTSxlQUFlLENBQUM7QUFDeEgsT0FBTyxFQUFFLHlCQUF5QixFQUFFLE1BQU0sNkJBQTZCLENBQUM7QUFFeEU7SUErRGlELHVEQUF5QjtJQUd4RSxxQ0FBWSxVQUFzQixFQUFFLGlCQUFvQyxFQUFFLFFBQW1CO2VBQzNGLGtCQUFNLFVBQVUsRUFBRSxpQkFBaUIsRUFBRSxRQUFRLENBQUM7SUFDaEQsQ0FBQzs7Z0JBcEVGLFNBQVMsU0FBQztvQkFDVCxRQUFRLEVBQUUsdUJBQXVCO29CQUNqQyxRQUFRLEVBQUUsb0JBQW9CO29CQUM5QixRQUFRLEVBQUUsazJEQXdEVDtvQkFFRCxlQUFlLEVBQUUsdUJBQXVCLENBQUMsTUFBTTs2QkFEdEMsZ0JBQWdCO2lCQUUxQjs7OztnQkFqRStELFVBQVU7Z0JBQXhDLGlCQUFpQjtnQkFBeUIsU0FBUzs7OytCQW1FbEYsU0FBUyxTQUFDLFdBQVcsRUFBRSxFQUFFLE1BQU0sRUFBRSxJQUFJLEVBQUU7O0lBSzFDLGtDQUFDO0NBQUEsQUFyRUQsQ0ErRGlELHlCQUF5QixHQU16RTtTQU5ZLDJCQUEyQjs7Ozs7O0lBQ3RDLG1EQUE2RSIsInNvdXJjZXNDb250ZW50IjpbIi8vIENvcHlyaWdodCAoYykgTWljcm9zb2Z0IENvcnBvcmF0aW9uLiBBbGwgcmlnaHRzIHJlc2VydmVkLlxyXG4vLyBMaWNlbnNlZCB1bmRlciB0aGUgTUlUIExpY2Vuc2UuXHJcblxyXG5pbXBvcnQgeyBDaGFuZ2VEZXRlY3Rpb25TdHJhdGVneSwgQ2hhbmdlRGV0ZWN0b3JSZWYsIENvbXBvbmVudCwgRWxlbWVudFJlZiwgUmVuZGVyZXIyLCBWaWV3Q2hpbGQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuaW1wb3J0IHsgRmFiQmFzZVRleHRGaWVsZENvbXBvbmVudCB9IGZyb20gJy4vYmFzZS10ZXh0LWZpZWxkLmNvbXBvbmVudCc7XHJcblxyXG5AQ29tcG9uZW50KHtcclxuICBzZWxlY3RvcjogJ2ZhYi1tYXNrZWQtdGV4dC1maWVsZCcsXHJcbiAgZXhwb3J0QXM6ICdmYWJNYXNrZWRUZXh0RmllbGQnLFxyXG4gIHRlbXBsYXRlOiBgXHJcbiAgICA8TWFza2VkVGV4dEZpZWxkXHJcbiAgICAgICNyZWFjdE5vZGVcclxuICAgICAgW3JlcXVpcmVkXT1cInJlcXVpcmVkXCJcclxuICAgICAgW3BsYWNlaG9sZGVyXT1cInBsYWNlaG9sZGVyXCJcclxuICAgICAgW3R5cGVdPVwidHlwZVwiXHJcbiAgICAgIFtjb2xzXT1cImNvbHNcIlxyXG4gICAgICBbY29sU3Bhbl09XCJjb2xTcGFuXCJcclxuICAgICAgW3Jvd3NdPVwicm93c1wiXHJcbiAgICAgIFtyb3dTcGFuXT1cInJvd1NwYW5cIlxyXG4gICAgICBbbWluXT1cIm1pblwiXHJcbiAgICAgIFttYXhdPVwibWF4XCJcclxuICAgICAgW3BhdHRlcm5dPVwicGF0dGVyblwiXHJcbiAgICAgIFtodG1sRm9yXT1cImh0bWxGb3JcIlxyXG4gICAgICBbY29tcG9uZW50UmVmXT1cImNvbXBvbmVudFJlZlwiXHJcbiAgICAgIFttdWx0aWxpbmVdPVwibXVsdGlsaW5lXCJcclxuICAgICAgW3Jlc2l6YWJsZV09XCJyZXNpemFibGVcIlxyXG4gICAgICBbYXV0b0FkanVzdEhlaWdodF09XCJhdXRvQWRqdXN0SGVpZ2h0XCJcclxuICAgICAgW3VuZGVybGluZWRdPVwidW5kZXJsaW5lZFwiXHJcbiAgICAgIFtib3JkZXJsZXNzXT1cImJvcmRlcmxlc3NcIlxyXG4gICAgICBbbGFiZWxdPVwibGFiZWxcIlxyXG4gICAgICBbZGVzY3JpcHRpb25dPVwiZGVzY3JpcHRpb25cIlxyXG4gICAgICBbcHJlZml4XT1cInByZWZpeFwiXHJcbiAgICAgIFtzdWZmaXhdPVwic3VmZml4XCJcclxuICAgICAgW2ljb25Qcm9wc109XCJpY29uUHJvcHNcIlxyXG4gICAgICBbZGVmYXVsdFZhbHVlXT1cImRlZmF1bHRWYWx1ZVwiXHJcbiAgICAgIFt2YWx1ZV09XCJ2YWx1ZVwiXHJcbiAgICAgIFtkaXNhYmxlZF09XCJkaXNhYmxlZFwiXHJcbiAgICAgIFtyZWFkT25seV09XCJyZWFkT25seVwiXHJcbiAgICAgIFtlcnJvck1lc3NhZ2VdPVwiZXJyb3JNZXNzYWdlXCJcclxuICAgICAgW2RlZmVycmVkVmFsaWRhdGlvblRpbWVdPVwiZGVmZXJyZWRWYWxpZGF0aW9uVGltZVwiXHJcbiAgICAgIFtjbGFzc05hbWVdPVwiY2xhc3NOYW1lXCJcclxuICAgICAgW2lucHV0Q2xhc3NOYW1lXT1cImlucHV0Q2xhc3NOYW1lXCJcclxuICAgICAgW2FyaWFMYWJlbF09XCJhcmlhTGFiZWxcIlxyXG4gICAgICBbdmFsaWRhdGVPbkZvY3VzSW5dPVwidmFsaWRhdGVPbkZvY3VzSW5cIlxyXG4gICAgICBbdmFsaWRhdGVPbkZvY3VzT3V0XT1cInZhbGlkYXRlT25Gb2N1c091dFwiXHJcbiAgICAgIFt2YWxpZGF0ZU9uTG9hZF09XCJ2YWxpZGF0ZU9uTG9hZFwiXHJcbiAgICAgIFt0aGVtZV09XCJ0aGVtZVwiXHJcbiAgICAgIFtzdHlsZXNdPVwic3R5bGVzXCJcclxuICAgICAgW2F1dG9Db21wbGV0ZV09XCJhdXRvQ29tcGxldGVcIlxyXG4gICAgICBbbWFza109XCJtYXNrXCJcclxuICAgICAgW21hc2tDaGFyXT1cIm1hc2tDaGFyXCJcclxuICAgICAgW21hc2tGb3JtYXRdPVwibWFza0Zvcm1hdFwiXHJcbiAgICAgIFtHZXRFcnJvck1lc3NhZ2VdPVwiZ2V0RXJyb3JNZXNzYWdlXCJcclxuICAgICAgW1JlbmRlckxhYmVsXT1cInJlbmRlckxhYmVsXCJcclxuICAgICAgW1JlbmRlckRlc2NyaXB0aW9uXT1cInJlbmRlckRlc2NyaXB0aW9uXCJcclxuICAgICAgW1JlbmRlclByZWZpeF09XCJyZW5kZXJQcmVmaXhcIlxyXG4gICAgICBbUmVuZGVyU3VmZml4XT1cInJlbmRlclN1ZmZpeFwiXHJcbiAgICAgIFtDaGFuZ2VdPVwib25DaGFuZ2VIYW5kbGVyXCJcclxuICAgICAgW0JlZm9yZUNoYW5nZV09XCJvbkJlZm9yZUNoYW5nZUhhbmRsZXJcIlxyXG4gICAgICBbTm90aWZ5VmFsaWRhdGlvblJlc3VsdF09XCJvbk5vdGlmeVZhbGlkYXRpb25SZXN1bHRIYW5kbGVyXCJcclxuICAgICAgKG9uQ2xpY2spPVwib25DbGlja0hhbmRsZXIoJGV2ZW50KVwiXHJcbiAgICAgIChvbkZvY3VzKT1cIm9uRm9jdXNIYW5kbGVyKCRldmVudClcIlxyXG4gICAgICAob25CbHVyKT1cIm9uQmx1ckhhbmRsZXIoJGV2ZW50KVwiXHJcbiAgICA+XHJcbiAgICA8L01hc2tlZFRleHRGaWVsZD5cclxuICBgLFxyXG4gIHN0eWxlczogWydyZWFjdC1yZW5kZXJlciddLFxyXG4gIGNoYW5nZURldGVjdGlvbjogQ2hhbmdlRGV0ZWN0aW9uU3RyYXRlZ3kuT25QdXNoLFxyXG59KVxyXG5leHBvcnQgY2xhc3MgRmFiTWFza2VkVGV4dEZpZWxkQ29tcG9uZW50IGV4dGVuZHMgRmFiQmFzZVRleHRGaWVsZENvbXBvbmVudCB7XHJcbiAgQFZpZXdDaGlsZCgncmVhY3ROb2RlJywgeyBzdGF0aWM6IHRydWUgfSkgcHJvdGVjdGVkIHJlYWN0Tm9kZVJlZjogRWxlbWVudFJlZjtcclxuXHJcbiAgY29uc3RydWN0b3IoZWxlbWVudFJlZjogRWxlbWVudFJlZiwgY2hhbmdlRGV0ZWN0b3JSZWY6IENoYW5nZURldGVjdG9yUmVmLCByZW5kZXJlcjogUmVuZGVyZXIyKSB7XHJcbiAgICBzdXBlcihlbGVtZW50UmVmLCBjaGFuZ2VEZXRlY3RvclJlZiwgcmVuZGVyZXIpO1xyXG4gIH1cclxufVxyXG4iXX0=

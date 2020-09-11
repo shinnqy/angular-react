@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-fabric.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-fabric.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-fabric.js",
+  "esm5": "../../../esm5/lib/components/fabric/angular-react-fabric-lib-components-fabric.js",
+  "esm2015": "../../../esm2015/lib/components/fabric/angular-react-fabric-lib-components-fabric.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-fabric.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-fabric.js",
+  "typings": "angular-react-fabric-lib-components-fabric.d.ts",
+  "metadata": "angular-react-fabric-lib-components-fabric.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/fabric"
+}

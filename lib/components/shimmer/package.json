@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-shimmer.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-shimmer.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-shimmer.js",
+  "esm5": "../../../esm5/lib/components/shimmer/angular-react-fabric-lib-components-shimmer.js",
+  "esm2015": "../../../esm2015/lib/components/shimmer/angular-react-fabric-lib-components-shimmer.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-shimmer.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-shimmer.js",
+  "typings": "angular-react-fabric-lib-components-shimmer.d.ts",
+  "metadata": "angular-react-fabric-lib-components-shimmer.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/shimmer"
+}

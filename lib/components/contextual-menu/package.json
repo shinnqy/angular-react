@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-contextual-menu.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-contextual-menu.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-contextual-menu.js",
+  "esm5": "../../../esm5/lib/components/contextual-menu/angular-react-fabric-lib-components-contextual-menu.js",
+  "esm2015": "../../../esm2015/lib/components/contextual-menu/angular-react-fabric-lib-components-contextual-menu.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-contextual-menu.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-contextual-menu.js",
+  "typings": "angular-react-fabric-lib-components-contextual-menu.d.ts",
+  "metadata": "angular-react-fabric-lib-components-contextual-menu.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/contextual-menu"
+}

@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-dialog.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-dialog.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-dialog.js",
+  "esm5": "../../../esm5/lib/components/dialog/angular-react-fabric-lib-components-dialog.js",
+  "esm2015": "../../../esm2015/lib/components/dialog/angular-react-fabric-lib-components-dialog.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-dialog.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-dialog.js",
+  "typings": "angular-react-fabric-lib-components-dialog.d.ts",
+  "metadata": "angular-react-fabric-lib-components-dialog.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/dialog"
+}

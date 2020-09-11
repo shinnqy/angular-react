@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-tooltip.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-tooltip.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-tooltip.js",
+  "esm5": "../../../esm5/lib/components/tooltip/angular-react-fabric-lib-components-tooltip.js",
+  "esm2015": "../../../esm2015/lib/components/tooltip/angular-react-fabric-lib-components-tooltip.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-tooltip.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-tooltip.js",
+  "typings": "angular-react-fabric-lib-components-tooltip.d.ts",
+  "metadata": "angular-react-fabric-lib-components-tooltip.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/tooltip"
+}

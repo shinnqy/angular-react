@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-breadcrumb.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-breadcrumb.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-breadcrumb.js",
+  "esm5": "../../../esm5/lib/components/breadcrumb/angular-react-fabric-lib-components-breadcrumb.js",
+  "esm2015": "../../../esm2015/lib/components/breadcrumb/angular-react-fabric-lib-components-breadcrumb.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-breadcrumb.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-breadcrumb.js",
+  "typings": "angular-react-fabric-lib-components-breadcrumb.d.ts",
+  "metadata": "angular-react-fabric-lib-components-breadcrumb.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/breadcrumb"
+}

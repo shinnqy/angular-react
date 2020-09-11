@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-nav.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-nav.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-nav.js",
+  "esm5": "../../../esm5/lib/components/nav/angular-react-fabric-lib-components-nav.js",
+  "esm2015": "../../../esm2015/lib/components/nav/angular-react-fabric-lib-components-nav.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-nav.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-nav.js",
+  "typings": "angular-react-fabric-lib-components-nav.d.ts",
+  "metadata": "angular-react-fabric-lib-components-nav.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/nav"
+}

@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-callout.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-callout.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-callout.js",
+  "esm5": "../../../esm5/lib/components/callout/angular-react-fabric-lib-components-callout.js",
+  "esm2015": "../../../esm2015/lib/components/callout/angular-react-fabric-lib-components-callout.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-callout.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-callout.js",
+  "typings": "angular-react-fabric-lib-components-callout.d.ts",
+  "metadata": "angular-react-fabric-lib-components-callout.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/callout"
+}

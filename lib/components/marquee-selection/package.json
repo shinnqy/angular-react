@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-marquee-selection.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-marquee-selection.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-marquee-selection.js",
+  "esm5": "../../../esm5/lib/components/marquee-selection/angular-react-fabric-lib-components-marquee-selection.js",
+  "esm2015": "../../../esm2015/lib/components/marquee-selection/angular-react-fabric-lib-components-marquee-selection.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-marquee-selection.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-marquee-selection.js",
+  "typings": "angular-react-fabric-lib-components-marquee-selection.d.ts",
+  "metadata": "angular-react-fabric-lib-components-marquee-selection.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/marquee-selection"
+}
