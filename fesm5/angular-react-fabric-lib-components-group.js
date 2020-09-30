@@ -1,7 +1,6 @@
 import { __extends } from 'tslib';
 import { Directive, ContentChildren, Input, Output, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-import { ChangeableItemsHelper } from 'angular-react-toolkit/core/shared/changeable-helper';
-import { ChangeableItemDirective } from 'angular-react-toolkit/core/shared/changeable-item.directive';
+import { ChangeableItemsHelper, ChangeableItemDirective } from '@angular-react/fabric/lib/components/core';
 import { CommonModule } from '@angular/common';
 
 /**

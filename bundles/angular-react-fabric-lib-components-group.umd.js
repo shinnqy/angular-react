@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('angular-react-toolkit/core/shared/changeable-helper'), require('angular-react-toolkit/core/shared/changeable-item.directive'), require('@angular/common')) :
-    typeof define === 'function' && define.amd ? define('@angular-react/fabric/lib/components/group', ['exports', '@angular/core', 'angular-react-toolkit/core/shared/changeable-helper', 'angular-react-toolkit/core/shared/changeable-item.directive', '@angular/common'], factory) :
-    (global = global || self, factory((global['angular-react'] = global['angular-react'] || {}, global['angular-react'].fabric = global['angular-react'].fabric || {}, global['angular-react'].fabric.lib = global['angular-react'].fabric.lib || {}, global['angular-react'].fabric.lib.components = global['angular-react'].fabric.lib.components || {}, global['angular-react'].fabric.lib.components.group = {}), global.ng.core, global.changeableHelper, global.changeableItem_directive, global.ng.common));
-}(this, (function (exports, core, changeableHelper, changeableItem_directive, common) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular-react/fabric/lib/components/core'), require('@angular/common')) :
+    typeof define === 'function' && define.amd ? define('@angular-react/fabric/lib/components/group', ['exports', '@angular/core', '@angular-react/fabric/lib/components/core', '@angular/common'], factory) :
+    (global = global || self, factory((global['angular-react'] = global['angular-react'] || {}, global['angular-react'].fabric = global['angular-react'].fabric || {}, global['angular-react'].fabric.lib = global['angular-react'].fabric.lib || {}, global['angular-react'].fabric.lib.components = global['angular-react'].fabric.lib.components || {}, global['angular-react'].fabric.lib.components.group = {}), global.ng.core, global['angular-react'].fabric.lib.components.core, global.ng.common));
+}(this, (function (exports, core, core$1, common) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -238,7 +238,7 @@
          */
         function () {
             var _this = this;
-            this.changeableItemsHelper = new changeableHelper.ChangeableItemsHelper(this.groupItemsDirectives, this, (/**
+            this.changeableItemsHelper = new core$1.ChangeableItemsHelper(this.groupItemsDirectives, this, (/**
              * @param {?} nonSelf
              * @return {?}
              */
@@ -275,7 +275,7 @@
             onItemsChanged: [{ type: core.Input }]
         };
         return GroupItemDirective;
-    }(changeableItem_directive.ChangeableItemDirective));
+    }(core$1.ChangeableItemDirective));
     if (false) {
         /** @type {?} */
         GroupItemDirective.prototype.groupItemsDirectives;

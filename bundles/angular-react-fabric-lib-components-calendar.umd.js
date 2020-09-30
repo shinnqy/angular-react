@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular-react/core'), require('@angular/core'), require('@angular/common'), require('office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss'), require('office-ui-fabric-react/lib/Calendar'), require('angular-react-toolkit/utils/noop')) :
-    typeof define === 'function' && define.amd ? define('@angular-react/fabric/lib/components/calendar', ['exports', '@angular-react/core', '@angular/core', '@angular/common', 'office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss', 'office-ui-fabric-react/lib/Calendar', 'angular-react-toolkit/utils/noop'], factory) :
-    (global = global || self, factory((global['angular-react'] = global['angular-react'] || {}, global['angular-react'].fabric = global['angular-react'].fabric || {}, global['angular-react'].fabric.lib = global['angular-react'].fabric.lib || {}, global['angular-react'].fabric.lib.components = global['angular-react'].fabric.lib.components || {}, global['angular-react'].fabric.lib.components.calendar = {}), global.core, global.ng.core, global.ng.common, global.CalendarCss, global.Calendar, global.noop));
-}(this, (function (exports, core, core$1, common, CalendarCss, Calendar, noop) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular-react/core'), require('@angular/core'), require('@angular/common'), require('office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss'), require('office-ui-fabric-react/lib/Calendar'), require('@angular-react/fabric/lib/utils')) :
+    typeof define === 'function' && define.amd ? define('@angular-react/fabric/lib/components/calendar', ['exports', '@angular-react/core', '@angular/core', '@angular/common', 'office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss', 'office-ui-fabric-react/lib/Calendar', '@angular-react/fabric/lib/utils'], factory) :
+    (global = global || self, factory((global['angular-react'] = global['angular-react'] || {}, global['angular-react'].fabric = global['angular-react'].fabric || {}, global['angular-react'].fabric.lib = global['angular-react'].fabric.lib || {}, global['angular-react'].fabric.lib.components = global['angular-react'].fabric.lib.components || {}, global['angular-react'].fabric.lib.components.calendar = {}), global.core, global.ng.core, global.ng.common, global.CalendarCss, global.Calendar, global['angular-react'].fabric.lib.utils));
+}(this, (function (exports, core, core$1, common, CalendarCss, Calendar, utils) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -472,7 +472,7 @@
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Dummy action to force CalendarCss to load and not be tree-shaken away.
-    noop.noop(CalendarCss);
+    utils.noop(CalendarCss);
     /** @type {?} */
     var declarations = [FabCalendarComponent, CalendarStringsDirective];
     var FabCalendarModule = /** @class */ (function () {
@@ -496,9 +496,9 @@
         return FabCalendarModule;
     }());
 
+    exports.CalendarStringsDirective = CalendarStringsDirective;
     exports.FabCalendarComponent = FabCalendarComponent;
     exports.FabCalendarModule = FabCalendarModule;
-    exports.ɵa = CalendarStringsDirective;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

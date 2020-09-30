@@ -644,12 +644,12 @@
         return FabComboBoxModule;
     }());
 
+    exports.ComboBoxOptionDirective = ComboBoxOptionDirective;
+    exports.ComboBoxOptionsDirective = ComboBoxOptionsDirective;
     exports.FabComboBoxComponent = FabComboBoxComponent;
     exports.FabComboBoxModule = FabComboBoxModule;
     exports.ɵa = FabBaseComboBoxComponent;
-    exports.ɵb = ComboBoxOptionsDirective;
-    exports.ɵc = ComboBoxOptionDirective;
-    exports.ɵd = FabVirtualizedComboBoxComponent;
+    exports.ɵb = FabVirtualizedComboBoxComponent;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

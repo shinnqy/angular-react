@@ -3,7 +3,7 @@ import { Directive, Input, EventEmitter, Component, ChangeDetectionStrategy, Ele
 import { CommonModule } from '@angular/common';
 import * as CalendarCss from 'office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss';
 import { Calendar } from 'office-ui-fabric-react/lib/Calendar';
-import { noop } from 'angular-react-toolkit/utils/noop';
+import { noop } from '@angular-react/fabric/lib/utils';
 
 /**
  * @fileoverview added by tsickle
@@ -323,5 +323,5 @@ FabCalendarModule.ctorParameters = () => [];
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
-export { FabCalendarComponent, FabCalendarModule, CalendarStringsDirective as ɵa };
+export { CalendarStringsDirective, FabCalendarComponent, FabCalendarModule };
 //# sourceMappingURL=angular-react-fabric-lib-components-calendar.js.map

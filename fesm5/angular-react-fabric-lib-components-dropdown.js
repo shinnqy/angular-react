@@ -374,5 +374,5 @@ var FabDropdownModule = /** @class */ (function () {
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
-export { FabDropdownComponent, FabDropdownModule, DropdownOptionsDirective as ɵa, DropdownOptionDirective as ɵb };
+export { DropdownOptionDirective, DropdownOptionsDirective, FabDropdownComponent, FabDropdownModule };
 //# sourceMappingURL=angular-react-fabric-lib-components-dropdown.js.map

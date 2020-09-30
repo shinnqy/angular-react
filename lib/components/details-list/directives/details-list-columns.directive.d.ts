@@ -1,5 +1,5 @@
 import { QueryList } from '@angular/core';
-import { ChangeableItemsDirective } from 'angular-react-toolkit/core/shared/changeable-items.directive';
+import { ChangeableItemsDirective } from '@angular-react/fabric/lib/components/core';
 import { DetailsListColumnDirective, IDetailsListColumnOptions } from './details-list-column.directive';
 /**
  * Wrapper directive for creating multiple DetailsListColumns

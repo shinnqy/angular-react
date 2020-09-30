@@ -1,7 +1,7 @@
 import { __extends } from 'tslib';
 import { ReactWrapperComponent, registerElement } from '@angular-react/core';
 import { EventEmitter, Component, ChangeDetectionStrategy, ElementRef, ChangeDetectorRef, Renderer2, NgZone, ViewChild, Input, Output, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-import omit from 'angular-react-toolkit/utils/omit';
+import { omit } from '@angular-react/fabric/lib/utils';
 import { CommonModule } from '@angular/common';
 import { SearchBox } from 'office-ui-fabric-react/lib/SearchBox';
 

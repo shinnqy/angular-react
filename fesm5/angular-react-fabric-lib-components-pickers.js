@@ -1,11 +1,10 @@
 import { __extends } from 'tslib';
 import { ReactWrapperComponent, registerElement } from '@angular-react/core';
 import { EventEmitter, Input, Output, NgModule, NO_ERRORS_SCHEMA, Component, ChangeDetectionStrategy, ElementRef, ChangeDetectorRef, Renderer2, NgZone, ViewChild } from '@angular/core';
-import omit from 'angular-react-toolkit/utils/omit';
+import { omit, noop } from '@angular-react/fabric/lib/utils';
 import { CommonModule } from '@angular/common';
 import * as BasePickerCss from 'office-ui-fabric-react/lib-amd/components/pickers/BasePicker.scss';
 import { BasePicker, NormalPeoplePickerBase } from 'office-ui-fabric-react/lib/Pickers';
-import { noop } from 'angular-react-toolkit/utils/noop';
 import { TagPicker } from 'office-ui-fabric-react';
 import * as PeoplePickerItemCss from 'office-ui-fabric-react/lib-amd/components/pickers/PeoplePicker/PeoplePickerItems/PickerItemsDefault.scss';
 

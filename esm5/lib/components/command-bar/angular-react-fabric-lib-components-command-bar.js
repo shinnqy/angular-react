@@ -1,0 +1,9 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * Generated bundle index. Do not edit.
+ */
+export { FabCommandBarComponent, FabCommandBarModule, CommandBarItemRenderDirective, CommandBarItemRenderIconDirective, CommandBarItemDirective, CommandBarItemsDirectiveBase, CommandBarItemsDirective, CommandBarFarItemsDirective, CommandBarOverflowItemsDirective } from './public-api';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYW5ndWxhci1yZWFjdC1mYWJyaWMtbGliLWNvbXBvbmVudHMtY29tbWFuZC1iYXIuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9AYW5ndWxhci1yZWFjdC9mYWJyaWMvbGliL2NvbXBvbmVudHMvY29tbWFuZC1iYXIvIiwic291cmNlcyI6WyJhbmd1bGFyLXJlYWN0LWZhYnJpYy1saWItY29tcG9uZW50cy1jb21tYW5kLWJhci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBSUEsOFFBQWMsY0FBYyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBHZW5lcmF0ZWQgYnVuZGxlIGluZGV4LiBEbyBub3QgZWRpdC5cbiAqL1xuXG5leHBvcnQgKiBmcm9tICcuL3B1YmxpYy1hcGknO1xuIl19

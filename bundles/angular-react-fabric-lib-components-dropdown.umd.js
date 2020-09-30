@@ -561,10 +561,10 @@
         return FabDropdownModule;
     }());
 
+    exports.DropdownOptionDirective = DropdownOptionDirective;
+    exports.DropdownOptionsDirective = DropdownOptionsDirective;
     exports.FabDropdownComponent = FabDropdownComponent;
     exports.FabDropdownModule = FabDropdownModule;
-    exports.ɵa = DropdownOptionsDirective;
-    exports.ɵb = DropdownOptionDirective;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

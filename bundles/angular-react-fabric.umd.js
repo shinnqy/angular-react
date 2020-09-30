@@ -1,10 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular-react/core'), require('@angular/core'), require('@angular/common'), require('office-ui-fabric-react/lib/Breadcrumb'), require('angular-react-toolkit/core/shared/changeable-helper'), require('angular-react-toolkit/core/declarative/item-changed'), require('angular-react-toolkit/utils/omit'), require('angular-react-toolkit/utils/get-data-attributes'), require('angular-react-toolkit/core/shared/changeable-item.directive'), require('office-ui-fabric-react/lib/Button'), require('office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss'), require('office-ui-fabric-react/lib/Calendar'), require('angular-react-toolkit/utils/noop'), require('office-ui-fabric-react/lib/Callout'), require('office-ui-fabric-react/lib/Checkbox'), require('office-ui-fabric-react/lib/ChoiceGroup'), require('office-ui-fabric-react/lib/ComboBox'), require('angular-react-toolkit/core/shared/changeable-items.directive'), require('office-ui-fabric-react/lib-amd/components/OverflowSet/OverflowSet.scss'), require('office-ui-fabric-react/lib/CommandBar'), require('office-ui-fabric-react/lib/DatePicker'), require('office-ui-fabric-react/lib/DetailsList'), require('office-ui-fabric-react/lib/Dialog'), require('office-ui-fabric-react/lib/Divider'), require('office-ui-fabric-react/lib/Dropdown'), require('office-ui-fabric-react/lib/Fabric'), require('office-ui-fabric-react/lib/GroupedList'), require('office-ui-fabric-react/lib/HoverCard'), require('office-ui-fabric-react/lib/Icon'), require('office-ui-fabric-react/lib/Image'), require('office-ui-fabric-react/lib/Link'), require('office-ui-fabric-react/lib/MarqueeSelection'), require('office-ui-fabric-react/lib/MessageBar'), require('office-ui-fabric-react/lib/Modal'), require('office-ui-fabric-react/lib/Panel'), require('office-ui-fabric-react/lib/Persona'), require('office-ui-fabric-react/lib/Pivot'), require('office-ui-fabric-react/lib/SearchBox'), require('office-ui-fabric-react/lib/Shimmer'), require('office-ui-fabric-react/lib/Slider'), require('office-ui-fabric-react/lib/SpinButton'), require('office-ui-fabric-react/lib/Spinner'), require('office-ui-fabric-react/lib/TextField'), require('office-ui-fabric-react/lib/Toggle'), require('office-ui-fabric-react/lib/Tooltip'), require('office-ui-fabric-react/lib/Nav'), require('office-ui-fabric-react/lib-amd/components/pickers/BasePicker.scss'), require('office-ui-fabric-react/lib/Pickers'), require('office-ui-fabric-react'), require('office-ui-fabric-react/lib-amd/components/pickers/PeoplePicker/PeoplePickerItems/PickerItemsDefault.scss'), require('office-ui-fabric-react/lib/ProgressIndicator')) :
-    typeof define === 'function' && define.amd ? define('@angular-react/fabric', ['exports', '@angular-react/core', '@angular/core', '@angular/common', 'office-ui-fabric-react/lib/Breadcrumb', 'angular-react-toolkit/core/shared/changeable-helper', 'angular-react-toolkit/core/declarative/item-changed', 'angular-react-toolkit/utils/omit', 'angular-react-toolkit/utils/get-data-attributes', 'angular-react-toolkit/core/shared/changeable-item.directive', 'office-ui-fabric-react/lib/Button', 'office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss', 'office-ui-fabric-react/lib/Calendar', 'angular-react-toolkit/utils/noop', 'office-ui-fabric-react/lib/Callout', 'office-ui-fabric-react/lib/Checkbox', 'office-ui-fabric-react/lib/ChoiceGroup', 'office-ui-fabric-react/lib/ComboBox', 'angular-react-toolkit/core/shared/changeable-items.directive', 'office-ui-fabric-react/lib-amd/components/OverflowSet/OverflowSet.scss', 'office-ui-fabric-react/lib/CommandBar', 'office-ui-fabric-react/lib/DatePicker', 'office-ui-fabric-react/lib/DetailsList', 'office-ui-fabric-react/lib/Dialog', 'office-ui-fabric-react/lib/Divider', 'office-ui-fabric-react/lib/Dropdown', 'office-ui-fabric-react/lib/Fabric', 'office-ui-fabric-react/lib/GroupedList', 'office-ui-fabric-react/lib/HoverCard', 'office-ui-fabric-react/lib/Icon', 'office-ui-fabric-react/lib/Image', 'office-ui-fabric-react/lib/Link', 'office-ui-fabric-react/lib/MarqueeSelection', 'office-ui-fabric-react/lib/MessageBar', 'office-ui-fabric-react/lib/Modal', 'office-ui-fabric-react/lib/Panel', 'office-ui-fabric-react/lib/Persona', 'office-ui-fabric-react/lib/Pivot', 'office-ui-fabric-react/lib/SearchBox', 'office-ui-fabric-react/lib/Shimmer', 'office-ui-fabric-react/lib/Slider', 'office-ui-fabric-react/lib/SpinButton', 'office-ui-fabric-react/lib/Spinner', 'office-ui-fabric-react/lib/TextField', 'office-ui-fabric-react/lib/Toggle', 'office-ui-fabric-react/lib/Tooltip', 'office-ui-fabric-react/lib/Nav', 'office-ui-fabric-react/lib-amd/components/pickers/BasePicker.scss', 'office-ui-fabric-react/lib/Pickers', 'office-ui-fabric-react', 'office-ui-fabric-react/lib-amd/components/pickers/PeoplePicker/PeoplePickerItems/PickerItemsDefault.scss', 'office-ui-fabric-react/lib/ProgressIndicator'], factory) :
-    (global = global || self, factory((global['angular-react'] = global['angular-react'] || {}, global['angular-react'].fabric = {}), global['ɵa'], global.ng.core, global.ng.common, global.Breadcrumb, global.changeableHelper, global.itemChanged, global.omit$1, global.getDataAttributes, global.changeableItem_directive, global.Button, global.CalendarCss, global.Calendar, global.noop, global.Callout, global.Checkbox, global.ChoiceGroup, global.ComboBox, global.changeableItems_directive, global.OverflowSetCss, global.CommandBar, global.DatePicker, global.DetailsList, global.Dialog, global.Divider, global.Dropdown, global.Fabric, global.GroupedList, global.HoverCard, global.Icon, global.Image, global.Link, global.MarqueeSelection, global.MessageBar, global.Modal, global.Panel, global.Persona, global.Pivot, global.SearchBox, global.Shimmer, global.Slider, global.SpinButton, global.Spinner, global.TextField, global.Toggle, global.Tooltip, global.Nav, global.BasePickerCss, global.Pickers, global.Fabric, global.PeoplePickerItemCss, global.ProgressIndicator));
-}(this, (function (exports, core, core$1, common, Breadcrumb, changeableHelper, itemChanged, omit$1, getDataAttributes, changeableItem_directive, Button, CalendarCss, Calendar, noop, Callout, Checkbox, ChoiceGroup, ComboBox, changeableItems_directive, OverflowSetCss, CommandBar, DatePicker, DetailsList, Dialog, Divider, Dropdown, Fabric, GroupedList, HoverCard, Icon, Image, Link, MarqueeSelection, MessageBar, Modal, Panel, Persona, Pivot, SearchBox, Shimmer, Slider, SpinButton, Spinner, TextField, Toggle, Tooltip, Nav, BasePickerCss, Pickers, officeUiFabricReact, PeoplePickerItemCss, ProgressIndicator) { 'use strict';
-
-    var omit$1__default = 'default' in omit$1 ? omit$1['default'] : omit$1;
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular-react/core'), require('@angular/core'), require('@angular/common'), require('office-ui-fabric-react/lib/Breadcrumb'), require('@angular-react/fabric/lib/components/core'), require('@angular-react/fabric/lib/utils'), require('@angular-react/fabric/lib/components/contextual-menu'), require('office-ui-fabric-react/lib/Button'), require('office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss'), require('office-ui-fabric-react/lib/Calendar'), require('office-ui-fabric-react/lib/Callout'), require('office-ui-fabric-react/lib/Checkbox'), require('office-ui-fabric-react/lib/ChoiceGroup'), require('office-ui-fabric-react/lib/ComboBox'), require('office-ui-fabric-react/lib-amd/components/OverflowSet/OverflowSet.scss'), require('office-ui-fabric-react/lib/CommandBar'), require('office-ui-fabric-react/lib/DatePicker'), require('@angular-react/fabric/lib/components/group'), require('office-ui-fabric-react/lib/DetailsList'), require('office-ui-fabric-react/lib/Dialog'), require('office-ui-fabric-react/lib/Divider'), require('office-ui-fabric-react/lib/Dropdown'), require('office-ui-fabric-react/lib/Fabric'), require('office-ui-fabric-react/lib/GroupedList'), require('office-ui-fabric-react/lib/HoverCard'), require('office-ui-fabric-react/lib/Icon'), require('office-ui-fabric-react/lib/Image'), require('office-ui-fabric-react/lib/Link'), require('office-ui-fabric-react/lib/MarqueeSelection'), require('office-ui-fabric-react/lib/MessageBar'), require('office-ui-fabric-react/lib/Modal'), require('office-ui-fabric-react/lib/Panel'), require('office-ui-fabric-react/lib/Persona'), require('office-ui-fabric-react/lib/Pivot'), require('office-ui-fabric-react/lib/SearchBox'), require('office-ui-fabric-react/lib/Shimmer'), require('office-ui-fabric-react/lib/Slider'), require('office-ui-fabric-react/lib/SpinButton'), require('office-ui-fabric-react/lib/Spinner'), require('office-ui-fabric-react/lib/TextField'), require('office-ui-fabric-react/lib/Toggle'), require('office-ui-fabric-react/lib/Tooltip'), require('office-ui-fabric-react/lib/Nav'), require('office-ui-fabric-react/lib-amd/components/pickers/BasePicker.scss'), require('office-ui-fabric-react/lib/Pickers'), require('office-ui-fabric-react'), require('office-ui-fabric-react/lib-amd/components/pickers/PeoplePicker/PeoplePickerItems/PickerItemsDefault.scss'), require('office-ui-fabric-react/lib/ProgressIndicator')) :
+    typeof define === 'function' && define.amd ? define('@angular-react/fabric', ['exports', '@angular-react/core', '@angular/core', '@angular/common', 'office-ui-fabric-react/lib/Breadcrumb', '@angular-react/fabric/lib/components/core', '@angular-react/fabric/lib/utils', '@angular-react/fabric/lib/components/contextual-menu', 'office-ui-fabric-react/lib/Button', 'office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss', 'office-ui-fabric-react/lib/Calendar', 'office-ui-fabric-react/lib/Callout', 'office-ui-fabric-react/lib/Checkbox', 'office-ui-fabric-react/lib/ChoiceGroup', 'office-ui-fabric-react/lib/ComboBox', 'office-ui-fabric-react/lib-amd/components/OverflowSet/OverflowSet.scss', 'office-ui-fabric-react/lib/CommandBar', 'office-ui-fabric-react/lib/DatePicker', '@angular-react/fabric/lib/components/group', 'office-ui-fabric-react/lib/DetailsList', 'office-ui-fabric-react/lib/Dialog', 'office-ui-fabric-react/lib/Divider', 'office-ui-fabric-react/lib/Dropdown', 'office-ui-fabric-react/lib/Fabric', 'office-ui-fabric-react/lib/GroupedList', 'office-ui-fabric-react/lib/HoverCard', 'office-ui-fabric-react/lib/Icon', 'office-ui-fabric-react/lib/Image', 'office-ui-fabric-react/lib/Link', 'office-ui-fabric-react/lib/MarqueeSelection', 'office-ui-fabric-react/lib/MessageBar', 'office-ui-fabric-react/lib/Modal', 'office-ui-fabric-react/lib/Panel', 'office-ui-fabric-react/lib/Persona', 'office-ui-fabric-react/lib/Pivot', 'office-ui-fabric-react/lib/SearchBox', 'office-ui-fabric-react/lib/Shimmer', 'office-ui-fabric-react/lib/Slider', 'office-ui-fabric-react/lib/SpinButton', 'office-ui-fabric-react/lib/Spinner', 'office-ui-fabric-react/lib/TextField', 'office-ui-fabric-react/lib/Toggle', 'office-ui-fabric-react/lib/Tooltip', 'office-ui-fabric-react/lib/Nav', 'office-ui-fabric-react/lib-amd/components/pickers/BasePicker.scss', 'office-ui-fabric-react/lib/Pickers', 'office-ui-fabric-react', 'office-ui-fabric-react/lib-amd/components/pickers/PeoplePicker/PeoplePickerItems/PickerItemsDefault.scss', 'office-ui-fabric-react/lib/ProgressIndicator'], factory) :
+    (global = global || self, factory((global['angular-react'] = global['angular-react'] || {}, global['angular-react'].fabric = {}), global['ɵa'], global.ng.core, global.ng.common, global.Breadcrumb, global['angular-react'].fabric.lib.components.core, global['angular-react'].fabric.lib.utils, global['angular-react'].fabric.lib.components['contextual-menu'], global.Button, global.CalendarCss, global.Calendar, global.Callout, global.Checkbox, global.ChoiceGroup, global.ComboBox, global.OverflowSetCss, global.CommandBar, global.DatePicker, global['angular-react'].fabric.lib.components.group, global.DetailsList, global.Dialog, global.Divider, global.Dropdown, global.Fabric, global.GroupedList, global.HoverCard, global.Icon, global.Image, global.Link, global.MarqueeSelection, global.MessageBar, global.Modal, global.Panel, global.Persona, global.Pivot, global.SearchBox, global.Shimmer, global.Slider, global.SpinButton, global.Spinner, global.TextField, global.Toggle, global.Tooltip, global.Nav, global.BasePickerCss, global.Pickers, global.Fabric, global.PeoplePickerItemCss, global.ProgressIndicator));
+}(this, (function (exports, core, core$1, common, Breadcrumb, core$2, utils, contextualMenu, Button, CalendarCss, Calendar, Callout, Checkbox, ChoiceGroup, ComboBox, OverflowSetCss, CommandBar, DatePicker, group, DetailsList, Dialog, Divider, Dropdown, Fabric, GroupedList, HoverCard, Icon, Image, Link, MarqueeSelection, MessageBar, Modal, Panel, Persona, Pivot, SearchBox, Shimmer, Slider, SpinButton, Spinner, TextField, Toggle, Tooltip, Nav, BasePickerCss, Pickers, officeUiFabricReact, PeoplePickerItemCss, ProgressIndicator) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -330,331 +328,6 @@
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
-     * Wrapper directive to allow rendering a custom item to a ContextualMenuItem.
-     */
-    var ContextualMenuItemRenderDirective = /** @class */ (function () {
-        function ContextualMenuItemRenderDirective() {
-        }
-        ContextualMenuItemRenderDirective.decorators = [
-            { type: core$1.Directive, args: [{ selector: 'fab-command-bar-item > render' },] }
-        ];
-        ContextualMenuItemRenderDirective.propDecorators = {
-            templateRef: [{ type: core$1.ContentChild, args: [core$1.TemplateRef, { static: false },] }]
-        };
-        return ContextualMenuItemRenderDirective;
-    }());
-    if (false) {
-        /** @type {?} */
-        ContextualMenuItemRenderDirective.prototype.templateRef;
-    }
-    /**
-     * Wrapper directive to allow rendering a custom icon to a ContextualMenuItem.
-     */
-    var ContextualMenuItemRenderIconDirective = /** @class */ (function () {
-        function ContextualMenuItemRenderIconDirective() {
-        }
-        ContextualMenuItemRenderIconDirective.decorators = [
-            { type: core$1.Directive, args: [{ selector: 'fab-command-bar-item > render-icon' },] }
-        ];
-        ContextualMenuItemRenderIconDirective.propDecorators = {
-            templateRef: [{ type: core$1.ContentChild, args: [core$1.TemplateRef, { static: false },] }]
-        };
-        return ContextualMenuItemRenderIconDirective;
-    }());
-    if (false) {
-        /** @type {?} */
-        ContextualMenuItemRenderIconDirective.prototype.templateRef;
-    }
-    var ContextualMenuItemDirective = /** @class */ (function (_super) {
-        __extends(ContextualMenuItemDirective, _super);
-        function ContextualMenuItemDirective(elementRef) {
-            var _this = _super.call(this) || this;
-            _this.elementRef = elementRef;
-            _this.click = new core$1.EventEmitter();
-            return _this;
-        }
-        Object.defineProperty(ContextualMenuItemDirective.prototype, "onChildItemChanged", {
-            get: /**
-             * @return {?}
-             */
-            function () {
-                return this._changeableItemsHelper && this._changeableItemsHelper.onChildItemChanged;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        Object.defineProperty(ContextualMenuItemDirective.prototype, "onItemsChanged", {
-            get: /**
-             * @return {?}
-             */
-            function () {
-                return this._changeableItemsHelper && this._changeableItemsHelper.onItemsChanged;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        /**
-         * @return {?}
-         */
-        ContextualMenuItemDirective.prototype.ngAfterContentInit = /**
-         * @return {?}
-         */
-        function () {
-            var _this = this;
-            if (this.renderDirective && this.renderDirective.templateRef) {
-                this.render = this.renderDirective.templateRef;
-            }
-            if (this.renderIconDirective && this.renderIconDirective.templateRef) {
-                this.renderIcon = this.renderIconDirective.templateRef;
-            }
-            this._changeableItemsHelper = new changeableHelper.ChangeableItemsHelper(this.menuItemsDirectives, this, (/**
-             * @param {?} nonSelfDirective
-             * @return {?}
-             */
-            function (nonSelfDirective) {
-                /** @type {?} */
-                var items = nonSelfDirective.map((/**
-                 * @param {?} directive
-                 * @return {?}
-                 */
-                function (directive) { return _this._directiveToContextualMenuItem((/** @type {?} */ (directive))); }));
-                if (!_this.subMenuProps) {
-                    _this.subMenuProps = { items: items };
-                }
-                else {
-                    _this.subMenuProps.items = items;
-                }
-            }));
-        };
-        /**
-         * @return {?}
-         */
-        ContextualMenuItemDirective.prototype.ngOnDestroy = /**
-         * @return {?}
-         */
-        function () {
-            this._changeableItemsHelper.destroy();
-        };
-        /**
-         * @private
-         * @param {?} directive
-         * @return {?}
-         */
-        ContextualMenuItemDirective.prototype._directiveToContextualMenuItem = /**
-         * @private
-         * @param {?} directive
-         * @return {?}
-         */
-        function (directive) {
-            return __assign({}, directive, getDataAttributes.getDataAttributes(directive.elementRef.nativeElement, true), { onClick: (/**
-                 * @param {?} ev
-                 * @param {?} item
-                 * @return {?}
-                 */
-                function (ev, item) {
-                    directive.click.emit({ ev: ev && ev.nativeEvent, item: item });
-                }) });
-        };
-        ContextualMenuItemDirective.decorators = [
-            { type: core$1.Directive, args: [{ selector: 'contextual-menu-item' },] }
-        ];
-        /** @nocollapse */
-        ContextualMenuItemDirective.ctorParameters = function () { return [
-            { type: core$1.ElementRef }
-        ]; };
-        ContextualMenuItemDirective.propDecorators = {
-            menuItemsDirectives: [{ type: core$1.ContentChildren, args: [ContextualMenuItemDirective,] }],
-            renderDirective: [{ type: core$1.ContentChild, args: [ContextualMenuItemRenderDirective, { static: false },] }],
-            renderIconDirective: [{ type: core$1.ContentChild, args: [ContextualMenuItemRenderIconDirective, { static: false },] }],
-            componentRef: [{ type: core$1.Input }],
-            text: [{ type: core$1.Input }],
-            secondaryText: [{ type: core$1.Input }],
-            itemType: [{ type: core$1.Input }],
-            iconProps: [{ type: core$1.Input }],
-            submenuIconProps: [{ type: core$1.Input }],
-            disabled: [{ type: core$1.Input }],
-            primaryDisabled: [{ type: core$1.Input }],
-            shortCut: [{ type: core$1.Input }],
-            canCheck: [{ type: core$1.Input }],
-            checked: [{ type: core$1.Input }],
-            split: [{ type: core$1.Input }],
-            data: [{ type: core$1.Input }],
-            href: [{ type: core$1.Input }],
-            target: [{ type: core$1.Input }],
-            rel: [{ type: core$1.Input }],
-            subMenuProps: [{ type: core$1.Input }],
-            getItemClassNames: [{ type: core$1.Input }],
-            itemProps: [{ type: core$1.Input }],
-            getSplitButtonVerticalDividerClassNames: [{ type: core$1.Input }],
-            sectionProps: [{ type: core$1.Input }],
-            className: [{ type: core$1.Input }],
-            style: [{ type: core$1.Input }],
-            ariaLabel: [{ type: core$1.Input }],
-            title: [{ type: core$1.Input }],
-            onMouseDown: [{ type: core$1.Input }],
-            role: [{ type: core$1.Input }],
-            customOnRenderListLength: [{ type: core$1.Input }],
-            keytipProps: [{ type: core$1.Input }],
-            inactive: [{ type: core$1.Input }],
-            name: [{ type: core$1.Input }],
-            render: [{ type: core$1.Input }],
-            renderIcon: [{ type: core$1.Input }],
-            click: [{ type: core$1.Output }],
-            onChildItemChanged: [{ type: core$1.Output }],
-            onItemsChanged: [{ type: core$1.Output }]
-        };
-        return ContextualMenuItemDirective;
-    }(changeableItem_directive.ChangeableItemDirective));
-    if (false) {
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.menuItemsDirectives;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.renderDirective;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.renderIconDirective;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.componentRef;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.text;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.secondaryText;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.itemType;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.iconProps;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.submenuIconProps;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.disabled;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.primaryDisabled;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.shortCut;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.canCheck;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.checked;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.split;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.data;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.href;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.target;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.rel;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.subMenuProps;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.getItemClassNames;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.itemProps;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.getSplitButtonVerticalDividerClassNames;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.sectionProps;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.className;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.style;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.ariaLabel;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.title;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.onMouseDown;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.role;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.customOnRenderListLength;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.keytipProps;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.inactive;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.name;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.render;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.renderIcon;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.click;
-        /**
-         * @type {?}
-         * @private
-         */
-        ContextualMenuItemDirective.prototype._changeableItemsHelper;
-        /** @type {?} */
-        ContextualMenuItemDirective.prototype.elementRef;
-    }
-    /**
-     * @record
-     * @template TData
-     */
-    function IContextualMenuItemOptions() { }
-    if (false) {
-        /** @type {?|undefined} */
-        IContextualMenuItemOptions.prototype.renderIcon;
-        /** @type {?|undefined} */
-        IContextualMenuItemOptions.prototype.render;
-        /** @type {?|undefined} */
-        IContextualMenuItemOptions.prototype.data;
-        /* Skipping unhandled member: [propertyName: string]: any;*/
-    }
-    /**
-     * @record
-     */
-    function IContextualMenuItemOptionsRenderContext() { }
-    if (false) {
-        /** @type {?} */
-        IContextualMenuItemOptionsRenderContext.prototype.item;
-        /** @type {?} */
-        IContextualMenuItemOptionsRenderContext.prototype.dismissMenu;
-    }
-    /**
-     * @record
-     */
-    function IContextualMenuItemOptionsRenderIconContext() { }
-    if (false) {
-        /** @type {?} */
-        IContextualMenuItemOptionsRenderIconContext.prototype.contextualMenuItem;
-    }
-
-    /**
-     * @fileoverview added by tsickle
-     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-     */
-    /** @type {?} */
-    var components$1 = [
-        ContextualMenuItemDirective,
-        ContextualMenuItemRenderDirective,
-        ContextualMenuItemRenderIconDirective,
-    ];
-    var FabContextualMenuModule = /** @class */ (function () {
-        function FabContextualMenuModule() {
-        }
-        FabContextualMenuModule.decorators = [
-            { type: core$1.NgModule, args: [{
-                        imports: [common.CommonModule],
-                        declarations: components$1,
-                        exports: components$1,
-                        schemas: [core$1.NO_ERRORS_SCHEMA],
-                    },] }
-        ];
-        return FabContextualMenuModule;
-    }());
-
-    /**
-     * @fileoverview added by tsickle
-     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-     */
-
-    /**
-     * @fileoverview added by tsickle
-     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-     */
-    /**
      * @abstract
      */
     var FabBaseButtonComponent = /** @class */ (function (_super) {
@@ -715,7 +388,7 @@
                     _this.markForCheck();
                 });
                 // @ts-ignore
-                this._changeableItemsHelper = new changeableHelper.ChangeableItemsHelper(this.menuItemsDirectives);
+                this._changeableItemsHelper = new core$2.ChangeableItemsHelper(this.menuItemsDirectives);
                 this._subscriptions.push(this._changeableItemsHelper.onItemsChanged.subscribe((/**
                  * @param {?} newItems
                  * @return {?}
@@ -734,7 +407,7 @@
                      * @return {?}
                      */
                     function (item) {
-                        return item.key === key ? itemChanged.mergeItemChanges(item, changes) : item;
+                        return item.key === key ? core$2.mergeItemChanges(item, changes) : item;
                     }));
                     setItems_1(newItems);
                     _this.markForCheck();
@@ -799,7 +472,7 @@
          * @return {?}
          */
         function (directive) {
-            return __assign({}, omit$1.omit(directive, 'menuItemsDirectives', 'renderDirective', 'renderIconDirective', 'click', 'onItemChanged', 'onItemsChanged', 'onChildItemChanged', 'ngOnInit', 'ngOnChanges', 'ngOnDestroy', 'ngAfterContentInit'), getDataAttributes.getDataAttributes(directive.elementRef.nativeElement, true), { onClick: (/**
+            return __assign({}, utils.omit(directive, 'menuItemsDirectives', 'renderDirective', 'renderIconDirective', 'click', 'onItemChanged', 'onItemsChanged', 'onChildItemChanged', 'ngOnInit', 'ngOnChanges', 'ngOnDestroy', 'ngAfterContentInit'), utils.getDataAttributes(directive.elementRef.nativeElement, true), { onClick: (/**
                  * @param {?} ev
                  * @param {?} item
                  * @return {?}
@@ -820,7 +493,7 @@
          */
         function (itemOptions) {
             /** @type {?} */
-            var sharedProperties = omit$1.omit(itemOptions, 'renderIcon', 'render');
+            var sharedProperties = utils.omit(itemOptions, 'renderIcon', 'render');
             // Legacy render mode is used for the icon because otherwise the icon is to the right of the text (instead of the usual left)
             /** @type {?} */
             var iconRenderer = this.createInputJsxRenderer(itemOptions.renderIcon, { legacyRenderMode: true });
@@ -885,7 +558,7 @@
             onClick: [{ type: core$1.Output }],
             onMenuClick: [{ type: core$1.Output }],
             onAfterMenuDismiss: [{ type: core$1.Output }],
-            menuItemsDirectives: [{ type: core$1.ContentChildren, args: [ContextualMenuItemDirective,] }]
+            menuItemsDirectives: [{ type: core$1.ContentChildren, args: [contextualMenu.ContextualMenuItemDirective,] }]
         };
         return FabBaseButtonComponent;
     }(core.ReactWrapperComponent));
@@ -1307,7 +980,7 @@
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
-    var components$2 = [
+    var components$1 = [
         FabDefaultButtonComponent,
         FabActionButtonComponent,
         FabCommandBarButtonComponent,
@@ -1352,8 +1025,8 @@
         FabButtonModule.decorators = [
             { type: core$1.NgModule, args: [{
                         imports: [common.CommonModule],
-                        declarations: components$2,
-                        exports: components$2,
+                        declarations: components$1,
+                        exports: components$1,
                         schemas: [core$1.NO_ERRORS_SCHEMA],
                     },] }
         ];
@@ -1638,7 +1311,7 @@
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Dummy action to force CalendarCss to load and not be tree-shaken away.
-    noop.noop(CalendarCss);
+    utils.noop(CalendarCss);
     /** @type {?} */
     var declarations = [FabCalendarComponent, CalendarStringsDirective];
     var FabCalendarModule = /** @class */ (function () {
@@ -1819,7 +1492,7 @@
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
-    var components$3 = [FabCalloutComponent];
+    var components$2 = [FabCalloutComponent];
     var FabCalloutModule = /** @class */ (function () {
         function FabCalloutModule() {
             // Add any React elements to the registry (used by the renderer).
@@ -1835,8 +1508,8 @@
         FabCalloutModule.decorators = [
             { type: core$1.NgModule, args: [{
                         imports: [common.CommonModule],
-                        declarations: components$3,
-                        exports: components$3,
+                        declarations: components$2,
+                        exports: components$2,
                         schemas: [core$1.NO_ERRORS_SCHEMA],
                     },] }
         ];
@@ -1988,7 +1661,7 @@
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
-    var components$4 = [FabCheckboxComponent];
+    var components$3 = [FabCheckboxComponent];
     var FabCheckboxModule = /** @class */ (function () {
         function FabCheckboxModule() {
             // Add any React elements to the registry (used by the renderer).
@@ -2000,8 +1673,8 @@
         FabCheckboxModule.decorators = [
             { type: core$1.NgModule, args: [{
                         imports: [common.CommonModule],
-                        declarations: components$4,
-                        exports: components$4,
+                        declarations: components$3,
+                        exports: components$3,
                         schemas: [core$1.NO_ERRORS_SCHEMA],
                     },] }
         ];
@@ -2130,7 +1803,7 @@
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
-    var components$5 = [FabChoiceGroupComponent];
+    var components$4 = [FabChoiceGroupComponent];
     var FabChoiceGroupModule = /** @class */ (function () {
         function FabChoiceGroupModule() {
             // Add any React elements to the registry (used by the renderer).
@@ -2142,8 +1815,8 @@
         FabChoiceGroupModule.decorators = [
             { type: core$1.NgModule, args: [{
                         imports: [common.CommonModule],
-                        declarations: components$5,
-                        exports: components$5,
+                        declarations: components$4,
+                        exports: components$4,
                         schemas: [core$1.NO_ERRORS_SCHEMA],
                     },] }
         ];
@@ -2666,7 +2339,7 @@
             commandBarButtonAs: [{ type: core$1.Input }]
         };
         return CommandBarItemDirective;
-    }(ContextualMenuItemDirective));
+    }(contextualMenu.ContextualMenuItemDirective));
     if (false) {
         /** @type {?} */
         CommandBarItemDirective.prototype.iconOnly;
@@ -2707,7 +2380,7 @@
                      * @param {?} directiveItem
                      * @return {?}
                      */
-                    function (directiveItem) { return (__assign({}, directiveItem, getDataAttributes.getDataAttributes(directiveItem.elementRef.nativeElement, true), { onClick: (/**
+                    function (directiveItem) { return (__assign({}, directiveItem, utils.getDataAttributes(directiveItem.elementRef.nativeElement, true), { onClick: (/**
                          * @param {?} ev
                          * @param {?} item
                          * @return {?}
@@ -2723,7 +2396,7 @@
             configurable: true
         });
         return CommandBarItemsDirectiveBase;
-    }(changeableItems_directive.ChangeableItemsDirective));
+    }(core$2.ChangeableItemsDirective));
     if (false) {
         /** @type {?} */
         CommandBarItemsDirectiveBase.prototype.directiveItems;
@@ -2926,7 +2599,7 @@
                  * @param {?} item
                  * @return {?}
                  */
-                function (item) { return (item.key === key ? itemChanged.mergeItemChanges(item, changes) : item); })); }));
+                function (item) { return (item.key === key ? core$2.mergeItemChanges(item, changes) : item); })); }));
                 _this.markForCheck();
             })));
         };
@@ -2996,7 +2669,7 @@
          */
         function (itemOptions) {
             /** @type {?} */
-            var sharedProperties = omit$1__default(itemOptions, 'renderIcon', 'render');
+            var sharedProperties = utils.omit(itemOptions, 'renderIcon', 'render');
             // Legacy render mode is used for the icon because otherwise the icon is to the right of the text (instead of the usual left)
             /** @type {?} */
             var iconRenderer = this.createInputJsxRenderer(itemOptions.renderIcon, { legacyRenderMode: true });
@@ -3159,9 +2832,9 @@
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Dummy action to force OverflowSetCss to load and not be tree-shaken away.
-    noop.noop(OverflowSetCss);
+    utils.noop(OverflowSetCss);
     /** @type {?} */
-    var components$6 = [
+    var components$5 = [
         FabCommandBarComponent,
         CommandBarItemsDirective,
         CommandBarFarItemsDirective,
@@ -3180,15 +2853,340 @@
         }
         FabCommandBarModule.decorators = [
             { type: core$1.NgModule, args: [{
-                        imports: [common.CommonModule, FabContextualMenuModule],
-                        declarations: components$6,
-                        exports: __spread(components$6, [FabContextualMenuModule]),
+                        imports: [common.CommonModule, contextualMenu.FabContextualMenuModule],
+                        declarations: components$5,
+                        exports: __spread(components$5, [contextualMenu.FabContextualMenuModule]),
                         schemas: [core$1.NO_ERRORS_SCHEMA],
                     },] }
         ];
         /** @nocollapse */
         FabCommandBarModule.ctorParameters = function () { return []; };
         return FabCommandBarModule;
+    }());
+
+    /**
+     * @fileoverview added by tsickle
+     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+
+    /**
+     * @fileoverview added by tsickle
+     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
+     * Wrapper directive to allow rendering a custom item to a ContextualMenuItem.
+     */
+    var ContextualMenuItemRenderDirective = /** @class */ (function () {
+        function ContextualMenuItemRenderDirective() {
+        }
+        ContextualMenuItemRenderDirective.decorators = [
+            { type: core$1.Directive, args: [{ selector: 'fab-command-bar-item > render' },] }
+        ];
+        ContextualMenuItemRenderDirective.propDecorators = {
+            templateRef: [{ type: core$1.ContentChild, args: [core$1.TemplateRef, { static: false },] }]
+        };
+        return ContextualMenuItemRenderDirective;
+    }());
+    if (false) {
+        /** @type {?} */
+        ContextualMenuItemRenderDirective.prototype.templateRef;
+    }
+    /**
+     * Wrapper directive to allow rendering a custom icon to a ContextualMenuItem.
+     */
+    var ContextualMenuItemRenderIconDirective = /** @class */ (function () {
+        function ContextualMenuItemRenderIconDirective() {
+        }
+        ContextualMenuItemRenderIconDirective.decorators = [
+            { type: core$1.Directive, args: [{ selector: 'fab-command-bar-item > render-icon' },] }
+        ];
+        ContextualMenuItemRenderIconDirective.propDecorators = {
+            templateRef: [{ type: core$1.ContentChild, args: [core$1.TemplateRef, { static: false },] }]
+        };
+        return ContextualMenuItemRenderIconDirective;
+    }());
+    if (false) {
+        /** @type {?} */
+        ContextualMenuItemRenderIconDirective.prototype.templateRef;
+    }
+    var ContextualMenuItemDirective = /** @class */ (function (_super) {
+        __extends(ContextualMenuItemDirective, _super);
+        function ContextualMenuItemDirective(elementRef) {
+            var _this = _super.call(this) || this;
+            _this.elementRef = elementRef;
+            _this.click = new core$1.EventEmitter();
+            return _this;
+        }
+        Object.defineProperty(ContextualMenuItemDirective.prototype, "onChildItemChanged", {
+            get: /**
+             * @return {?}
+             */
+            function () {
+                return this._changeableItemsHelper && this._changeableItemsHelper.onChildItemChanged;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Object.defineProperty(ContextualMenuItemDirective.prototype, "onItemsChanged", {
+            get: /**
+             * @return {?}
+             */
+            function () {
+                return this._changeableItemsHelper && this._changeableItemsHelper.onItemsChanged;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        /**
+         * @return {?}
+         */
+        ContextualMenuItemDirective.prototype.ngAfterContentInit = /**
+         * @return {?}
+         */
+        function () {
+            var _this = this;
+            if (this.renderDirective && this.renderDirective.templateRef) {
+                this.render = this.renderDirective.templateRef;
+            }
+            if (this.renderIconDirective && this.renderIconDirective.templateRef) {
+                this.renderIcon = this.renderIconDirective.templateRef;
+            }
+            this._changeableItemsHelper = new core$2.ChangeableItemsHelper(this.menuItemsDirectives, this, (/**
+             * @param {?} nonSelfDirective
+             * @return {?}
+             */
+            function (nonSelfDirective) {
+                /** @type {?} */
+                var items = nonSelfDirective.map((/**
+                 * @param {?} directive
+                 * @return {?}
+                 */
+                function (directive) { return _this._directiveToContextualMenuItem((/** @type {?} */ (directive))); }));
+                if (!_this.subMenuProps) {
+                    _this.subMenuProps = { items: items };
+                }
+                else {
+                    _this.subMenuProps.items = items;
+                }
+            }));
+        };
+        /**
+         * @return {?}
+         */
+        ContextualMenuItemDirective.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
+            this._changeableItemsHelper.destroy();
+        };
+        /**
+         * @private
+         * @param {?} directive
+         * @return {?}
+         */
+        ContextualMenuItemDirective.prototype._directiveToContextualMenuItem = /**
+         * @private
+         * @param {?} directive
+         * @return {?}
+         */
+        function (directive) {
+            return __assign({}, directive, utils.getDataAttributes(directive.elementRef.nativeElement, true), { onClick: (/**
+                 * @param {?} ev
+                 * @param {?} item
+                 * @return {?}
+                 */
+                function (ev, item) {
+                    directive.click.emit({ ev: ev && ev.nativeEvent, item: item });
+                }) });
+        };
+        ContextualMenuItemDirective.decorators = [
+            { type: core$1.Directive, args: [{ selector: 'contextual-menu-item' },] }
+        ];
+        /** @nocollapse */
+        ContextualMenuItemDirective.ctorParameters = function () { return [
+            { type: core$1.ElementRef }
+        ]; };
+        ContextualMenuItemDirective.propDecorators = {
+            menuItemsDirectives: [{ type: core$1.ContentChildren, args: [ContextualMenuItemDirective,] }],
+            renderDirective: [{ type: core$1.ContentChild, args: [ContextualMenuItemRenderDirective, { static: false },] }],
+            renderIconDirective: [{ type: core$1.ContentChild, args: [ContextualMenuItemRenderIconDirective, { static: false },] }],
+            componentRef: [{ type: core$1.Input }],
+            text: [{ type: core$1.Input }],
+            secondaryText: [{ type: core$1.Input }],
+            itemType: [{ type: core$1.Input }],
+            iconProps: [{ type: core$1.Input }],
+            submenuIconProps: [{ type: core$1.Input }],
+            disabled: [{ type: core$1.Input }],
+            primaryDisabled: [{ type: core$1.Input }],
+            shortCut: [{ type: core$1.Input }],
+            canCheck: [{ type: core$1.Input }],
+            checked: [{ type: core$1.Input }],
+            split: [{ type: core$1.Input }],
+            data: [{ type: core$1.Input }],
+            href: [{ type: core$1.Input }],
+            target: [{ type: core$1.Input }],
+            rel: [{ type: core$1.Input }],
+            subMenuProps: [{ type: core$1.Input }],
+            getItemClassNames: [{ type: core$1.Input }],
+            itemProps: [{ type: core$1.Input }],
+            getSplitButtonVerticalDividerClassNames: [{ type: core$1.Input }],
+            sectionProps: [{ type: core$1.Input }],
+            className: [{ type: core$1.Input }],
+            style: [{ type: core$1.Input }],
+            ariaLabel: [{ type: core$1.Input }],
+            title: [{ type: core$1.Input }],
+            onMouseDown: [{ type: core$1.Input }],
+            role: [{ type: core$1.Input }],
+            customOnRenderListLength: [{ type: core$1.Input }],
+            keytipProps: [{ type: core$1.Input }],
+            inactive: [{ type: core$1.Input }],
+            name: [{ type: core$1.Input }],
+            render: [{ type: core$1.Input }],
+            renderIcon: [{ type: core$1.Input }],
+            click: [{ type: core$1.Output }],
+            onChildItemChanged: [{ type: core$1.Output }],
+            onItemsChanged: [{ type: core$1.Output }]
+        };
+        return ContextualMenuItemDirective;
+    }(core$2.ChangeableItemDirective));
+    if (false) {
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.menuItemsDirectives;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.renderDirective;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.renderIconDirective;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.componentRef;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.text;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.secondaryText;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.itemType;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.iconProps;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.submenuIconProps;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.disabled;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.primaryDisabled;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.shortCut;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.canCheck;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.checked;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.split;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.data;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.href;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.target;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.rel;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.subMenuProps;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.getItemClassNames;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.itemProps;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.getSplitButtonVerticalDividerClassNames;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.sectionProps;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.className;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.style;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.ariaLabel;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.title;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.onMouseDown;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.role;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.customOnRenderListLength;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.keytipProps;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.inactive;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.name;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.render;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.renderIcon;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.click;
+        /**
+         * @type {?}
+         * @private
+         */
+        ContextualMenuItemDirective.prototype._changeableItemsHelper;
+        /** @type {?} */
+        ContextualMenuItemDirective.prototype.elementRef;
+    }
+    /**
+     * @record
+     * @template TData
+     */
+    function IContextualMenuItemOptions() { }
+    if (false) {
+        /** @type {?|undefined} */
+        IContextualMenuItemOptions.prototype.renderIcon;
+        /** @type {?|undefined} */
+        IContextualMenuItemOptions.prototype.render;
+        /** @type {?|undefined} */
+        IContextualMenuItemOptions.prototype.data;
+        /* Skipping unhandled member: [propertyName: string]: any;*/
+    }
+    /**
+     * @record
+     */
+    function IContextualMenuItemOptionsRenderContext() { }
+    if (false) {
+        /** @type {?} */
+        IContextualMenuItemOptionsRenderContext.prototype.item;
+        /** @type {?} */
+        IContextualMenuItemOptionsRenderContext.prototype.dismissMenu;
+    }
+    /**
+     * @record
+     */
+    function IContextualMenuItemOptionsRenderIconContext() { }
+    if (false) {
+        /** @type {?} */
+        IContextualMenuItemOptionsRenderIconContext.prototype.contextualMenuItem;
+    }
+
+    /**
+     * @fileoverview added by tsickle
+     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
+    var components$6 = [
+        ContextualMenuItemDirective,
+        ContextualMenuItemRenderDirective,
+        ContextualMenuItemRenderIconDirective,
+    ];
+    var FabContextualMenuModule = /** @class */ (function () {
+        function FabContextualMenuModule() {
+        }
+        FabContextualMenuModule.decorators = [
+            { type: core$1.NgModule, args: [{
+                        imports: [common.CommonModule],
+                        declarations: components$6,
+                        exports: components$6,
+                        schemas: [core$1.NO_ERRORS_SCHEMA],
+                    },] }
+        ];
+        return FabContextualMenuModule;
     }());
 
     /**
@@ -3372,7 +3370,7 @@
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Dummy action to force CalendarCss to load and not be tree-shaken away.
-    noop.noop(CalendarCss);
+    utils.noop(CalendarCss);
     /** @type {?} */
     var components$7 = [FabDatePickerComponent];
     var FabDatePickerModule = /** @class */ (function () {
@@ -3488,7 +3486,7 @@
             onColumnResize: [{ type: core$1.Output }]
         };
         return DetailsListColumnDirective;
-    }(changeableItem_directive.ChangeableItemDirective));
+    }(core$2.ChangeableItemDirective));
     if (false) {
         /** @type {?} */
         DetailsListColumnDirective.prototype.renderDirective;
@@ -3644,117 +3642,10 @@
             directiveItems: [{ type: core$1.ContentChildren, args: [DetailsListColumnDirective,] }]
         };
         return DetailsListColumnsDirective;
-    }(changeableItems_directive.ChangeableItemsDirective));
+    }(core$2.ChangeableItemsDirective));
     if (false) {
         /** @type {?} */
         DetailsListColumnsDirective.prototype.directiveItems;
-    }
-
-    /**
-     * @fileoverview added by tsickle
-     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-     */
-    var GroupItemDirective = /** @class */ (function (_super) {
-        __extends(GroupItemDirective, _super);
-        function GroupItemDirective() {
-            return _super !== null && _super.apply(this, arguments) || this;
-        }
-        Object.defineProperty(GroupItemDirective.prototype, "onChildItemChanged", {
-            get: /**
-             * @return {?}
-             */
-            function () {
-                return this.changeableItemsHelper && this.changeableItemsHelper.onChildItemChanged;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        Object.defineProperty(GroupItemDirective.prototype, "onItemsChanged", {
-            get: /**
-             * @return {?}
-             */
-            function () {
-                return this.changeableItemsHelper && this.changeableItemsHelper.onItemsChanged;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        /**
-         * @return {?}
-         */
-        GroupItemDirective.prototype.ngAfterContentInit = /**
-         * @return {?}
-         */
-        function () {
-            var _this = this;
-            this.changeableItemsHelper = new changeableHelper.ChangeableItemsHelper(this.groupItemsDirectives, this, (/**
-             * @param {?} nonSelf
-             * @return {?}
-             */
-            function (nonSelf) {
-                _this.children = (/** @type {?} */ (nonSelf));
-            }));
-        };
-        /**
-         * @return {?}
-         */
-        GroupItemDirective.prototype.ngOnDestroy = /**
-         * @return {?}
-         */
-        function () {
-            this.changeableItemsHelper.destroy();
-        };
-        GroupItemDirective.decorators = [
-            { type: core$1.Directive, args: [{ selector: 'fab-group-item' },] }
-        ];
-        GroupItemDirective.propDecorators = {
-            groupItemsDirectives: [{ type: core$1.ContentChildren, args: [GroupItemDirective,] }],
-            name: [{ type: core$1.Input }],
-            startIndex: [{ type: core$1.Input }],
-            count: [{ type: core$1.Input }],
-            children: [{ type: core$1.Input }],
-            level: [{ type: core$1.Input }],
-            isCollapsed: [{ type: core$1.Input }],
-            isShowingAll: [{ type: core$1.Input }],
-            isDropEnabled: [{ type: core$1.Input }],
-            data: [{ type: core$1.Input }],
-            ariaLabel: [{ type: core$1.Input }],
-            hasMoreData: [{ type: core$1.Input }],
-            onChildItemChanged: [{ type: core$1.Output }],
-            onItemsChanged: [{ type: core$1.Input }]
-        };
-        return GroupItemDirective;
-    }(changeableItem_directive.ChangeableItemDirective));
-    if (false) {
-        /** @type {?} */
-        GroupItemDirective.prototype.groupItemsDirectives;
-        /** @type {?} */
-        GroupItemDirective.prototype.name;
-        /** @type {?} */
-        GroupItemDirective.prototype.startIndex;
-        /** @type {?} */
-        GroupItemDirective.prototype.count;
-        /** @type {?} */
-        GroupItemDirective.prototype.children;
-        /** @type {?} */
-        GroupItemDirective.prototype.level;
-        /** @type {?} */
-        GroupItemDirective.prototype.isCollapsed;
-        /** @type {?} */
-        GroupItemDirective.prototype.isShowingAll;
-        /** @type {?} */
-        GroupItemDirective.prototype.isDropEnabled;
-        /** @type {?} */
-        GroupItemDirective.prototype.data;
-        /** @type {?} */
-        GroupItemDirective.prototype.ariaLabel;
-        /** @type {?} */
-        GroupItemDirective.prototype.hasMoreData;
-        /**
-         * @type {?}
-         * @private
-         */
-        GroupItemDirective.prototype.changeableItemsHelper;
     }
 
     /**
@@ -3783,10 +3674,10 @@
             { type: core$1.Directive, args: [{ selector: 'fab-details-list > groups' },] }
         ];
         DetailsListGroupsDirective.propDecorators = {
-            directiveItems: [{ type: core$1.ContentChildren, args: [GroupItemDirective,] }]
+            directiveItems: [{ type: core$1.ContentChildren, args: [group.GroupItemDirective,] }]
         };
         return DetailsListGroupsDirective;
-    }(changeableItems_directive.ChangeableItemsDirective));
+    }(core$2.ChangeableItemsDirective));
     if (false) {
         /** @type {?} */
         DetailsListGroupsDirective.prototype.directiveItems;
@@ -4075,7 +3966,7 @@
                  * @param {?} item
                  * @return {?}
                  */
-                function (item) { return (item.key === key ? itemChanged.mergeItemChanges(item, changes) : item); })); }));
+                function (item) { return (item.key === key ? core$2.mergeItemChanges(item, changes) : item); })); }));
                 _this.markForCheck();
             })));
         };
@@ -4140,7 +4031,7 @@
         function (options) {
             /** @type {?} */
             var renderer = this.createInputJsxRenderer(options.render);
-            return (/** @type {?} */ (Object.assign({}, omit$1.omit(options, 'render'), renderer &&
+            return (/** @type {?} */ (Object.assign({}, utils.omit(options, 'render'), renderer &&
                 ((/** @type {?} */ ({
                     onRender: (/**
                      * @param {?=} item
@@ -4422,27 +4313,7 @@
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
-    var components$8 = [GroupItemDirective];
-    var FabGroupModule = /** @class */ (function () {
-        function FabGroupModule() {
-        }
-        FabGroupModule.decorators = [
-            { type: core$1.NgModule, args: [{
-                        imports: [common.CommonModule],
-                        declarations: components$8,
-                        exports: components$8,
-                        schemas: [core$1.NO_ERRORS_SCHEMA],
-                    },] }
-        ];
-        return FabGroupModule;
-    }());
-
-    /**
-     * @fileoverview added by tsickle
-     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-     */
-    /** @type {?} */
-    var components$9 = [
+    var components$8 = [
         DetailsListColumnDirective,
         DetailsListColumnRenderDirective,
         DetailsListColumnsDirective,
@@ -4459,9 +4330,9 @@
         }
         FabDetailsListModule.decorators = [
             { type: core$1.NgModule, args: [{
-                        imports: [common.CommonModule, FabGroupModule],
-                        declarations: components$9,
-                        exports: __spread(components$9, [FabGroupModule]),
+                        imports: [common.CommonModule, group.FabGroupModule],
+                        declarations: components$8,
+                        exports: __spread(components$8, [group.FabGroupModule]),
                         schemas: [core$1.NO_ERRORS_SCHEMA],
                     },] }
         ];
@@ -4705,7 +4576,7 @@
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
-    var components$a = [FabDialogComponent, FabDialogContentComponent, FabDialogFooterComponent];
+    var components$9 = [FabDialogComponent, FabDialogContentComponent, FabDialogFooterComponent];
     var FabDialogModule = /** @class */ (function () {
         function FabDialogModule() {
             // Add any React elements to the registry (used by the renderer).
@@ -4725,8 +4596,8 @@
         FabDialogModule.decorators = [
             { type: core$1.NgModule, args: [{
                         imports: [common.CommonModule],
-                        declarations: components$a,
-                        exports: components$a,
+                        declarations: components$9,
+                        exports: components$9,
                         schemas: [core$1.NO_ERRORS_SCHEMA],
                     },] }
         ];
@@ -4794,7 +4665,7 @@
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
-    var components$b = [FabDividerComponent];
+    var components$a = [FabDividerComponent];
     var FabDividerModule = /** @class */ (function () {
         function FabDividerModule() {
             // Add any React elements to the registry (used by the renderer).
@@ -4806,8 +4677,8 @@
         FabDividerModule.decorators = [
             { type: core$1.NgModule, args: [{
                         imports: [common.CommonModule],
-                        declarations: components$b,
-                        exports: components$b,
+                        declarations: components$a,
+                        exports: components$a,
                         schemas: [core$1.NO_ERRORS_SCHEMA],
                     },] }
         ];
@@ -5234,7 +5105,7 @@
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
-    var components$c = [FabFabricComponent];
+    var components$b = [FabFabricComponent];
     var FabFabricModule = /** @class */ (function () {
         function FabFabricModule() {
             // Add any React elements to the registry (used by the renderer).
@@ -5246,8 +5117,8 @@
         FabFabricModule.decorators = [
             { type: core$1.NgModule, args: [{
                         imports: [common.CommonModule],
-                        declarations: components$c,
-                        exports: components$c,
+                        declarations: components$b,
+                        exports: components$b,
                         schemas: [core$1.NO_ERRORS_SCHEMA],
                     },] }
         ];
@@ -5260,6 +5131,133 @@
      * @fileoverview added by tsickle
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
+
+    /**
+     * @fileoverview added by tsickle
+     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    var GroupItemDirective = /** @class */ (function (_super) {
+        __extends(GroupItemDirective, _super);
+        function GroupItemDirective() {
+            return _super !== null && _super.apply(this, arguments) || this;
+        }
+        Object.defineProperty(GroupItemDirective.prototype, "onChildItemChanged", {
+            get: /**
+             * @return {?}
+             */
+            function () {
+                return this.changeableItemsHelper && this.changeableItemsHelper.onChildItemChanged;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Object.defineProperty(GroupItemDirective.prototype, "onItemsChanged", {
+            get: /**
+             * @return {?}
+             */
+            function () {
+                return this.changeableItemsHelper && this.changeableItemsHelper.onItemsChanged;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        /**
+         * @return {?}
+         */
+        GroupItemDirective.prototype.ngAfterContentInit = /**
+         * @return {?}
+         */
+        function () {
+            var _this = this;
+            this.changeableItemsHelper = new core$2.ChangeableItemsHelper(this.groupItemsDirectives, this, (/**
+             * @param {?} nonSelf
+             * @return {?}
+             */
+            function (nonSelf) {
+                _this.children = (/** @type {?} */ (nonSelf));
+            }));
+        };
+        /**
+         * @return {?}
+         */
+        GroupItemDirective.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
+            this.changeableItemsHelper.destroy();
+        };
+        GroupItemDirective.decorators = [
+            { type: core$1.Directive, args: [{ selector: 'fab-group-item' },] }
+        ];
+        GroupItemDirective.propDecorators = {
+            groupItemsDirectives: [{ type: core$1.ContentChildren, args: [GroupItemDirective,] }],
+            name: [{ type: core$1.Input }],
+            startIndex: [{ type: core$1.Input }],
+            count: [{ type: core$1.Input }],
+            children: [{ type: core$1.Input }],
+            level: [{ type: core$1.Input }],
+            isCollapsed: [{ type: core$1.Input }],
+            isShowingAll: [{ type: core$1.Input }],
+            isDropEnabled: [{ type: core$1.Input }],
+            data: [{ type: core$1.Input }],
+            ariaLabel: [{ type: core$1.Input }],
+            hasMoreData: [{ type: core$1.Input }],
+            onChildItemChanged: [{ type: core$1.Output }],
+            onItemsChanged: [{ type: core$1.Input }]
+        };
+        return GroupItemDirective;
+    }(core$2.ChangeableItemDirective));
+    if (false) {
+        /** @type {?} */
+        GroupItemDirective.prototype.groupItemsDirectives;
+        /** @type {?} */
+        GroupItemDirective.prototype.name;
+        /** @type {?} */
+        GroupItemDirective.prototype.startIndex;
+        /** @type {?} */
+        GroupItemDirective.prototype.count;
+        /** @type {?} */
+        GroupItemDirective.prototype.children;
+        /** @type {?} */
+        GroupItemDirective.prototype.level;
+        /** @type {?} */
+        GroupItemDirective.prototype.isCollapsed;
+        /** @type {?} */
+        GroupItemDirective.prototype.isShowingAll;
+        /** @type {?} */
+        GroupItemDirective.prototype.isDropEnabled;
+        /** @type {?} */
+        GroupItemDirective.prototype.data;
+        /** @type {?} */
+        GroupItemDirective.prototype.ariaLabel;
+        /** @type {?} */
+        GroupItemDirective.prototype.hasMoreData;
+        /**
+         * @type {?}
+         * @private
+         */
+        GroupItemDirective.prototype.changeableItemsHelper;
+    }
+
+    /**
+     * @fileoverview added by tsickle
+     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
+    var components$c = [GroupItemDirective];
+    var FabGroupModule = /** @class */ (function () {
+        function FabGroupModule() {
+        }
+        FabGroupModule.decorators = [
+            { type: core$1.NgModule, args: [{
+                        imports: [common.CommonModule],
+                        declarations: components$c,
+                        exports: components$c,
+                        schemas: [core$1.NO_ERRORS_SCHEMA],
+                    },] }
+        ];
+        return FabGroupModule;
+    }());
 
     /**
      * @fileoverview added by tsickle
@@ -5629,7 +5627,7 @@
          */
         function (options) {
             /** @type {?} */
-            var sharedProperties = omit$1.omit(options, 'renderCompactCard', 'renderExpandedCard');
+            var sharedProperties = utils.omit(options, 'renderCompactCard', 'renderExpandedCard');
             /** @type {?} */
             var compactCardRenderer = this.createInputJsxRenderer(options.renderCompactCard);
             /** @type {?} */
@@ -5658,7 +5656,7 @@
          */
         function (options) {
             /** @type {?} */
-            var sharedProperties = omit$1.omit(options, 'renderPlainCard');
+            var sharedProperties = utils.omit(options, 'renderPlainCard');
             /** @type {?} */
             var plainCardRenderer = this.createInputJsxRenderer(options.renderPlainCard);
             return Object.assign({}, sharedProperties, plainCardRenderer &&
@@ -7554,7 +7552,7 @@
          */
         function (options) {
             /** @type {?} */
-            var sharedProperties = omit$1__default(options, 'renderIcon', 'renderText', 'renderDescription', 'renderAriaDescription', 'renderChildren', 'renderMenuIcon');
+            var sharedProperties = utils.omit(options, 'renderIcon', 'renderText', 'renderDescription', 'renderAriaDescription', 'renderChildren', 'renderMenuIcon');
             /** @type {?} */
             var iconRenderer = this.createInputJsxRenderer(options.renderIcon);
             /** @type {?} */
@@ -8917,7 +8915,7 @@
          */
         function (options) {
             /** @type {?} */
-            var sharedProperties = omit$1.omit(options, 'renderContent');
+            var sharedProperties = utils.omit(options, 'renderContent');
             /** @type {?} */
             var contentRenderer = this.createInputJsxRenderer(options.renderContent);
             return Object.assign({}, sharedProperties, contentRenderer && ((/** @type {?} */ ({ onRenderContent: (/**
@@ -9303,7 +9301,7 @@
          */
         function (options) {
             /** @type {?} */
-            var sharedProperties = omit$1__default(options, 'renderNoResultFound', 'renderResultsFooterFull', 'renderResultsFooter');
+            var sharedProperties = utils.omit(options, 'renderNoResultFound', 'renderResultsFooterFull', 'renderResultsFooter');
             /** @type {?} */
             var noResultFoundRenderer = this.createInputJsxRenderer(options.renderNoResultFound);
             /** @type {?} */
@@ -9452,7 +9450,7 @@
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Dummy action to force BasePickerCss to load and not be tree-shaken away.
-    noop.noop(BasePickerCss);
+    utils.noop(BasePickerCss);
     var FabBasePickerModule = /** @class */ (function () {
         function FabBasePickerModule() {
             // Add any React elements to the registry (used by the renderer).
@@ -9590,7 +9588,7 @@
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Dummy action to force PeoplePickerItemCss to load and not be tree-shaken away.
-    noop.noop(PeoplePickerItemCss);
+    utils.noop(PeoplePickerItemCss);
     /** @type {?} */
     var components$x = [FabPeoplePickerComponent];
     var FabPeoplePickerModule = /** @class */ (function () {
@@ -9778,9 +9776,60 @@
         return FabProgressIndicatorModule;
     }());
 
+    /**
+     * @fileoverview added by tsickle
+     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+
+    /**
+     * @fileoverview added by tsickle
+     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    // Copyright (c) Microsoft Corporation. All rights reserved.
+    // Licensed under the MIT License.
+    /**
+     * @record
+     * @template T
+     */
+    function TypedChange() { }
+    if (false) {
+        /** @type {?} */
+        TypedChange.prototype.previousValue;
+        /** @type {?} */
+        TypedChange.prototype.currentValue;
+    }
+    /**
+     * @record
+     * @template TComponent
+     */
+    function OnChanges() { }
+    if (false) {
+        /**
+         * @param {?} changes
+         * @return {?}
+         */
+        OnChanges.prototype.ngOnChanges = function (changes) { };
+    }
+
+    exports.CalendarStringsDirective = CalendarStringsDirective;
+    exports.ComboBoxOptionDirective = ComboBoxOptionDirective;
+    exports.ComboBoxOptionsDirective = ComboBoxOptionsDirective;
+    exports.CommandBarFarItemsDirective = CommandBarFarItemsDirective;
+    exports.CommandBarItemDirective = CommandBarItemDirective;
+    exports.CommandBarItemRenderDirective = CommandBarItemRenderDirective;
+    exports.CommandBarItemRenderIconDirective = CommandBarItemRenderIconDirective;
+    exports.CommandBarItemsDirective = CommandBarItemsDirective;
+    exports.CommandBarItemsDirectiveBase = CommandBarItemsDirectiveBase;
+    exports.CommandBarOverflowItemsDirective = CommandBarOverflowItemsDirective;
     exports.ContextualMenuItemDirective = ContextualMenuItemDirective;
     exports.ContextualMenuItemRenderDirective = ContextualMenuItemRenderDirective;
     exports.ContextualMenuItemRenderIconDirective = ContextualMenuItemRenderIconDirective;
+    exports.DetailsListColumnDirective = DetailsListColumnDirective;
+    exports.DetailsListColumnRenderDirective = DetailsListColumnRenderDirective;
+    exports.DetailsListColumnsDirective = DetailsListColumnsDirective;
+    exports.DetailsListGroupsDirective = DetailsListGroupsDirective;
+    exports.DropdownOptionDirective = DropdownOptionDirective;
+    exports.DropdownOptionsDirective = DropdownOptionsDirective;
     exports.FabActionButtonComponent = FabActionButtonComponent;
     exports.FabBasePickerComponent = FabBasePickerComponent;
     exports.FabBasePickerModule = FabBasePickerModule;
@@ -9876,26 +9925,10 @@
     exports.FabTooltipModule = FabTooltipModule;
     exports.GroupItemDirective = GroupItemDirective;
     exports.ɵa = FabBaseButtonComponent;
-    exports.ɵb = CalendarStringsDirective;
-    exports.ɵc = FabBaseComboBoxComponent;
-    exports.ɵd = ComboBoxOptionsDirective;
-    exports.ɵe = ComboBoxOptionDirective;
-    exports.ɵf = FabVirtualizedComboBoxComponent;
-    exports.ɵg = CommandBarItemsDirectiveBase;
-    exports.ɵh = CommandBarItemsDirective;
-    exports.ɵi = CommandBarFarItemsDirective;
-    exports.ɵj = CommandBarOverflowItemsDirective;
-    exports.ɵk = CommandBarItemRenderDirective;
-    exports.ɵl = CommandBarItemRenderIconDirective;
-    exports.ɵm = CommandBarItemDirective;
-    exports.ɵn = DetailsListColumnsDirective;
-    exports.ɵo = DetailsListColumnRenderDirective;
-    exports.ɵp = DetailsListColumnDirective;
-    exports.ɵq = DetailsListGroupsDirective;
-    exports.ɵr = DropdownOptionsDirective;
-    exports.ɵs = DropdownOptionDirective;
-    exports.ɵt = FabMarqueeSelectionComponent;
-    exports.ɵu = FabBaseTextFieldComponent;
+    exports.ɵb = FabBaseComboBoxComponent;
+    exports.ɵc = FabVirtualizedComboBoxComponent;
+    exports.ɵd = FabMarqueeSelectionComponent;
+    exports.ɵe = FabBaseTextFieldComponent;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

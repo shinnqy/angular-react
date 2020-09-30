@@ -3,7 +3,7 @@ import { AfterContentInit, ChangeDetectorRef, ElementRef, EventEmitter, NgZone, 
 import { InputRendererOptions, JsxRenderFunc, ReactWrapperComponent } from '@angular-react/core';
 import { DetailsListBase, IColumn, IDetailsListCheckboxProps, IDetailsFooterProps, IDetailsHeaderProps, IDetailsListProps, IDetailsRowProps, IGroup } from 'office-ui-fabric-react/lib/DetailsList';
 import { IListProps } from 'office-ui-fabric-react/lib/List';
-import { OnChanges, TypedChanges } from 'angular-react-toolkit/declarations/angular/typed-changes';
+import { TypedChanges, OnChanges } from '@angular-react/fabric/lib/declarations';
 import { IDetailsListColumnOptions } from './directives/details-list-column.directive';
 import { DetailsListColumnsDirective } from './directives/details-list-columns.directive';
 import { DetailsListGroupsDirective } from './directives/details-list-groups.directive';

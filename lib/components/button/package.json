@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-button.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-button.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-button.js",
+  "esm5": "../../../esm5/lib/components/button/angular-react-fabric-lib-components-button.js",
+  "esm2015": "../../../esm2015/lib/components/button/angular-react-fabric-lib-components-button.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-button.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-button.js",
+  "typings": "angular-react-fabric-lib-components-button.d.ts",
+  "metadata": "angular-react-fabric-lib-components-button.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/button"
+}

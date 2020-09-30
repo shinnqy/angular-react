@@ -1,10 +1,8 @@
 import { AfterContentInit, EventEmitter, OnDestroy, QueryList, TemplateRef, ElementRef } from '@angular/core';
 import { IContextualMenuItem } from 'office-ui-fabric-react/lib/ContextualMenu';
 import { KnownKeys, InputRendererOptions } from '@angular-react/core';
-import { OnChanges } from 'angular-react-toolkit/declarations/angular/typed-changes';
-import { ItemChangedPayload } from 'angular-react-toolkit/core/declarative/item-changed.payload';
-import { IChangeableItemsContainer } from 'angular-react-toolkit/core/shared/changeable-helper';
-import { ChangeableItemDirective } from 'angular-react-toolkit/core/shared/changeable-item.directive';
+import { ItemChangedPayload, IChangeableItemsContainer, ChangeableItemDirective } from '@angular-react/fabric/lib/components/core';
+import { OnChanges } from '@angular-react/fabric/lib/declarations';
 export declare type ContextualMenuItemChangedPayload = ItemChangedPayload<IContextualMenuItemOptions['key'], IContextualMenuItemOptions>;
 /**
  * Wrapper directive to allow rendering a custom item to a ContextualMenuItem.

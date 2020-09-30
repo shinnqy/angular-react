@@ -3,7 +3,7 @@ import { EventEmitter, Component, ChangeDetectionStrategy, ElementRef, ChangeDet
 import { CommonModule } from '@angular/common';
 import { DatePicker } from 'office-ui-fabric-react/lib/DatePicker';
 import * as CalendarCss from 'office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss';
-import { noop } from 'angular-react-toolkit/utils/noop';
+import { noop } from '@angular-react/fabric/lib/utils';
 
 /**
  * @fileoverview added by tsickle

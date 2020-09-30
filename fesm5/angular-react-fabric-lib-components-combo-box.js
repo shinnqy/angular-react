@@ -457,5 +457,5 @@ var FabComboBoxModule = /** @class */ (function () {
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
-export { FabComboBoxComponent, FabComboBoxModule, FabBaseComboBoxComponent as ɵa, ComboBoxOptionsDirective as ɵb, ComboBoxOptionDirective as ɵc, FabVirtualizedComboBoxComponent as ɵd };
+export { ComboBoxOptionDirective, ComboBoxOptionsDirective, FabComboBoxComponent, FabComboBoxModule, FabBaseComboBoxComponent as ɵa, FabVirtualizedComboBoxComponent as ɵb };
 //# sourceMappingURL=angular-react-fabric-lib-components-combo-box.js.map

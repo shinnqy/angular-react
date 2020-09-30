@@ -1,25 +1,22 @@
 import { ReactWrapperComponent, registerElement, passProp } from '@angular-react/core';
-import { Component, ChangeDetectionStrategy, ElementRef, ChangeDetectorRef, Renderer2, ViewChild, Input, NgModule, NO_ERRORS_SCHEMA, Directive, ContentChild, TemplateRef, EventEmitter, ContentChildren, Output, NgZone } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ElementRef, ChangeDetectorRef, Renderer2, ViewChild, Input, NgModule, NO_ERRORS_SCHEMA, EventEmitter, Output, ContentChildren, NgZone, Directive, ContentChild, TemplateRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Breadcrumb } from 'office-ui-fabric-react/lib/Breadcrumb';
-import { ChangeableItemsHelper } from 'angular-react-toolkit/core/shared/changeable-helper';
-import { mergeItemChanges } from 'angular-react-toolkit/core/declarative/item-changed';
-import omit$1, { omit } from 'angular-react-toolkit/utils/omit';
-import { getDataAttributes } from 'angular-react-toolkit/utils/get-data-attributes';
-import { ChangeableItemDirective } from 'angular-react-toolkit/core/shared/changeable-item.directive';
+import { ChangeableItemsHelper, mergeItemChanges, ChangeableItemsDirective, ChangeableItemDirective } from '@angular-react/fabric/lib/components/core';
+import { omit, getDataAttributes, noop } from '@angular-react/fabric/lib/utils';
+import { ContextualMenuItemDirective as ContextualMenuItemDirective$1, FabContextualMenuModule as FabContextualMenuModule$1 } from '@angular-react/fabric/lib/components/contextual-menu';
 import { DefaultButton, ActionButton, CommandBarButton, CompoundButton, IconButton, MessageBarButton, PrimaryButton } from 'office-ui-fabric-react/lib/Button';
 import * as CalendarCss from 'office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss';
 import { Calendar } from 'office-ui-fabric-react/lib/Calendar';
-import { noop } from 'angular-react-toolkit/utils/noop';
 import { Callout, FocusTrapCallout } from 'office-ui-fabric-react/lib/Callout';
 import { Checkbox } from 'office-ui-fabric-react/lib/Checkbox';
 import { ChoiceGroup } from 'office-ui-fabric-react/lib/ChoiceGroup';
 import { __rest, __decorate, __metadata } from 'tslib';
 import { ComboBox, VirtualizedComboBox } from 'office-ui-fabric-react/lib/ComboBox';
-import { ChangeableItemsDirective } from 'angular-react-toolkit/core/shared/changeable-items.directive';
 import * as OverflowSetCss from 'office-ui-fabric-react/lib-amd/components/OverflowSet/OverflowSet.scss';
 import { CommandBar } from 'office-ui-fabric-react/lib/CommandBar';
 import { DatePicker } from 'office-ui-fabric-react/lib/DatePicker';
+import { GroupItemDirective as GroupItemDirective$1, FabGroupModule as FabGroupModule$1 } from '@angular-react/fabric/lib/components/group';
 import { DetailsList } from 'office-ui-fabric-react/lib/DetailsList';
 import { Dialog, DialogContent, DialogFooter } from 'office-ui-fabric-react/lib/Dialog';
 import { VerticalDivider } from 'office-ui-fabric-react/lib/Divider';
@@ -185,302 +182,6 @@ FabBreadcrumbModule.decorators = [
 ];
 /** @nocollapse */
 FabBreadcrumbModule.ctorParameters = () => [];
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/**
- * Wrapper directive to allow rendering a custom item to a ContextualMenuItem.
- */
-class ContextualMenuItemRenderDirective {
-}
-ContextualMenuItemRenderDirective.decorators = [
-    { type: Directive, args: [{ selector: 'fab-command-bar-item > render' },] }
-];
-ContextualMenuItemRenderDirective.propDecorators = {
-    templateRef: [{ type: ContentChild, args: [TemplateRef, { static: false },] }]
-};
-if (false) {
-    /** @type {?} */
-    ContextualMenuItemRenderDirective.prototype.templateRef;
-}
-/**
- * Wrapper directive to allow rendering a custom icon to a ContextualMenuItem.
- */
-class ContextualMenuItemRenderIconDirective {
-}
-ContextualMenuItemRenderIconDirective.decorators = [
-    { type: Directive, args: [{ selector: 'fab-command-bar-item > render-icon' },] }
-];
-ContextualMenuItemRenderIconDirective.propDecorators = {
-    templateRef: [{ type: ContentChild, args: [TemplateRef, { static: false },] }]
-};
-if (false) {
-    /** @type {?} */
-    ContextualMenuItemRenderIconDirective.prototype.templateRef;
-}
-class ContextualMenuItemDirective extends ChangeableItemDirective {
-    /**
-     * @param {?} elementRef
-     */
-    constructor(elementRef) {
-        super();
-        this.elementRef = elementRef;
-        this.click = new EventEmitter();
-    }
-    /**
-     * @return {?}
-     */
-    get onChildItemChanged() {
-        return this._changeableItemsHelper && this._changeableItemsHelper.onChildItemChanged;
-    }
-    /**
-     * @return {?}
-     */
-    get onItemsChanged() {
-        return this._changeableItemsHelper && this._changeableItemsHelper.onItemsChanged;
-    }
-    /**
-     * @return {?}
-     */
-    ngAfterContentInit() {
-        if (this.renderDirective && this.renderDirective.templateRef) {
-            this.render = this.renderDirective.templateRef;
-        }
-        if (this.renderIconDirective && this.renderIconDirective.templateRef) {
-            this.renderIcon = this.renderIconDirective.templateRef;
-        }
-        this._changeableItemsHelper = new ChangeableItemsHelper(this.menuItemsDirectives, this, (/**
-         * @param {?} nonSelfDirective
-         * @return {?}
-         */
-        nonSelfDirective => {
-            /** @type {?} */
-            const items = nonSelfDirective.map((/**
-             * @param {?} directive
-             * @return {?}
-             */
-            directive => this._directiveToContextualMenuItem((/** @type {?} */ (directive)))));
-            if (!this.subMenuProps) {
-                this.subMenuProps = { items: items };
-            }
-            else {
-                this.subMenuProps.items = items;
-            }
-        }));
-    }
-    /**
-     * @return {?}
-     */
-    ngOnDestroy() {
-        this._changeableItemsHelper.destroy();
-    }
-    /**
-     * @private
-     * @param {?} directive
-     * @return {?}
-     */
-    _directiveToContextualMenuItem(directive) {
-        return Object.assign({}, directive, getDataAttributes(directive.elementRef.nativeElement, true), { onClick: (/**
-             * @param {?} ev
-             * @param {?} item
-             * @return {?}
-             */
-            (ev, item) => {
-                directive.click.emit({ ev: ev && ev.nativeEvent, item: item });
-            }) });
-    }
-}
-ContextualMenuItemDirective.decorators = [
-    { type: Directive, args: [{ selector: 'contextual-menu-item' },] }
-];
-/** @nocollapse */
-ContextualMenuItemDirective.ctorParameters = () => [
-    { type: ElementRef }
-];
-ContextualMenuItemDirective.propDecorators = {
-    menuItemsDirectives: [{ type: ContentChildren, args: [ContextualMenuItemDirective,] }],
-    renderDirective: [{ type: ContentChild, args: [ContextualMenuItemRenderDirective, { static: false },] }],
-    renderIconDirective: [{ type: ContentChild, args: [ContextualMenuItemRenderIconDirective, { static: false },] }],
-    componentRef: [{ type: Input }],
-    text: [{ type: Input }],
-    secondaryText: [{ type: Input }],
-    itemType: [{ type: Input }],
-    iconProps: [{ type: Input }],
-    submenuIconProps: [{ type: Input }],
-    disabled: [{ type: Input }],
-    primaryDisabled: [{ type: Input }],
-    shortCut: [{ type: Input }],
-    canCheck: [{ type: Input }],
-    checked: [{ type: Input }],
-    split: [{ type: Input }],
-    data: [{ type: Input }],
-    href: [{ type: Input }],
-    target: [{ type: Input }],
-    rel: [{ type: Input }],
-    subMenuProps: [{ type: Input }],
-    getItemClassNames: [{ type: Input }],
-    itemProps: [{ type: Input }],
-    getSplitButtonVerticalDividerClassNames: [{ type: Input }],
-    sectionProps: [{ type: Input }],
-    className: [{ type: Input }],
-    style: [{ type: Input }],
-    ariaLabel: [{ type: Input }],
-    title: [{ type: Input }],
-    onMouseDown: [{ type: Input }],
-    role: [{ type: Input }],
-    customOnRenderListLength: [{ type: Input }],
-    keytipProps: [{ type: Input }],
-    inactive: [{ type: Input }],
-    name: [{ type: Input }],
-    render: [{ type: Input }],
-    renderIcon: [{ type: Input }],
-    click: [{ type: Output }],
-    onChildItemChanged: [{ type: Output }],
-    onItemsChanged: [{ type: Output }]
-};
-if (false) {
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.menuItemsDirectives;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.renderDirective;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.renderIconDirective;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.componentRef;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.text;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.secondaryText;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.itemType;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.iconProps;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.submenuIconProps;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.disabled;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.primaryDisabled;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.shortCut;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.canCheck;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.checked;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.split;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.data;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.href;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.target;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.rel;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.subMenuProps;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.getItemClassNames;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.itemProps;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.getSplitButtonVerticalDividerClassNames;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.sectionProps;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.className;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.style;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.ariaLabel;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.title;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.onMouseDown;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.role;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.customOnRenderListLength;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.keytipProps;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.inactive;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.name;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.render;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.renderIcon;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.click;
-    /**
-     * @type {?}
-     * @private
-     */
-    ContextualMenuItemDirective.prototype._changeableItemsHelper;
-    /** @type {?} */
-    ContextualMenuItemDirective.prototype.elementRef;
-}
-/**
- * @record
- * @template TData
- */
-function IContextualMenuItemOptions() { }
-if (false) {
-    /** @type {?|undefined} */
-    IContextualMenuItemOptions.prototype.renderIcon;
-    /** @type {?|undefined} */
-    IContextualMenuItemOptions.prototype.render;
-    /** @type {?|undefined} */
-    IContextualMenuItemOptions.prototype.data;
-    /* Skipping unhandled member: [propertyName: string]: any;*/
-}
-/**
- * @record
- */
-function IContextualMenuItemOptionsRenderContext() { }
-if (false) {
-    /** @type {?} */
-    IContextualMenuItemOptionsRenderContext.prototype.item;
-    /** @type {?} */
-    IContextualMenuItemOptionsRenderContext.prototype.dismissMenu;
-}
-/**
- * @record
- */
-function IContextualMenuItemOptionsRenderIconContext() { }
-if (false) {
-    /** @type {?} */
-    IContextualMenuItemOptionsRenderIconContext.prototype.contextualMenuItem;
-}
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/** @type {?} */
-const components$1 = [
-    ContextualMenuItemDirective,
-    ContextualMenuItemRenderDirective,
-    ContextualMenuItemRenderIconDirective,
-];
-class FabContextualMenuModule {
-}
-FabContextualMenuModule.decorators = [
-    { type: NgModule, args: [{
-                imports: [CommonModule],
-                declarations: components$1,
-                exports: components$1,
-                schemas: [NO_ERRORS_SCHEMA],
-            },] }
-];
 
 /**
  * @fileoverview added by tsickle
@@ -693,7 +394,7 @@ FabBaseButtonComponent.propDecorators = {
     onClick: [{ type: Output }],
     onMenuClick: [{ type: Output }],
     onAfterMenuDismiss: [{ type: Output }],
-    menuItemsDirectives: [{ type: ContentChildren, args: [ContextualMenuItemDirective,] }]
+    menuItemsDirectives: [{ type: ContentChildren, args: [ContextualMenuItemDirective$1,] }]
 };
 if (false) {
     /** @type {?} */
@@ -1521,7 +1222,7 @@ if (false) {
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
-const components$2 = [
+const components$1 = [
     FabDefaultButtonComponent,
     FabActionButtonComponent,
     FabCommandBarButtonComponent,
@@ -1567,8 +1268,8 @@ class FabButtonModule {
 FabButtonModule.decorators = [
     { type: NgModule, args: [{
                 imports: [CommonModule],
-                declarations: components$2,
-                exports: components$2,
+                declarations: components$1,
+                exports: components$1,
                 schemas: [NO_ERRORS_SCHEMA],
             },] }
 ];
@@ -2088,7 +1789,7 @@ if (false) {
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
-const components$3 = [FabCalloutComponent];
+const components$2 = [FabCalloutComponent];
 class FabCalloutModule {
     constructor() {
         // Add any React elements to the registry (used by the renderer).
@@ -2105,8 +1806,8 @@ class FabCalloutModule {
 FabCalloutModule.decorators = [
     { type: NgModule, args: [{
                 imports: [CommonModule],
-                declarations: components$3,
-                exports: components$3,
+                declarations: components$2,
+                exports: components$2,
                 schemas: [NO_ERRORS_SCHEMA],
             },] }
 ];
@@ -2275,7 +1976,7 @@ if (false) {
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
-const components$4 = [FabCheckboxComponent];
+const components$3 = [FabCheckboxComponent];
 class FabCheckboxModule {
     constructor() {
         // Add any React elements to the registry (used by the renderer).
@@ -2288,8 +1989,8 @@ class FabCheckboxModule {
 FabCheckboxModule.decorators = [
     { type: NgModule, args: [{
                 imports: [CommonModule],
-                declarations: components$4,
-                exports: components$4,
+                declarations: components$3,
+                exports: components$3,
                 schemas: [NO_ERRORS_SCHEMA],
             },] }
 ];
@@ -2424,7 +2125,7 @@ if (false) {
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
-const components$5 = [FabChoiceGroupComponent];
+const components$4 = [FabChoiceGroupComponent];
 class FabChoiceGroupModule {
     constructor() {
         // Add any React elements to the registry (used by the renderer).
@@ -2437,8 +2138,8 @@ class FabChoiceGroupModule {
 FabChoiceGroupModule.decorators = [
     { type: NgModule, args: [{
                 imports: [CommonModule],
-                declarations: components$5,
-                exports: components$5,
+                declarations: components$4,
+                exports: components$4,
                 schemas: [NO_ERRORS_SCHEMA],
             },] }
 ];
@@ -2968,7 +2669,7 @@ if (false) {
     /** @type {?} */
     CommandBarItemRenderIconDirective.prototype.templateRef;
 }
-class CommandBarItemDirective extends ContextualMenuItemDirective {
+class CommandBarItemDirective extends ContextualMenuItemDirective$1 {
     /**
      * @param {?} elementRef
      */
@@ -3255,7 +2956,7 @@ class FabCommandBarComponent extends ReactWrapperComponent {
      */
     _transformCommandBarItemOptionsToProps(itemOptions) {
         /** @type {?} */
-        const sharedProperties = omit$1(itemOptions, 'renderIcon', 'render');
+        const sharedProperties = omit(itemOptions, 'renderIcon', 'render');
         // Legacy render mode is used for the icon because otherwise the icon is to the right of the text (instead of the usual left)
         /** @type {?} */
         const iconRenderer = this.createInputJsxRenderer(itemOptions.renderIcon, { legacyRenderMode: true });
@@ -3440,7 +3141,7 @@ if (false) {
 // Dummy action to force OverflowSetCss to load and not be tree-shaken away.
 noop(OverflowSetCss);
 /** @type {?} */
-const components$6 = [
+const components$5 = [
     FabCommandBarComponent,
     CommandBarItemsDirective,
     CommandBarFarItemsDirective,
@@ -3460,14 +3161,310 @@ class FabCommandBarModule {
 }
 FabCommandBarModule.decorators = [
     { type: NgModule, args: [{
-                imports: [CommonModule, FabContextualMenuModule],
-                declarations: components$6,
-                exports: [...components$6, FabContextualMenuModule],
+                imports: [CommonModule, FabContextualMenuModule$1],
+                declarations: components$5,
+                exports: [...components$5, FabContextualMenuModule$1],
                 schemas: [NO_ERRORS_SCHEMA],
             },] }
 ];
 /** @nocollapse */
 FabCommandBarModule.ctorParameters = () => [];
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * Wrapper directive to allow rendering a custom item to a ContextualMenuItem.
+ */
+class ContextualMenuItemRenderDirective {
+}
+ContextualMenuItemRenderDirective.decorators = [
+    { type: Directive, args: [{ selector: 'fab-command-bar-item > render' },] }
+];
+ContextualMenuItemRenderDirective.propDecorators = {
+    templateRef: [{ type: ContentChild, args: [TemplateRef, { static: false },] }]
+};
+if (false) {
+    /** @type {?} */
+    ContextualMenuItemRenderDirective.prototype.templateRef;
+}
+/**
+ * Wrapper directive to allow rendering a custom icon to a ContextualMenuItem.
+ */
+class ContextualMenuItemRenderIconDirective {
+}
+ContextualMenuItemRenderIconDirective.decorators = [
+    { type: Directive, args: [{ selector: 'fab-command-bar-item > render-icon' },] }
+];
+ContextualMenuItemRenderIconDirective.propDecorators = {
+    templateRef: [{ type: ContentChild, args: [TemplateRef, { static: false },] }]
+};
+if (false) {
+    /** @type {?} */
+    ContextualMenuItemRenderIconDirective.prototype.templateRef;
+}
+class ContextualMenuItemDirective extends ChangeableItemDirective {
+    /**
+     * @param {?} elementRef
+     */
+    constructor(elementRef) {
+        super();
+        this.elementRef = elementRef;
+        this.click = new EventEmitter();
+    }
+    /**
+     * @return {?}
+     */
+    get onChildItemChanged() {
+        return this._changeableItemsHelper && this._changeableItemsHelper.onChildItemChanged;
+    }
+    /**
+     * @return {?}
+     */
+    get onItemsChanged() {
+        return this._changeableItemsHelper && this._changeableItemsHelper.onItemsChanged;
+    }
+    /**
+     * @return {?}
+     */
+    ngAfterContentInit() {
+        if (this.renderDirective && this.renderDirective.templateRef) {
+            this.render = this.renderDirective.templateRef;
+        }
+        if (this.renderIconDirective && this.renderIconDirective.templateRef) {
+            this.renderIcon = this.renderIconDirective.templateRef;
+        }
+        this._changeableItemsHelper = new ChangeableItemsHelper(this.menuItemsDirectives, this, (/**
+         * @param {?} nonSelfDirective
+         * @return {?}
+         */
+        nonSelfDirective => {
+            /** @type {?} */
+            const items = nonSelfDirective.map((/**
+             * @param {?} directive
+             * @return {?}
+             */
+            directive => this._directiveToContextualMenuItem((/** @type {?} */ (directive)))));
+            if (!this.subMenuProps) {
+                this.subMenuProps = { items: items };
+            }
+            else {
+                this.subMenuProps.items = items;
+            }
+        }));
+    }
+    /**
+     * @return {?}
+     */
+    ngOnDestroy() {
+        this._changeableItemsHelper.destroy();
+    }
+    /**
+     * @private
+     * @param {?} directive
+     * @return {?}
+     */
+    _directiveToContextualMenuItem(directive) {
+        return Object.assign({}, directive, getDataAttributes(directive.elementRef.nativeElement, true), { onClick: (/**
+             * @param {?} ev
+             * @param {?} item
+             * @return {?}
+             */
+            (ev, item) => {
+                directive.click.emit({ ev: ev && ev.nativeEvent, item: item });
+            }) });
+    }
+}
+ContextualMenuItemDirective.decorators = [
+    { type: Directive, args: [{ selector: 'contextual-menu-item' },] }
+];
+/** @nocollapse */
+ContextualMenuItemDirective.ctorParameters = () => [
+    { type: ElementRef }
+];
+ContextualMenuItemDirective.propDecorators = {
+    menuItemsDirectives: [{ type: ContentChildren, args: [ContextualMenuItemDirective,] }],
+    renderDirective: [{ type: ContentChild, args: [ContextualMenuItemRenderDirective, { static: false },] }],
+    renderIconDirective: [{ type: ContentChild, args: [ContextualMenuItemRenderIconDirective, { static: false },] }],
+    componentRef: [{ type: Input }],
+    text: [{ type: Input }],
+    secondaryText: [{ type: Input }],
+    itemType: [{ type: Input }],
+    iconProps: [{ type: Input }],
+    submenuIconProps: [{ type: Input }],
+    disabled: [{ type: Input }],
+    primaryDisabled: [{ type: Input }],
+    shortCut: [{ type: Input }],
+    canCheck: [{ type: Input }],
+    checked: [{ type: Input }],
+    split: [{ type: Input }],
+    data: [{ type: Input }],
+    href: [{ type: Input }],
+    target: [{ type: Input }],
+    rel: [{ type: Input }],
+    subMenuProps: [{ type: Input }],
+    getItemClassNames: [{ type: Input }],
+    itemProps: [{ type: Input }],
+    getSplitButtonVerticalDividerClassNames: [{ type: Input }],
+    sectionProps: [{ type: Input }],
+    className: [{ type: Input }],
+    style: [{ type: Input }],
+    ariaLabel: [{ type: Input }],
+    title: [{ type: Input }],
+    onMouseDown: [{ type: Input }],
+    role: [{ type: Input }],
+    customOnRenderListLength: [{ type: Input }],
+    keytipProps: [{ type: Input }],
+    inactive: [{ type: Input }],
+    name: [{ type: Input }],
+    render: [{ type: Input }],
+    renderIcon: [{ type: Input }],
+    click: [{ type: Output }],
+    onChildItemChanged: [{ type: Output }],
+    onItemsChanged: [{ type: Output }]
+};
+if (false) {
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.menuItemsDirectives;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.renderDirective;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.renderIconDirective;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.componentRef;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.text;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.secondaryText;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.itemType;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.iconProps;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.submenuIconProps;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.disabled;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.primaryDisabled;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.shortCut;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.canCheck;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.checked;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.split;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.data;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.href;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.target;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.rel;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.subMenuProps;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.getItemClassNames;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.itemProps;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.getSplitButtonVerticalDividerClassNames;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.sectionProps;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.className;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.style;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.ariaLabel;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.title;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.onMouseDown;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.role;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.customOnRenderListLength;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.keytipProps;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.inactive;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.name;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.render;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.renderIcon;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.click;
+    /**
+     * @type {?}
+     * @private
+     */
+    ContextualMenuItemDirective.prototype._changeableItemsHelper;
+    /** @type {?} */
+    ContextualMenuItemDirective.prototype.elementRef;
+}
+/**
+ * @record
+ * @template TData
+ */
+function IContextualMenuItemOptions() { }
+if (false) {
+    /** @type {?|undefined} */
+    IContextualMenuItemOptions.prototype.renderIcon;
+    /** @type {?|undefined} */
+    IContextualMenuItemOptions.prototype.render;
+    /** @type {?|undefined} */
+    IContextualMenuItemOptions.prototype.data;
+    /* Skipping unhandled member: [propertyName: string]: any;*/
+}
+/**
+ * @record
+ */
+function IContextualMenuItemOptionsRenderContext() { }
+if (false) {
+    /** @type {?} */
+    IContextualMenuItemOptionsRenderContext.prototype.item;
+    /** @type {?} */
+    IContextualMenuItemOptionsRenderContext.prototype.dismissMenu;
+}
+/**
+ * @record
+ */
+function IContextualMenuItemOptionsRenderIconContext() { }
+if (false) {
+    /** @type {?} */
+    IContextualMenuItemOptionsRenderIconContext.prototype.contextualMenuItem;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+const components$6 = [
+    ContextualMenuItemDirective,
+    ContextualMenuItemRenderDirective,
+    ContextualMenuItemRenderIconDirective,
+];
+class FabContextualMenuModule {
+}
+FabContextualMenuModule.decorators = [
+    { type: NgModule, args: [{
+                imports: [CommonModule],
+                declarations: components$6,
+                exports: components$6,
+                schemas: [NO_ERRORS_SCHEMA],
+            },] }
+];
 
 /**
  * @fileoverview added by tsickle
@@ -3954,93 +3951,6 @@ if (false) {
  * @fileoverview added by tsickle
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-class GroupItemDirective extends ChangeableItemDirective {
-    /**
-     * @return {?}
-     */
-    get onChildItemChanged() {
-        return this.changeableItemsHelper && this.changeableItemsHelper.onChildItemChanged;
-    }
-    /**
-     * @return {?}
-     */
-    get onItemsChanged() {
-        return this.changeableItemsHelper && this.changeableItemsHelper.onItemsChanged;
-    }
-    /**
-     * @return {?}
-     */
-    ngAfterContentInit() {
-        this.changeableItemsHelper = new ChangeableItemsHelper(this.groupItemsDirectives, this, (/**
-         * @param {?} nonSelf
-         * @return {?}
-         */
-        nonSelf => {
-            this.children = (/** @type {?} */ (nonSelf));
-        }));
-    }
-    /**
-     * @return {?}
-     */
-    ngOnDestroy() {
-        this.changeableItemsHelper.destroy();
-    }
-}
-GroupItemDirective.decorators = [
-    { type: Directive, args: [{ selector: 'fab-group-item' },] }
-];
-GroupItemDirective.propDecorators = {
-    groupItemsDirectives: [{ type: ContentChildren, args: [GroupItemDirective,] }],
-    name: [{ type: Input }],
-    startIndex: [{ type: Input }],
-    count: [{ type: Input }],
-    children: [{ type: Input }],
-    level: [{ type: Input }],
-    isCollapsed: [{ type: Input }],
-    isShowingAll: [{ type: Input }],
-    isDropEnabled: [{ type: Input }],
-    data: [{ type: Input }],
-    ariaLabel: [{ type: Input }],
-    hasMoreData: [{ type: Input }],
-    onChildItemChanged: [{ type: Output }],
-    onItemsChanged: [{ type: Input }]
-};
-if (false) {
-    /** @type {?} */
-    GroupItemDirective.prototype.groupItemsDirectives;
-    /** @type {?} */
-    GroupItemDirective.prototype.name;
-    /** @type {?} */
-    GroupItemDirective.prototype.startIndex;
-    /** @type {?} */
-    GroupItemDirective.prototype.count;
-    /** @type {?} */
-    GroupItemDirective.prototype.children;
-    /** @type {?} */
-    GroupItemDirective.prototype.level;
-    /** @type {?} */
-    GroupItemDirective.prototype.isCollapsed;
-    /** @type {?} */
-    GroupItemDirective.prototype.isShowingAll;
-    /** @type {?} */
-    GroupItemDirective.prototype.isDropEnabled;
-    /** @type {?} */
-    GroupItemDirective.prototype.data;
-    /** @type {?} */
-    GroupItemDirective.prototype.ariaLabel;
-    /** @type {?} */
-    GroupItemDirective.prototype.hasMoreData;
-    /**
-     * @type {?}
-     * @private
-     */
-    GroupItemDirective.prototype.changeableItemsHelper;
-}
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
 /**
  * Wrapper directive for creating multiple DetailsList Groups
  */
@@ -4056,7 +3966,7 @@ DetailsListGroupsDirective.decorators = [
     { type: Directive, args: [{ selector: 'fab-details-list > groups' },] }
 ];
 DetailsListGroupsDirective.propDecorators = {
-    directiveItems: [{ type: ContentChildren, args: [GroupItemDirective,] }]
+    directiveItems: [{ type: ContentChildren, args: [GroupItemDirective$1,] }]
 };
 if (false) {
     /** @type {?} */
@@ -4672,24 +4582,7 @@ if (false) {
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
-const components$8 = [GroupItemDirective];
-class FabGroupModule {
-}
-FabGroupModule.decorators = [
-    { type: NgModule, args: [{
-                imports: [CommonModule],
-                declarations: components$8,
-                exports: components$8,
-                schemas: [NO_ERRORS_SCHEMA],
-            },] }
-];
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/** @type {?} */
-const components$9 = [
+const components$8 = [
     DetailsListColumnDirective,
     DetailsListColumnRenderDirective,
     DetailsListColumnsDirective,
@@ -4707,9 +4600,9 @@ class FabDetailsListModule {
 }
 FabDetailsListModule.decorators = [
     { type: NgModule, args: [{
-                imports: [CommonModule, FabGroupModule],
-                declarations: components$9,
-                exports: [...components$9, FabGroupModule],
+                imports: [CommonModule, FabGroupModule$1],
+                declarations: components$8,
+                exports: [...components$8, FabGroupModule$1],
                 schemas: [NO_ERRORS_SCHEMA],
             },] }
 ];
@@ -5003,7 +4896,7 @@ if (false) {
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
-const components$a = [FabDialogComponent, FabDialogContentComponent, FabDialogFooterComponent];
+const components$9 = [FabDialogComponent, FabDialogContentComponent, FabDialogFooterComponent];
 class FabDialogModule {
     constructor() {
         // Add any React elements to the registry (used by the renderer).
@@ -5024,8 +4917,8 @@ class FabDialogModule {
 FabDialogModule.decorators = [
     { type: NgModule, args: [{
                 imports: [CommonModule],
-                declarations: components$a,
-                exports: components$a,
+                declarations: components$9,
+                exports: components$9,
                 schemas: [NO_ERRORS_SCHEMA],
             },] }
 ];
@@ -5103,7 +4996,7 @@ if (false) {
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
-const components$b = [FabDividerComponent];
+const components$a = [FabDividerComponent];
 class FabDividerModule {
     constructor() {
         // Add any React elements to the registry (used by the renderer).
@@ -5116,8 +5009,8 @@ class FabDividerModule {
 FabDividerModule.decorators = [
     { type: NgModule, args: [{
                 imports: [CommonModule],
-                declarations: components$b,
-                exports: components$b,
+                declarations: components$a,
+                exports: components$a,
                 schemas: [NO_ERRORS_SCHEMA],
             },] }
 ];
@@ -5559,7 +5452,7 @@ if (false) {
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
-const components$c = [FabFabricComponent];
+const components$b = [FabFabricComponent];
 class FabFabricModule {
     constructor() {
         // Add any React elements to the registry (used by the renderer).
@@ -5572,8 +5465,8 @@ class FabFabricModule {
 FabFabricModule.decorators = [
     { type: NgModule, args: [{
                 imports: [CommonModule],
-                declarations: components$c,
-                exports: components$c,
+                declarations: components$b,
+                exports: components$b,
                 schemas: [NO_ERRORS_SCHEMA],
             },] }
 ];
@@ -5584,6 +5477,110 @@ FabFabricModule.ctorParameters = () => [];
  * @fileoverview added by tsickle
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+class GroupItemDirective extends ChangeableItemDirective {
+    /**
+     * @return {?}
+     */
+    get onChildItemChanged() {
+        return this.changeableItemsHelper && this.changeableItemsHelper.onChildItemChanged;
+    }
+    /**
+     * @return {?}
+     */
+    get onItemsChanged() {
+        return this.changeableItemsHelper && this.changeableItemsHelper.onItemsChanged;
+    }
+    /**
+     * @return {?}
+     */
+    ngAfterContentInit() {
+        this.changeableItemsHelper = new ChangeableItemsHelper(this.groupItemsDirectives, this, (/**
+         * @param {?} nonSelf
+         * @return {?}
+         */
+        nonSelf => {
+            this.children = (/** @type {?} */ (nonSelf));
+        }));
+    }
+    /**
+     * @return {?}
+     */
+    ngOnDestroy() {
+        this.changeableItemsHelper.destroy();
+    }
+}
+GroupItemDirective.decorators = [
+    { type: Directive, args: [{ selector: 'fab-group-item' },] }
+];
+GroupItemDirective.propDecorators = {
+    groupItemsDirectives: [{ type: ContentChildren, args: [GroupItemDirective,] }],
+    name: [{ type: Input }],
+    startIndex: [{ type: Input }],
+    count: [{ type: Input }],
+    children: [{ type: Input }],
+    level: [{ type: Input }],
+    isCollapsed: [{ type: Input }],
+    isShowingAll: [{ type: Input }],
+    isDropEnabled: [{ type: Input }],
+    data: [{ type: Input }],
+    ariaLabel: [{ type: Input }],
+    hasMoreData: [{ type: Input }],
+    onChildItemChanged: [{ type: Output }],
+    onItemsChanged: [{ type: Input }]
+};
+if (false) {
+    /** @type {?} */
+    GroupItemDirective.prototype.groupItemsDirectives;
+    /** @type {?} */
+    GroupItemDirective.prototype.name;
+    /** @type {?} */
+    GroupItemDirective.prototype.startIndex;
+    /** @type {?} */
+    GroupItemDirective.prototype.count;
+    /** @type {?} */
+    GroupItemDirective.prototype.children;
+    /** @type {?} */
+    GroupItemDirective.prototype.level;
+    /** @type {?} */
+    GroupItemDirective.prototype.isCollapsed;
+    /** @type {?} */
+    GroupItemDirective.prototype.isShowingAll;
+    /** @type {?} */
+    GroupItemDirective.prototype.isDropEnabled;
+    /** @type {?} */
+    GroupItemDirective.prototype.data;
+    /** @type {?} */
+    GroupItemDirective.prototype.ariaLabel;
+    /** @type {?} */
+    GroupItemDirective.prototype.hasMoreData;
+    /**
+     * @type {?}
+     * @private
+     */
+    GroupItemDirective.prototype.changeableItemsHelper;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+const components$c = [GroupItemDirective];
+class FabGroupModule {
+}
+FabGroupModule.decorators = [
+    { type: NgModule, args: [{
+                imports: [CommonModule],
+                declarations: components$c,
+                exports: components$c,
+                schemas: [NO_ERRORS_SCHEMA],
+            },] }
+];
 
 /**
  * @fileoverview added by tsickle
@@ -8179,7 +8176,7 @@ class FabSearchBoxComponent extends ReactWrapperComponent {
      */
     _transformButtonOptionsToProps(options) {
         /** @type {?} */
-        const sharedProperties = omit$1(options, 'renderIcon', 'renderText', 'renderDescription', 'renderAriaDescription', 'renderChildren', 'renderMenuIcon');
+        const sharedProperties = omit(options, 'renderIcon', 'renderText', 'renderDescription', 'renderAriaDescription', 'renderChildren', 'renderMenuIcon');
         /** @type {?} */
         const iconRenderer = this.createInputJsxRenderer(options.renderIcon);
         /** @type {?} */
@@ -10144,7 +10141,7 @@ class FabBasePickerComponent extends ReactWrapperComponent {
      */
     _transformBasePickerSuggestionsOptionsToProps(options) {
         /** @type {?} */
-        const sharedProperties = omit$1(options, 'renderNoResultFound', 'renderResultsFooterFull', 'renderResultsFooter');
+        const sharedProperties = omit(options, 'renderNoResultFound', 'renderResultsFooterFull', 'renderResultsFooter');
         /** @type {?} */
         const noResultFoundRenderer = this.createInputJsxRenderer(options.renderNoResultFound);
         /** @type {?} */
@@ -10704,11 +10701,46 @@ FabProgressIndicatorModule.ctorParameters = () => [];
  * @fileoverview added by tsickle
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+/**
+ * @record
+ * @template T
+ */
+function TypedChange() { }
+if (false) {
+    /** @type {?} */
+    TypedChange.prototype.previousValue;
+    /** @type {?} */
+    TypedChange.prototype.currentValue;
+}
+/**
+ * @record
+ * @template TComponent
+ */
+function OnChanges() { }
+if (false) {
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    OnChanges.prototype.ngOnChanges = function (changes) { };
+}
 
 /**
  * @fileoverview added by tsickle
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
-export { ContextualMenuItemDirective, ContextualMenuItemRenderDirective, ContextualMenuItemRenderIconDirective, FabActionButtonComponent, FabBasePickerComponent, FabBasePickerModule, FabBreadcrumbComponent, FabBreadcrumbModule, FabButtonModule, FabCalendarComponent, FabCalendarModule, FabCalloutComponent, FabCalloutModule, FabCheckboxComponent, FabCheckboxModule, FabChoiceGroupComponent, FabChoiceGroupModule, FabComboBoxComponent, FabComboBoxModule, FabCommandBarButtonComponent, FabCommandBarComponent, FabCommandBarModule, FabCompoundButtonComponent, FabContextualMenuModule, FabDatePickerComponent, FabDatePickerModule, FabDefaultButtonComponent, FabDetailsListComponent, FabDetailsListModule, FabDialogComponent, FabDialogContentComponent, FabDialogFooterComponent, FabDialogModule, FabDividerComponent, FabDividerModule, FabDropdownComponent, FabDropdownModule, FabExpandingCardComponent, FabFabricComponent, FabFabricModule, FabGroupModule, FabGroupedListComponent, FabGroupedListModule, FabHoverCardComponent, FabHoverCardModule, FabIconButtonComponent, FabIconComponent, FabIconModule, FabImageComponent, FabImageModule, FabLinkComponent, FabLinkModule, FabMarqueeSelectionModule, FabMaskedTextFieldComponent, FabMessageBarButtonComponent, FabMessageBarComponent, FabMessageBarModule, FabModalComponent, FabModalModule, FabNavComponent, FabNavModule, FabPanelComponent, FabPanelModule, FabPeoplePickerComponent, FabPeoplePickerModule, FabPersonaBaseComponent, FabPersonaCoinComponent, FabPersonaComponent, FabPersonaModule, FabPivotComponent, FabPivotItemComponent, FabPivotModule, FabPlainCardComponent, FabPrimaryButtonComponent, FabProgressIndicatorComponent, FabProgressIndicatorModule, FabSearchBoxComponent, FabSearchBoxModule, FabShimmerComponent, FabShimmerElementsGroupComponent, FabShimmerModule, FabSliderComponent, FabSliderModule, FabSpinButtonComponent, FabSpinButtonModule, FabSpinnerComponent, FabSpinnerModule, FabSplitButtonComponent, FabTagPickerComponent, FabTagPickerModule, FabTextFieldComponent, FabTextFieldModule, FabToggleComponent, FabToggleModule, FabTooltipHostComponent, FabTooltipModule, GroupItemDirective, FabBaseButtonComponent as ɵa, CalendarStringsDirective as ɵb, FabBaseComboBoxComponent as ɵc, ComboBoxOptionsDirective as ɵd, ComboBoxOptionDirective as ɵe, FabVirtualizedComboBoxComponent as ɵf, CommandBarItemsDirectiveBase as ɵg, CommandBarItemsDirective as ɵh, CommandBarFarItemsDirective as ɵi, CommandBarOverflowItemsDirective as ɵj, CommandBarItemRenderDirective as ɵk, CommandBarItemRenderIconDirective as ɵl, CommandBarItemDirective as ɵm, DetailsListColumnsDirective as ɵn, DetailsListColumnRenderDirective as ɵo, DetailsListColumnDirective as ɵp, DetailsListGroupsDirective as ɵq, DropdownOptionsDirective as ɵr, DropdownOptionDirective as ɵs, FabMarqueeSelectionComponent as ɵt, FabBaseTextFieldComponent as ɵu };
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+export { CalendarStringsDirective, ComboBoxOptionDirective, ComboBoxOptionsDirective, CommandBarFarItemsDirective, CommandBarItemDirective, CommandBarItemRenderDirective, CommandBarItemRenderIconDirective, CommandBarItemsDirective, CommandBarItemsDirectiveBase, CommandBarOverflowItemsDirective, ContextualMenuItemDirective, ContextualMenuItemRenderDirective, ContextualMenuItemRenderIconDirective, DetailsListColumnDirective, DetailsListColumnRenderDirective, DetailsListColumnsDirective, DetailsListGroupsDirective, DropdownOptionDirective, DropdownOptionsDirective, FabActionButtonComponent, FabBasePickerComponent, FabBasePickerModule, FabBreadcrumbComponent, FabBreadcrumbModule, FabButtonModule, FabCalendarComponent, FabCalendarModule, FabCalloutComponent, FabCalloutModule, FabCheckboxComponent, FabCheckboxModule, FabChoiceGroupComponent, FabChoiceGroupModule, FabComboBoxComponent, FabComboBoxModule, FabCommandBarButtonComponent, FabCommandBarComponent, FabCommandBarModule, FabCompoundButtonComponent, FabContextualMenuModule, FabDatePickerComponent, FabDatePickerModule, FabDefaultButtonComponent, FabDetailsListComponent, FabDetailsListModule, FabDialogComponent, FabDialogContentComponent, FabDialogFooterComponent, FabDialogModule, FabDividerComponent, FabDividerModule, FabDropdownComponent, FabDropdownModule, FabExpandingCardComponent, FabFabricComponent, FabFabricModule, FabGroupModule, FabGroupedListComponent, FabGroupedListModule, FabHoverCardComponent, FabHoverCardModule, FabIconButtonComponent, FabIconComponent, FabIconModule, FabImageComponent, FabImageModule, FabLinkComponent, FabLinkModule, FabMarqueeSelectionModule, FabMaskedTextFieldComponent, FabMessageBarButtonComponent, FabMessageBarComponent, FabMessageBarModule, FabModalComponent, FabModalModule, FabNavComponent, FabNavModule, FabPanelComponent, FabPanelModule, FabPeoplePickerComponent, FabPeoplePickerModule, FabPersonaBaseComponent, FabPersonaCoinComponent, FabPersonaComponent, FabPersonaModule, FabPivotComponent, FabPivotItemComponent, FabPivotModule, FabPlainCardComponent, FabPrimaryButtonComponent, FabProgressIndicatorComponent, FabProgressIndicatorModule, FabSearchBoxComponent, FabSearchBoxModule, FabShimmerComponent, FabShimmerElementsGroupComponent, FabShimmerModule, FabSliderComponent, FabSliderModule, FabSpinButtonComponent, FabSpinButtonModule, FabSpinnerComponent, FabSpinnerModule, FabSplitButtonComponent, FabTagPickerComponent, FabTagPickerModule, FabTextFieldComponent, FabTextFieldModule, FabToggleComponent, FabToggleModule, FabTooltipHostComponent, FabTooltipModule, GroupItemDirective, FabBaseButtonComponent as ɵa, FabBaseComboBoxComponent as ɵb, FabVirtualizedComboBoxComponent as ɵc, FabMarqueeSelectionComponent as ɵd, FabBaseTextFieldComponent as ɵe };
 //# sourceMappingURL=angular-react-fabric.js.map

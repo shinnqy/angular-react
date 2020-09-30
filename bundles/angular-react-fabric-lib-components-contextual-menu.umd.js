@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/common'), require('@angular/core'), require('angular-react-toolkit/core/shared/changeable-helper'), require('angular-react-toolkit/core/shared/changeable-item.directive'), require('angular-react-toolkit/utils/get-data-attributes')) :
-    typeof define === 'function' && define.amd ? define('@angular-react/fabric/lib/components/contextual-menu', ['exports', '@angular/common', '@angular/core', 'angular-react-toolkit/core/shared/changeable-helper', 'angular-react-toolkit/core/shared/changeable-item.directive', 'angular-react-toolkit/utils/get-data-attributes'], factory) :
-    (global = global || self, factory((global['angular-react'] = global['angular-react'] || {}, global['angular-react'].fabric = global['angular-react'].fabric || {}, global['angular-react'].fabric.lib = global['angular-react'].fabric.lib || {}, global['angular-react'].fabric.lib.components = global['angular-react'].fabric.lib.components || {}, global['angular-react'].fabric.lib.components['contextual-menu'] = {}), global.ng.common, global.ng.core, global.changeableHelper, global.changeableItem_directive, global.getDataAttributes));
-}(this, (function (exports, common, core, changeableHelper, changeableItem_directive, getDataAttributes) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/common'), require('@angular/core'), require('@angular-react/fabric/lib/utils'), require('@angular-react/fabric/lib/components/core')) :
+    typeof define === 'function' && define.amd ? define('@angular-react/fabric/lib/components/contextual-menu', ['exports', '@angular/common', '@angular/core', '@angular-react/fabric/lib/utils', '@angular-react/fabric/lib/components/core'], factory) :
+    (global = global || self, factory((global['angular-react'] = global['angular-react'] || {}, global['angular-react'].fabric = global['angular-react'].fabric || {}, global['angular-react'].fabric.lib = global['angular-react'].fabric.lib || {}, global['angular-react'].fabric.lib.components = global['angular-react'].fabric.lib.components || {}, global['angular-react'].fabric.lib.components['contextual-menu'] = {}), global.ng.common, global.ng.core, global['angular-react'].fabric.lib.utils, global['angular-react'].fabric.lib.components.core));
+}(this, (function (exports, common, core, utils, core$1) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -283,7 +283,7 @@
             if (this.renderIconDirective && this.renderIconDirective.templateRef) {
                 this.renderIcon = this.renderIconDirective.templateRef;
             }
-            this._changeableItemsHelper = new changeableHelper.ChangeableItemsHelper(this.menuItemsDirectives, this, (/**
+            this._changeableItemsHelper = new core$1.ChangeableItemsHelper(this.menuItemsDirectives, this, (/**
              * @param {?} nonSelfDirective
              * @return {?}
              */
@@ -322,7 +322,7 @@
          * @return {?}
          */
         function (directive) {
-            return __assign({}, directive, getDataAttributes.getDataAttributes(directive.elementRef.nativeElement, true), { onClick: (/**
+            return __assign({}, directive, utils.getDataAttributes(directive.elementRef.nativeElement, true), { onClick: (/**
                  * @param {?} ev
                  * @param {?} item
                  * @return {?}
@@ -380,7 +380,7 @@
             onItemsChanged: [{ type: core.Output }]
         };
         return ContextualMenuItemDirective;
-    }(changeableItem_directive.ChangeableItemDirective));
+    }(core$1.ChangeableItemDirective));
     if (false) {
         /** @type {?} */
         ContextualMenuItemDirective.prototype.menuItemsDirectives;
