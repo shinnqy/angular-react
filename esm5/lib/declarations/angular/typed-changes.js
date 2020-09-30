@@ -1,0 +1,30 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+/**
+ * @record
+ * @template T
+ */
+export function TypedChange() { }
+if (false) {
+    /** @type {?} */
+    TypedChange.prototype.previousValue;
+    /** @type {?} */
+    TypedChange.prototype.currentValue;
+}
+/**
+ * @record
+ * @template TComponent
+ */
+export function OnChanges() { }
+if (false) {
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    OnChanges.prototype.ngOnChanges = function (changes) { };
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidHlwZWQtY2hhbmdlcy5qcyIsInNvdXJjZVJvb3QiOiJuZzovL0Bhbmd1bGFyLXJlYWN0L2ZhYnJpYy8iLCJzb3VyY2VzIjpbImxpYi9kZWNsYXJhdGlvbnMvYW5ndWxhci90eXBlZC1jaGFuZ2VzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFLQSxpQ0FHQzs7O0lBRkMsb0NBQTBCOztJQUMxQixtQ0FBeUI7Ozs7OztBQXNCM0IsK0JBRUM7Ozs7OztJQURDLHlEQUFxRCIsInNvdXJjZXNDb250ZW50IjpbIi8vIENvcHlyaWdodCAoYykgTWljcm9zb2Z0IENvcnBvcmF0aW9uLiBBbGwgcmlnaHRzIHJlc2VydmVkLlxyXG4vLyBMaWNlbnNlZCB1bmRlciB0aGUgTUlUIExpY2Vuc2UuXHJcblxyXG5pbXBvcnQgKiBhcyBBbmd1bGFyQ29yZSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuXHJcbmV4cG9ydCBpbnRlcmZhY2UgVHlwZWRDaGFuZ2U8VD4gZXh0ZW5kcyBBbmd1bGFyQ29yZS5TaW1wbGVDaGFuZ2Uge1xyXG4gIHJlYWRvbmx5IHByZXZpb3VzVmFsdWU6IFQ7XHJcbiAgcmVhZG9ubHkgY3VycmVudFZhbHVlOiBUO1xyXG59XHJcblxyXG4vKipcclxuICogS25vd24gQW5ndWxhciBrZXlzIHRoYXQgY29tcG9uZW50cyBvZnRlbiBoYXZlXHJcbiAqL1xyXG5leHBvcnQgdHlwZSBBbmd1bGFyTGlmZUN5Y2xlS2V5cyA9XHJcbiAgfCBrZXlvZiBBbmd1bGFyQ29yZS5BZnRlckNvbnRlbnRDaGVja2VkXHJcbiAgfCBrZXlvZiBBbmd1bGFyQ29yZS5BZnRlckNvbnRlbnRJbml0XHJcbiAgfCBrZXlvZiBBbmd1bGFyQ29yZS5BZnRlclZpZXdDaGVja2VkXHJcbiAgfCBrZXlvZiBBbmd1bGFyQ29yZS5BZnRlclZpZXdJbml0XHJcbiAgfCBrZXlvZiBBbmd1bGFyQ29yZS5Eb0NoZWNrXHJcbiAgfCBrZXlvZiBBbmd1bGFyQ29yZS5PbkNoYW5nZXNcclxuICB8IGtleW9mIEFuZ3VsYXJDb3JlLk9uRGVzdHJveVxyXG4gIHwga2V5b2YgQW5ndWxhckNvcmUuT25Jbml0O1xyXG5cclxuLy8gT25seSB0YWtlIHN0cmluZyBrZXlzIGZyb20gVENvbXBvbmVudCwgc2luY2UgdGhvc2UgYXJlIHRoZSBvbmx5IHZhbGlkIGlucHV0IHByb3BlcnR5IHR5cGVzLlxyXG4vLyBFeGNsdWRlIGFueSBrbm93biBzdHVmZiB0aGF0IGNhbiBiZSBlbGltaW5hdGVkIGFzIG5vbi1JbnB1dHMuXHJcbmV4cG9ydCB0eXBlIElucHV0S2V5czxUQ29tcG9uZW50PiA9IEV4Y2x1ZGU8a2V5b2YgVENvbXBvbmVudCAmIHN0cmluZywgQW5ndWxhckxpZmVDeWNsZUtleXM+O1xyXG5cclxuZXhwb3J0IHR5cGUgVHlwZWRDaGFuZ2VzPFRDb21wb25lbnQ+ID0gUGFydGlhbDx7IFtQIGluIElucHV0S2V5czxUQ29tcG9uZW50Pl06IFR5cGVkQ2hhbmdlPFRDb21wb25lbnRbUF0+IH0+O1xyXG5cclxuZXhwb3J0IGludGVyZmFjZSBPbkNoYW5nZXM8VENvbXBvbmVudD4gZXh0ZW5kcyBBbmd1bGFyQ29yZS5PbkNoYW5nZXMge1xyXG4gIG5nT25DaGFuZ2VzKGNoYW5nZXM6IFR5cGVkQ2hhbmdlczxUQ29tcG9uZW50Pik6IHZvaWQ7XHJcbn1cclxuIl19

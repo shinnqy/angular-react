@@ -1,0 +1,9 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+export {} from './item-changed.payload';
+export { mergeItemChanges } from './item-changed.helpers';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaXRlbS1jaGFuZ2VkLmpzIiwic291cmNlUm9vdCI6Im5nOi8vQGFuZ3VsYXItcmVhY3QvZmFicmljL2xpYi9jb21wb25lbnRzL2NvcmUvIiwic291cmNlcyI6WyJkZWNsYXJhdGl2ZS9pdGVtLWNoYW5nZWQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBR0EsZUFBYyx3QkFBd0IsQ0FBQztBQUN2QyxpQ0FBYyx3QkFBd0IsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8vIENvcHlyaWdodCAoYykgTWljcm9zb2Z0IENvcnBvcmF0aW9uLiBBbGwgcmlnaHRzIHJlc2VydmVkLlxyXG4vLyBMaWNlbnNlZCB1bmRlciB0aGUgTUlUIExpY2Vuc2UuXHJcblxyXG5leHBvcnQgKiBmcm9tICcuL2l0ZW0tY2hhbmdlZC5wYXlsb2FkJztcclxuZXhwb3J0ICogZnJvbSAnLi9pdGVtLWNoYW5nZWQuaGVscGVycyc7XHJcbiJdfQ==

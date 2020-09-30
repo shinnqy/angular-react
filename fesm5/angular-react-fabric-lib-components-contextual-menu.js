@@ -1,9 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Directive, ContentChild, TemplateRef, EventEmitter, ElementRef, ContentChildren, Input, Output, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { __extends, __assign } from 'tslib';
-import { ChangeableItemsHelper } from 'angular-react-toolkit/core/shared/changeable-helper';
-import { ChangeableItemDirective } from 'angular-react-toolkit/core/shared/changeable-item.directive';
-import { getDataAttributes } from 'angular-react-toolkit/utils/get-data-attributes';
+import { getDataAttributes } from '@angular-react/fabric/lib/utils';
+import { ChangeableItemsHelper, ChangeableItemDirective } from '@angular-react/fabric/lib/components/core';
 
 /**
  * @fileoverview added by tsickle

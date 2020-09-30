@@ -1,8 +1,6 @@
 import { AfterContentInit, EventEmitter, OnDestroy, QueryList } from '@angular/core';
 import { IGroup } from 'office-ui-fabric-react/lib/GroupedList';
-import { ItemChangedPayload } from 'angular-react-toolkit/core/declarative/item-changed';
-import { IChangeableItemsContainer } from 'angular-react-toolkit/core/shared/changeable-helper';
-import { ChangeableItemDirective } from 'angular-react-toolkit/core/shared/changeable-item.directive';
+import { ItemChangedPayload, IChangeableItemsContainer, ChangeableItemDirective } from '@angular-react/fabric/lib/components/core';
 export declare class GroupItemDirective extends ChangeableItemDirective<IGroup> implements AfterContentInit, IChangeableItemsContainer<IGroup>, IGroup, OnDestroy {
     readonly groupItemsDirectives: QueryList<GroupItemDirective>;
     name: IGroup['name'];

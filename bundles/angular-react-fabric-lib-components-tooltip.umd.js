@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular-react/core'), require('@angular/core'), require('angular-react-toolkit/utils/omit'), require('@angular/common'), require('office-ui-fabric-react/lib/Tooltip')) :
-    typeof define === 'function' && define.amd ? define('@angular-react/fabric/lib/components/tooltip', ['exports', '@angular-react/core', '@angular/core', 'angular-react-toolkit/utils/omit', '@angular/common', 'office-ui-fabric-react/lib/Tooltip'], factory) :
-    (global = global || self, factory((global['angular-react'] = global['angular-react'] || {}, global['angular-react'].fabric = global['angular-react'].fabric || {}, global['angular-react'].fabric.lib = global['angular-react'].fabric.lib || {}, global['angular-react'].fabric.lib.components = global['angular-react'].fabric.lib.components || {}, global['angular-react'].fabric.lib.components.tooltip = {}), global.core, global.ng.core, global.omit, global.ng.common, global.Tooltip));
-}(this, (function (exports, core, core$1, omit, common, Tooltip) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular-react/core'), require('@angular/core'), require('@angular-react/fabric/lib/utils'), require('@angular/common'), require('office-ui-fabric-react/lib/Tooltip')) :
+    typeof define === 'function' && define.amd ? define('@angular-react/fabric/lib/components/tooltip', ['exports', '@angular-react/core', '@angular/core', '@angular-react/fabric/lib/utils', '@angular/common', 'office-ui-fabric-react/lib/Tooltip'], factory) :
+    (global = global || self, factory((global['angular-react'] = global['angular-react'] || {}, global['angular-react'].fabric = global['angular-react'].fabric || {}, global['angular-react'].fabric.lib = global['angular-react'].fabric.lib || {}, global['angular-react'].fabric.lib.components = global['angular-react'].fabric.lib.components || {}, global['angular-react'].fabric.lib.components.tooltip = {}), global.core, global.ng.core, global['angular-react'].fabric.lib.utils, global.ng.common, global.Tooltip));
+}(this, (function (exports, core, core$1, utils, common, Tooltip) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -256,7 +256,7 @@
          */
         function (options) {
             /** @type {?} */
-            var sharedProperties = omit.omit(options, 'renderContent');
+            var sharedProperties = utils.omit(options, 'renderContent');
             /** @type {?} */
             var contentRenderer = this.createInputJsxRenderer(options.renderContent);
             return Object.assign({}, sharedProperties, contentRenderer && ((/** @type {?} */ ({ onRenderContent: (/**

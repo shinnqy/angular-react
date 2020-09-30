@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular-react/core'), require('@angular/core'), require('@angular/common'), require('office-ui-fabric-react/lib/DatePicker'), require('office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss'), require('angular-react-toolkit/utils/noop')) :
-    typeof define === 'function' && define.amd ? define('@angular-react/fabric/lib/components/date-picker', ['exports', '@angular-react/core', '@angular/core', '@angular/common', 'office-ui-fabric-react/lib/DatePicker', 'office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss', 'angular-react-toolkit/utils/noop'], factory) :
-    (global = global || self, factory((global['angular-react'] = global['angular-react'] || {}, global['angular-react'].fabric = global['angular-react'].fabric || {}, global['angular-react'].fabric.lib = global['angular-react'].fabric.lib || {}, global['angular-react'].fabric.lib.components = global['angular-react'].fabric.lib.components || {}, global['angular-react'].fabric.lib.components['date-picker'] = {}), global.core, global.ng.core, global.ng.common, global.DatePicker, global.CalendarCss, global.noop));
-}(this, (function (exports, core, core$1, common, DatePicker, CalendarCss, noop) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular-react/core'), require('@angular/core'), require('@angular/common'), require('office-ui-fabric-react/lib/DatePicker'), require('office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss'), require('@angular-react/fabric/lib/utils')) :
+    typeof define === 'function' && define.amd ? define('@angular-react/fabric/lib/components/date-picker', ['exports', '@angular-react/core', '@angular/core', '@angular/common', 'office-ui-fabric-react/lib/DatePicker', 'office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss', '@angular-react/fabric/lib/utils'], factory) :
+    (global = global || self, factory((global['angular-react'] = global['angular-react'] || {}, global['angular-react'].fabric = global['angular-react'].fabric || {}, global['angular-react'].fabric.lib = global['angular-react'].fabric.lib || {}, global['angular-react'].fabric.lib.components = global['angular-react'].fabric.lib.components || {}, global['angular-react'].fabric.lib.components['date-picker'] = {}), global.core, global.ng.core, global.ng.common, global.DatePicker, global.CalendarCss, global['angular-react'].fabric.lib.utils));
+}(this, (function (exports, core, core$1, common, DatePicker, CalendarCss, utils) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -377,7 +377,7 @@
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Dummy action to force CalendarCss to load and not be tree-shaken away.
-    noop.noop(CalendarCss);
+    utils.noop(CalendarCss);
     /** @type {?} */
     var components = [FabDatePickerComponent];
     var FabDatePickerModule = /** @class */ (function () {

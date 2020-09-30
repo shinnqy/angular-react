@@ -1,6 +1,6 @@
 import { TemplateRef, ElementRef } from '@angular/core';
-import { ItemChangedPayload } from 'angular-react-toolkit/core/declarative/item-changed.payload';
-import { ContextualMenuItemDirective } from '../../contextual-menu/directives/contextual-menu-item.directive';
+import { ItemChangedPayload } from '@angular-react/fabric/lib/components/core';
+import { ContextualMenuItemDirective } from '@angular-react/fabric/lib/components/contextual-menu';
 import { ICommandBarItemOptions, ICommandBarItemOptionsRenderContext, ICommandBarItemOptionsRenderIconContext } from '../command-bar.component';
 export declare type CommandBarItemChangedPayload = ItemChangedPayload<ICommandBarItemOptions['key'], ICommandBarItemOptions>;
 /**

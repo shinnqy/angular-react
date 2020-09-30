@@ -2,7 +2,7 @@ import { InputRendererOptions, KnownKeys, ReactWrapperComponent } from '@angular
 import { AfterContentInit, ChangeDetectorRef, ElementRef, EventEmitter, NgZone, OnDestroy, Renderer2 } from '@angular/core';
 import { ICommandBarItemProps, ICommandBarProps } from 'office-ui-fabric-react/lib/CommandBar';
 import { IContextualMenuItem } from 'office-ui-fabric-react/lib/ContextualMenu';
-import { OnChanges, TypedChanges } from 'angular-react-toolkit/declarations/angular/typed-changes';
+import { OnChanges, TypedChanges } from '@angular-react/fabric/lib/declarations';
 import { CommandBarFarItemsDirective, CommandBarItemsDirective, CommandBarOverflowItemsDirective } from './directives/command-bar-items.directives';
 export declare class FabCommandBarComponent extends ReactWrapperComponent<ICommandBarProps> implements OnChanges<FabCommandBarComponent>, AfterContentInit, OnDestroy {
     readonly itemsDirective?: CommandBarItemsDirective;

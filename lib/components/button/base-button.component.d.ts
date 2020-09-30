@@ -2,7 +2,7 @@
 import { InputRendererOptions, JsxRenderFunc, ReactWrapperComponent } from '@angular-react/core';
 import { ChangeDetectorRef, ElementRef, EventEmitter, NgZone, OnInit, Renderer2, QueryList, AfterContentInit, OnDestroy } from '@angular/core';
 import { IButtonProps } from 'office-ui-fabric-react/lib/Button';
-import { ContextualMenuItemDirective } from '../contextual-menu/public-api';
+import { ContextualMenuItemDirective } from '@angular-react/fabric/lib/components/contextual-menu';
 export declare abstract class FabBaseButtonComponent extends ReactWrapperComponent<IButtonProps> implements OnInit, AfterContentInit, OnDestroy {
     componentRef?: IButtonProps['componentRef'];
     href?: IButtonProps['href'];

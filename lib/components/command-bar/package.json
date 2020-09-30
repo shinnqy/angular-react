@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-command-bar.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-command-bar.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-command-bar.js",
+  "esm5": "../../../esm5/lib/components/command-bar/angular-react-fabric-lib-components-command-bar.js",
+  "esm2015": "../../../esm2015/lib/components/command-bar/angular-react-fabric-lib-components-command-bar.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-command-bar.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-command-bar.js",
+  "typings": "angular-react-fabric-lib-components-command-bar.d.ts",
+  "metadata": "angular-react-fabric-lib-components-command-bar.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/command-bar"
+}

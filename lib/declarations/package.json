@@ -1,0 +1,13 @@
+{
+  "main": "../../bundles/angular-react-fabric-lib-declarations.umd.js",
+  "module": "../../fesm5/angular-react-fabric-lib-declarations.js",
+  "es2015": "../../fesm2015/angular-react-fabric-lib-declarations.js",
+  "esm5": "../../esm5/lib/declarations/angular-react-fabric-lib-declarations.js",
+  "esm2015": "../../esm2015/lib/declarations/angular-react-fabric-lib-declarations.js",
+  "fesm5": "../../fesm5/angular-react-fabric-lib-declarations.js",
+  "fesm2015": "../../fesm2015/angular-react-fabric-lib-declarations.js",
+  "typings": "angular-react-fabric-lib-declarations.d.ts",
+  "metadata": "angular-react-fabric-lib-declarations.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/declarations"
+}
