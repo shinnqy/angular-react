@@ -1,0 +1,7 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+export { FabRatingComponent } from './rating.component';
+export { FabRatingModule } from './rating.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL0Bhbmd1bGFyLXJlYWN0L2ZhYnJpYy8iLCJzb3VyY2VzIjpbImxpYi9jb21wb25lbnRzL3JhdGluZy9wdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7QUFFQSxtQ0FBYyxvQkFBb0IsQ0FBQztBQUNuQyxnQ0FBYyxpQkFBaUIsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGV4cHJlc3Npb25UeXBlIH0gZnJvbSAnQGFuZ3VsYXIvY29tcGlsZXIvc3JjL291dHB1dC9vdXRwdXRfYXN0JztcclxuXHJcbmV4cG9ydCAqIGZyb20gJy4vcmF0aW5nLmNvbXBvbmVudCc7XHJcbmV4cG9ydCAqIGZyb20gJy4vcmF0aW5nLm1vZHVsZSc7XHJcbiJdfQ==

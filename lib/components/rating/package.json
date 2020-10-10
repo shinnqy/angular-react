@@ -1,0 +1,13 @@
+{
+  "main": "../../../bundles/angular-react-fabric-lib-components-rating.umd.js",
+  "module": "../../../fesm5/angular-react-fabric-lib-components-rating.js",
+  "es2015": "../../../fesm2015/angular-react-fabric-lib-components-rating.js",
+  "esm5": "../../../esm5/lib/components/rating/angular-react-fabric-lib-components-rating.js",
+  "esm2015": "../../../esm2015/lib/components/rating/angular-react-fabric-lib-components-rating.js",
+  "fesm5": "../../../fesm5/angular-react-fabric-lib-components-rating.js",
+  "fesm2015": "../../../fesm2015/angular-react-fabric-lib-components-rating.js",
+  "typings": "angular-react-fabric-lib-components-rating.d.ts",
+  "metadata": "angular-react-fabric-lib-components-rating.metadata.json",
+  "sideEffects": false,
+  "name": "@angular-react/fabric/lib/components/rating"
+}

@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular-react/core'), require('@angular/core'), require('@angular/common'), require('office-ui-fabric-react/lib/Breadcrumb'), require('@angular-react/fabric/lib/components/core'), require('@angular-react/fabric/lib/utils'), require('@angular-react/fabric/lib/components/contextual-menu'), require('office-ui-fabric-react/lib/Button'), require('office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss'), require('office-ui-fabric-react/lib/Calendar'), require('office-ui-fabric-react/lib/Callout'), require('office-ui-fabric-react/lib/Checkbox'), require('office-ui-fabric-react/lib/ChoiceGroup'), require('office-ui-fabric-react/lib/ComboBox'), require('office-ui-fabric-react/lib-amd/components/OverflowSet/OverflowSet.scss'), require('office-ui-fabric-react/lib/CommandBar'), require('office-ui-fabric-react/lib/DatePicker'), require('@angular-react/fabric/lib/components/group'), require('office-ui-fabric-react/lib/DetailsList'), require('office-ui-fabric-react/lib/Dialog'), require('office-ui-fabric-react/lib/Divider'), require('office-ui-fabric-react/lib/Dropdown'), require('office-ui-fabric-react/lib/Fabric'), require('office-ui-fabric-react/lib/GroupedList'), require('office-ui-fabric-react/lib/HoverCard'), require('office-ui-fabric-react/lib/Icon'), require('office-ui-fabric-react/lib/Image'), require('office-ui-fabric-react/lib/Link'), require('office-ui-fabric-react/lib/MarqueeSelection'), require('office-ui-fabric-react/lib/MessageBar'), require('office-ui-fabric-react/lib/Modal'), require('office-ui-fabric-react/lib/Panel'), require('office-ui-fabric-react/lib/Persona'), require('office-ui-fabric-react/lib/Pivot'), require('office-ui-fabric-react/lib/SearchBox'), require('office-ui-fabric-react/lib/Shimmer'), require('office-ui-fabric-react/lib/Slider'), require('office-ui-fabric-react/lib/SpinButton'), require('office-ui-fabric-react/lib/Spinner'), require('office-ui-fabric-react/lib/TextField'), require('office-ui-fabric-react/lib/Toggle'), require('office-ui-fabric-react/lib/Tooltip'), require('office-ui-fabric-react/lib/Nav'), require('office-ui-fabric-react/lib-amd/components/pickers/BasePicker.scss'), require('office-ui-fabric-react/lib/Pickers'), require('office-ui-fabric-react'), require('office-ui-fabric-react/lib-amd/components/pickers/PeoplePicker/PeoplePickerItems/PickerItemsDefault.scss'), require('office-ui-fabric-react/lib/ProgressIndicator')) :
-    typeof define === 'function' && define.amd ? define('@angular-react/fabric', ['exports', '@angular-react/core', '@angular/core', '@angular/common', 'office-ui-fabric-react/lib/Breadcrumb', '@angular-react/fabric/lib/components/core', '@angular-react/fabric/lib/utils', '@angular-react/fabric/lib/components/contextual-menu', 'office-ui-fabric-react/lib/Button', 'office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss', 'office-ui-fabric-react/lib/Calendar', 'office-ui-fabric-react/lib/Callout', 'office-ui-fabric-react/lib/Checkbox', 'office-ui-fabric-react/lib/ChoiceGroup', 'office-ui-fabric-react/lib/ComboBox', 'office-ui-fabric-react/lib-amd/components/OverflowSet/OverflowSet.scss', 'office-ui-fabric-react/lib/CommandBar', 'office-ui-fabric-react/lib/DatePicker', '@angular-react/fabric/lib/components/group', 'office-ui-fabric-react/lib/DetailsList', 'office-ui-fabric-react/lib/Dialog', 'office-ui-fabric-react/lib/Divider', 'office-ui-fabric-react/lib/Dropdown', 'office-ui-fabric-react/lib/Fabric', 'office-ui-fabric-react/lib/GroupedList', 'office-ui-fabric-react/lib/HoverCard', 'office-ui-fabric-react/lib/Icon', 'office-ui-fabric-react/lib/Image', 'office-ui-fabric-react/lib/Link', 'office-ui-fabric-react/lib/MarqueeSelection', 'office-ui-fabric-react/lib/MessageBar', 'office-ui-fabric-react/lib/Modal', 'office-ui-fabric-react/lib/Panel', 'office-ui-fabric-react/lib/Persona', 'office-ui-fabric-react/lib/Pivot', 'office-ui-fabric-react/lib/SearchBox', 'office-ui-fabric-react/lib/Shimmer', 'office-ui-fabric-react/lib/Slider', 'office-ui-fabric-react/lib/SpinButton', 'office-ui-fabric-react/lib/Spinner', 'office-ui-fabric-react/lib/TextField', 'office-ui-fabric-react/lib/Toggle', 'office-ui-fabric-react/lib/Tooltip', 'office-ui-fabric-react/lib/Nav', 'office-ui-fabric-react/lib-amd/components/pickers/BasePicker.scss', 'office-ui-fabric-react/lib/Pickers', 'office-ui-fabric-react', 'office-ui-fabric-react/lib-amd/components/pickers/PeoplePicker/PeoplePickerItems/PickerItemsDefault.scss', 'office-ui-fabric-react/lib/ProgressIndicator'], factory) :
-    (global = global || self, factory((global['angular-react'] = global['angular-react'] || {}, global['angular-react'].fabric = {}), global['ɵa'], global.ng.core, global.ng.common, global.Breadcrumb, global['angular-react'].fabric.lib.components.core, global['angular-react'].fabric.lib.utils, global['angular-react'].fabric.lib.components['contextual-menu'], global.Button, global.CalendarCss, global.Calendar, global.Callout, global.Checkbox, global.ChoiceGroup, global.ComboBox, global.OverflowSetCss, global.CommandBar, global.DatePicker, global['angular-react'].fabric.lib.components.group, global.DetailsList, global.Dialog, global.Divider, global.Dropdown, global.Fabric, global.GroupedList, global.HoverCard, global.Icon, global.Image, global.Link, global.MarqueeSelection, global.MessageBar, global.Modal, global.Panel, global.Persona, global.Pivot, global.SearchBox, global.Shimmer, global.Slider, global.SpinButton, global.Spinner, global.TextField, global.Toggle, global.Tooltip, global.Nav, global.BasePickerCss, global.Pickers, global.Fabric, global.PeoplePickerItemCss, global.ProgressIndicator));
-}(this, (function (exports, core, core$1, common, Breadcrumb, core$2, utils, contextualMenu, Button, CalendarCss, Calendar, Callout, Checkbox, ChoiceGroup, ComboBox, OverflowSetCss, CommandBar, DatePicker, group, DetailsList, Dialog, Divider, Dropdown, Fabric, GroupedList, HoverCard, Icon, Image, Link, MarqueeSelection, MessageBar, Modal, Panel, Persona, Pivot, SearchBox, Shimmer, Slider, SpinButton, Spinner, TextField, Toggle, Tooltip, Nav, BasePickerCss, Pickers, officeUiFabricReact, PeoplePickerItemCss, ProgressIndicator) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular-react/core'), require('@angular/core'), require('@angular/common'), require('office-ui-fabric-react/lib/Breadcrumb'), require('@angular-react/fabric/lib/components/core'), require('@angular-react/fabric/lib/utils'), require('@angular-react/fabric/lib/components/contextual-menu'), require('office-ui-fabric-react/lib/Button'), require('office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss'), require('office-ui-fabric-react/lib/Calendar'), require('office-ui-fabric-react/lib/Callout'), require('office-ui-fabric-react/lib/Checkbox'), require('office-ui-fabric-react/lib/ChoiceGroup'), require('office-ui-fabric-react/lib/ComboBox'), require('office-ui-fabric-react/lib-amd/components/OverflowSet/OverflowSet.scss'), require('office-ui-fabric-react/lib/CommandBar'), require('office-ui-fabric-react/lib/DatePicker'), require('@angular-react/fabric/lib/components/group'), require('office-ui-fabric-react/lib/DetailsList'), require('office-ui-fabric-react/lib/Dialog'), require('office-ui-fabric-react/lib/Divider'), require('office-ui-fabric-react/lib/Dropdown'), require('office-ui-fabric-react/lib/Fabric'), require('office-ui-fabric-react/lib/GroupedList'), require('office-ui-fabric-react/lib/HoverCard'), require('office-ui-fabric-react/lib/Icon'), require('office-ui-fabric-react/lib/Image'), require('office-ui-fabric-react/lib/Link'), require('office-ui-fabric-react/lib/MarqueeSelection'), require('office-ui-fabric-react/lib/MessageBar'), require('office-ui-fabric-react/lib/Modal'), require('office-ui-fabric-react/lib/Panel'), require('office-ui-fabric-react/lib/Persona'), require('office-ui-fabric-react/lib/Pivot'), require('office-ui-fabric-react/lib/SearchBox'), require('office-ui-fabric-react/lib/Shimmer'), require('office-ui-fabric-react/lib/Slider'), require('office-ui-fabric-react/lib/SpinButton'), require('office-ui-fabric-react/lib/Spinner'), require('office-ui-fabric-react/lib/TextField'), require('office-ui-fabric-react/lib/Toggle'), require('office-ui-fabric-react/lib/Tooltip'), require('office-ui-fabric-react/lib/Nav'), require('office-ui-fabric-react/lib-amd/components/pickers/BasePicker.scss'), require('office-ui-fabric-react/lib/Pickers'), require('office-ui-fabric-react'), require('office-ui-fabric-react/lib-amd/components/pickers/PeoplePicker/PeoplePickerItems/PickerItemsDefault.scss'), require('office-ui-fabric-react/lib/ProgressIndicator'), require('office-ui-fabric-react/lib/Rating')) :
+    typeof define === 'function' && define.amd ? define('@angular-react/fabric', ['exports', '@angular-react/core', '@angular/core', '@angular/common', 'office-ui-fabric-react/lib/Breadcrumb', '@angular-react/fabric/lib/components/core', '@angular-react/fabric/lib/utils', '@angular-react/fabric/lib/components/contextual-menu', 'office-ui-fabric-react/lib/Button', 'office-ui-fabric-react/lib-amd/components/Calendar/Calendar.scss', 'office-ui-fabric-react/lib/Calendar', 'office-ui-fabric-react/lib/Callout', 'office-ui-fabric-react/lib/Checkbox', 'office-ui-fabric-react/lib/ChoiceGroup', 'office-ui-fabric-react/lib/ComboBox', 'office-ui-fabric-react/lib-amd/components/OverflowSet/OverflowSet.scss', 'office-ui-fabric-react/lib/CommandBar', 'office-ui-fabric-react/lib/DatePicker', '@angular-react/fabric/lib/components/group', 'office-ui-fabric-react/lib/DetailsList', 'office-ui-fabric-react/lib/Dialog', 'office-ui-fabric-react/lib/Divider', 'office-ui-fabric-react/lib/Dropdown', 'office-ui-fabric-react/lib/Fabric', 'office-ui-fabric-react/lib/GroupedList', 'office-ui-fabric-react/lib/HoverCard', 'office-ui-fabric-react/lib/Icon', 'office-ui-fabric-react/lib/Image', 'office-ui-fabric-react/lib/Link', 'office-ui-fabric-react/lib/MarqueeSelection', 'office-ui-fabric-react/lib/MessageBar', 'office-ui-fabric-react/lib/Modal', 'office-ui-fabric-react/lib/Panel', 'office-ui-fabric-react/lib/Persona', 'office-ui-fabric-react/lib/Pivot', 'office-ui-fabric-react/lib/SearchBox', 'office-ui-fabric-react/lib/Shimmer', 'office-ui-fabric-react/lib/Slider', 'office-ui-fabric-react/lib/SpinButton', 'office-ui-fabric-react/lib/Spinner', 'office-ui-fabric-react/lib/TextField', 'office-ui-fabric-react/lib/Toggle', 'office-ui-fabric-react/lib/Tooltip', 'office-ui-fabric-react/lib/Nav', 'office-ui-fabric-react/lib-amd/components/pickers/BasePicker.scss', 'office-ui-fabric-react/lib/Pickers', 'office-ui-fabric-react', 'office-ui-fabric-react/lib-amd/components/pickers/PeoplePicker/PeoplePickerItems/PickerItemsDefault.scss', 'office-ui-fabric-react/lib/ProgressIndicator', 'office-ui-fabric-react/lib/Rating'], factory) :
+    (global = global || self, factory((global['angular-react'] = global['angular-react'] || {}, global['angular-react'].fabric = {}), global['ɵa'], global.ng.core, global.ng.common, global.Breadcrumb, global['angular-react'].fabric.lib.components.core, global['angular-react'].fabric.lib.utils, global['angular-react'].fabric.lib.components['contextual-menu'], global.Button, global.CalendarCss, global.Calendar, global.Callout, global.Checkbox, global.ChoiceGroup, global.ComboBox, global.OverflowSetCss, global.CommandBar, global.DatePicker, global['angular-react'].fabric.lib.components.group, global.DetailsList, global.Dialog, global.Divider, global.Dropdown, global.Fabric, global.GroupedList, global.HoverCard, global.Icon, global.Image, global.Link, global.MarqueeSelection, global.MessageBar, global.Modal, global.Panel, global.Persona, global.Pivot, global.SearchBox, global.Shimmer, global.Slider, global.SpinButton, global.Spinner, global.TextField, global.Toggle, global.Tooltip, global.Nav, global.BasePickerCss, global.Pickers, global.Fabric, global.PeoplePickerItemCss, global.ProgressIndicator, global.Rating));
+}(this, (function (exports, core, core$1, common, Breadcrumb, core$2, utils, contextualMenu, Button, CalendarCss, Calendar, Callout, Checkbox, ChoiceGroup, ComboBox, OverflowSetCss, CommandBar, DatePicker, group, DetailsList, Dialog, Divider, Dropdown, Fabric, GroupedList, HoverCard, Icon, Image, Link, MarqueeSelection, MessageBar, Modal, Panel, Persona, Pivot, SearchBox, Shimmer, Slider, SpinButton, Spinner, TextField, Toggle, Tooltip, Nav, BasePickerCss, Pickers, officeUiFabricReact, PeoplePickerItemCss, ProgressIndicator, Rating) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -9785,6 +9785,158 @@
      * @fileoverview added by tsickle
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
+    var FabRatingComponent = /** @class */ (function (_super) {
+        __extends(FabRatingComponent, _super);
+        function FabRatingComponent(elementRef, changeDetectorRef, renderer, ngZone) {
+            var _this = _super.call(this, elementRef, changeDetectorRef, renderer, { ngZone: ngZone }) || this;
+            // tslint:disable-next-line: no-output-on-prefix
+            _this.onRatingChange = new core$1.EventEmitter();
+            // tslint:disable-next-line: no-output-on-prefix
+            _this.onRatingChanged = new core$1.EventEmitter();
+            _this.onChange = _this.onChange.bind(_this);
+            _this.onChanged = _this.onChanged.bind(_this);
+            return _this;
+        }
+        /**
+         * @param {?=} ev
+         * @param {?=} rating
+         * @return {?}
+         */
+        FabRatingComponent.prototype.onChange = /**
+         * @param {?=} ev
+         * @param {?=} rating
+         * @return {?}
+         */
+        function (ev, rating) {
+            this.onRatingChange.emit({
+                ev: ev && ev.nativeEvent,
+                rating: rating
+            });
+        };
+        /**
+         * @param {?=} rating
+         * @return {?}
+         */
+        FabRatingComponent.prototype.onChanged = /**
+         * @param {?=} rating
+         * @return {?}
+         */
+        function (rating) {
+            this.onRatingChanged.emit({
+                rating: rating
+            });
+        };
+        FabRatingComponent.decorators = [
+            { type: core$1.Component, args: [{
+                        selector: 'fab-rating',
+                        exportAs: 'fabRating',
+                        template: "\n    <Rating\n      #reactNode\n      [componentRef]=\"componentRef\"\n      [rating]=\"rating\"\n      [min]=\"min\"\n      [max]=\"max\"\n      [allowZeroStars]=\"allowZeroStars\"\n      [icon]=\"icon\"\n      [unselectedIcon]=\"unselectedIcon\"\n      [size]=\"size\"\n      [Change]=\"onChange\"\n      [Changed]=\"onChanged\"\n      [ariaLabelFormat]=\"ariaLabelFormat\"\n      [ariaLabelId]=\"ariaLabelId\"\n      [readOnly]=\"readOnly\"\n      [getAriaLabel]=\"getAriaLabel\"\n      [styles]=\"styles\"\n      [theme]=\"theme\"\n    ></Rating>\n  ",
+                        styles: ['react-renderer']
+                    }] }
+        ];
+        /** @nocollapse */
+        FabRatingComponent.ctorParameters = function () { return [
+            { type: core$1.ElementRef },
+            { type: core$1.ChangeDetectorRef },
+            { type: core$1.Renderer2 },
+            { type: core$1.NgZone }
+        ]; };
+        FabRatingComponent.propDecorators = {
+            reactNodeRef: [{ type: core$1.ViewChild, args: ['reactNode', { static: true },] }],
+            componentRef: [{ type: core$1.Input }],
+            rating: [{ type: core$1.Input }],
+            min: [{ type: core$1.Input }],
+            max: [{ type: core$1.Input }],
+            allowZeroStars: [{ type: core$1.Input }],
+            icon: [{ type: core$1.Input }],
+            unselectedIcon: [{ type: core$1.Input }],
+            size: [{ type: core$1.Input }],
+            ariaLabelFormat: [{ type: core$1.Input }],
+            ariaLabelId: [{ type: core$1.Input }],
+            readOnly: [{ type: core$1.Input }],
+            getAriaLabel: [{ type: core$1.Input }],
+            styles: [{ type: core$1.Input }],
+            theme: [{ type: core$1.Input }],
+            onRatingChange: [{ type: core$1.Output }],
+            onRatingChanged: [{ type: core$1.Output }]
+        };
+        return FabRatingComponent;
+    }(core.ReactWrapperComponent));
+    if (false) {
+        /**
+         * @type {?}
+         * @protected
+         */
+        FabRatingComponent.prototype.reactNodeRef;
+        /** @type {?} */
+        FabRatingComponent.prototype.componentRef;
+        /** @type {?} */
+        FabRatingComponent.prototype.rating;
+        /** @type {?} */
+        FabRatingComponent.prototype.min;
+        /** @type {?} */
+        FabRatingComponent.prototype.max;
+        /** @type {?} */
+        FabRatingComponent.prototype.allowZeroStars;
+        /** @type {?} */
+        FabRatingComponent.prototype.icon;
+        /** @type {?} */
+        FabRatingComponent.prototype.unselectedIcon;
+        /** @type {?} */
+        FabRatingComponent.prototype.size;
+        /** @type {?} */
+        FabRatingComponent.prototype.ariaLabelFormat;
+        /** @type {?} */
+        FabRatingComponent.prototype.ariaLabelId;
+        /** @type {?} */
+        FabRatingComponent.prototype.readOnly;
+        /** @type {?} */
+        FabRatingComponent.prototype.getAriaLabel;
+        /** @type {?} */
+        FabRatingComponent.prototype.styles;
+        /** @type {?} */
+        FabRatingComponent.prototype.theme;
+        /** @type {?} */
+        FabRatingComponent.prototype.onRatingChange;
+        /** @type {?} */
+        FabRatingComponent.prototype.onRatingChanged;
+    }
+
+    /**
+     * @fileoverview added by tsickle
+     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
+    var components$z = [FabRatingComponent];
+    var FabRatingModule = /** @class */ (function () {
+        function FabRatingModule() {
+            core.registerElement('Rating', (/**
+             * @return {?}
+             */
+            function () { return Rating.Rating; }));
+        }
+        FabRatingModule.decorators = [
+            { type: core$1.NgModule, args: [{
+                        imports: [common.CommonModule],
+                        declarations: components$z,
+                        exports: components$z,
+                        schemas: [core$1.NO_ERRORS_SCHEMA],
+                    },] }
+        ];
+        /** @nocollapse */
+        FabRatingModule.ctorParameters = function () { return []; };
+        return FabRatingModule;
+    }());
+
+    /**
+     * @fileoverview added by tsickle
+     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+
+    /**
+     * @fileoverview added by tsickle
+     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Copyright (c) Microsoft Corporation. All rights reserved.
     // Licensed under the MIT License.
     /**
@@ -9903,6 +10055,8 @@
     exports.FabPrimaryButtonComponent = FabPrimaryButtonComponent;
     exports.FabProgressIndicatorComponent = FabProgressIndicatorComponent;
     exports.FabProgressIndicatorModule = FabProgressIndicatorModule;
+    exports.FabRatingComponent = FabRatingComponent;
+    exports.FabRatingModule = FabRatingModule;
     exports.FabSearchBoxComponent = FabSearchBoxComponent;
     exports.FabSearchBoxModule = FabSearchBoxModule;
     exports.FabShimmerComponent = FabShimmerComponent;
