@@ -1,4 +1,5 @@
-import { ReactWrapperComponent, registerElement } from '@angular-react/core';
+import { __decorate, __metadata } from 'tslib';
+import { ReactWrapperComponent, passProp, registerElement } from '@angular-react/core';
 import { EventEmitter, Component, ElementRef, ChangeDetectorRef, Renderer2, NgZone, ViewChild, Input, Output, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Rating } from 'office-ui-fabric-react/lib/Rating';
@@ -22,6 +23,12 @@ class FabRatingComponent extends ReactWrapperComponent {
         this.onRatingChanged = new EventEmitter();
         this.onChange = this.onChange.bind(this);
         this.onChanged = this.onChanged.bind(this);
+    }
+    /**
+     * @return {?}
+     */
+    ngOnInit() {
+        this.onRenderStar = this.createRenderPropHandler(this.renderStar);
     }
     /**
      * @param {?=} ev
@@ -67,6 +74,7 @@ FabRatingComponent.decorators = [
       [getAriaLabel]="getAriaLabel"
       [styles]="styles"
       [theme]="theme"
+      [RenderStar]="renderStar && onRenderStar"
     ></Rating>
   `,
                 styles: ['react-renderer']
@@ -95,9 +103,14 @@ FabRatingComponent.propDecorators = {
     getAriaLabel: [{ type: Input }],
     styles: [{ type: Input }],
     theme: [{ type: Input }],
+    renderStar: [{ type: Input }],
     onRatingChange: [{ type: Output }],
     onRatingChanged: [{ type: Output }]
 };
+__decorate([
+    passProp(),
+    __metadata("design:type", Function)
+], FabRatingComponent.prototype, "onRenderStar", void 0);
 if (false) {
     /**
      * @type {?}
@@ -132,6 +145,10 @@ if (false) {
     FabRatingComponent.prototype.styles;
     /** @type {?} */
     FabRatingComponent.prototype.theme;
+    /** @type {?} */
+    FabRatingComponent.prototype.renderStar;
+    /** @type {?} */
+    FabRatingComponent.prototype.onRenderStar;
     /** @type {?} */
     FabRatingComponent.prototype.onRatingChange;
     /** @type {?} */

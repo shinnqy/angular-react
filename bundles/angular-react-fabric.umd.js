@@ -9798,6 +9798,15 @@
             return _this;
         }
         /**
+         * @return {?}
+         */
+        FabRatingComponent.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
+            this.onRenderStar = this.createRenderPropHandler(this.renderStar);
+        };
+        /**
          * @param {?=} ev
          * @param {?=} rating
          * @return {?}
@@ -9830,7 +9839,7 @@
             { type: core$1.Component, args: [{
                         selector: 'fab-rating',
                         exportAs: 'fabRating',
-                        template: "\n    <Rating\n      #reactNode\n      [componentRef]=\"componentRef\"\n      [rating]=\"rating\"\n      [min]=\"min\"\n      [max]=\"max\"\n      [allowZeroStars]=\"allowZeroStars\"\n      [icon]=\"icon\"\n      [unselectedIcon]=\"unselectedIcon\"\n      [size]=\"size\"\n      [Change]=\"onChange\"\n      [Changed]=\"onChanged\"\n      [ariaLabelFormat]=\"ariaLabelFormat\"\n      [ariaLabelId]=\"ariaLabelId\"\n      [readOnly]=\"readOnly\"\n      [getAriaLabel]=\"getAriaLabel\"\n      [styles]=\"styles\"\n      [theme]=\"theme\"\n    ></Rating>\n  ",
+                        template: "\n    <Rating\n      #reactNode\n      [componentRef]=\"componentRef\"\n      [rating]=\"rating\"\n      [min]=\"min\"\n      [max]=\"max\"\n      [allowZeroStars]=\"allowZeroStars\"\n      [icon]=\"icon\"\n      [unselectedIcon]=\"unselectedIcon\"\n      [size]=\"size\"\n      [Change]=\"onChange\"\n      [Changed]=\"onChanged\"\n      [ariaLabelFormat]=\"ariaLabelFormat\"\n      [ariaLabelId]=\"ariaLabelId\"\n      [readOnly]=\"readOnly\"\n      [getAriaLabel]=\"getAriaLabel\"\n      [styles]=\"styles\"\n      [theme]=\"theme\"\n      [RenderStar]=\"renderStar && onRenderStar\"\n    ></Rating>\n  ",
                         styles: ['react-renderer']
                     }] }
         ];
@@ -9857,9 +9866,14 @@
             getAriaLabel: [{ type: core$1.Input }],
             styles: [{ type: core$1.Input }],
             theme: [{ type: core$1.Input }],
+            renderStar: [{ type: core$1.Input }],
             onRatingChange: [{ type: core$1.Output }],
             onRatingChanged: [{ type: core$1.Output }]
         };
+        __decorate([
+            core.passProp(),
+            __metadata("design:type", Function)
+        ], FabRatingComponent.prototype, "onRenderStar", void 0);
         return FabRatingComponent;
     }(core.ReactWrapperComponent));
     if (false) {
@@ -9896,6 +9910,10 @@
         FabRatingComponent.prototype.styles;
         /** @type {?} */
         FabRatingComponent.prototype.theme;
+        /** @type {?} */
+        FabRatingComponent.prototype.renderStar;
+        /** @type {?} */
+        FabRatingComponent.prototype.onRenderStar;
         /** @type {?} */
         FabRatingComponent.prototype.onRatingChange;
         /** @type {?} */
