@@ -1,8 +1,8 @@
 /// <reference types="react" />
-import { ReactWrapperComponent } from '@angular-react/core';
-import { ChangeDetectorRef, ElementRef, NgZone, Renderer2, EventEmitter } from '@angular/core';
-import { IRatingProps } from 'office-ui-fabric-react/lib/Rating';
-export declare class FabRatingComponent extends ReactWrapperComponent<IRatingProps> {
+import { InputRendererOptions, ReactWrapperComponent } from '@angular-react/core';
+import { ChangeDetectorRef, ElementRef, NgZone, Renderer2, EventEmitter, OnInit } from '@angular/core';
+import { IRatingProps, IRatingStarProps } from 'office-ui-fabric-react/lib/Rating';
+export declare class FabRatingComponent extends ReactWrapperComponent<IRatingProps> implements OnInit {
     protected reactNodeRef: ElementRef;
     componentRef?: IRatingProps['componentRef'];
     rating?: IRatingProps['rating'];
@@ -18,6 +18,8 @@ export declare class FabRatingComponent extends ReactWrapperComponent<IRatingPro
     getAriaLabel?: IRatingProps['getAriaLabel'];
     styles?: IRatingProps['styles'];
     theme?: IRatingProps['theme'];
+    renderStar?: InputRendererOptions<IRatingStarProps>;
+    onRenderStar: (props?: IRatingStarProps) => JSX.Element;
     readonly onRatingChange: EventEmitter<{
         ev?: FocusEvent;
         rating?: number;
@@ -26,6 +28,7 @@ export declare class FabRatingComponent extends ReactWrapperComponent<IRatingPro
         rating?: number;
     }>;
     constructor(elementRef: ElementRef, changeDetectorRef: ChangeDetectorRef, renderer: Renderer2, ngZone: NgZone);
+    ngOnInit(): void;
     onChange(ev?: React.FocusEvent<HTMLElement>, rating?: number): void;
     onChanged(rating?: number): void;
 }

@@ -1,5 +1,5 @@
-import { __extends } from 'tslib';
-import { ReactWrapperComponent, registerElement } from '@angular-react/core';
+import { __extends, __decorate, __metadata } from 'tslib';
+import { passProp, ReactWrapperComponent, registerElement } from '@angular-react/core';
 import { EventEmitter, Component, ElementRef, ChangeDetectorRef, Renderer2, NgZone, ViewChild, Input, Output, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Rating } from 'office-ui-fabric-react/lib/Rating';
@@ -20,6 +20,15 @@ var FabRatingComponent = /** @class */ (function (_super) {
         _this.onChanged = _this.onChanged.bind(_this);
         return _this;
     }
+    /**
+     * @return {?}
+     */
+    FabRatingComponent.prototype.ngOnInit = /**
+     * @return {?}
+     */
+    function () {
+        this.onRenderStar = this.createRenderPropHandler(this.renderStar);
+    };
     /**
      * @param {?=} ev
      * @param {?=} rating
@@ -53,7 +62,7 @@ var FabRatingComponent = /** @class */ (function (_super) {
         { type: Component, args: [{
                     selector: 'fab-rating',
                     exportAs: 'fabRating',
-                    template: "\n    <Rating\n      #reactNode\n      [componentRef]=\"componentRef\"\n      [rating]=\"rating\"\n      [min]=\"min\"\n      [max]=\"max\"\n      [allowZeroStars]=\"allowZeroStars\"\n      [icon]=\"icon\"\n      [unselectedIcon]=\"unselectedIcon\"\n      [size]=\"size\"\n      [Change]=\"onChange\"\n      [Changed]=\"onChanged\"\n      [ariaLabelFormat]=\"ariaLabelFormat\"\n      [ariaLabelId]=\"ariaLabelId\"\n      [readOnly]=\"readOnly\"\n      [getAriaLabel]=\"getAriaLabel\"\n      [styles]=\"styles\"\n      [theme]=\"theme\"\n    ></Rating>\n  ",
+                    template: "\n    <Rating\n      #reactNode\n      [componentRef]=\"componentRef\"\n      [rating]=\"rating\"\n      [min]=\"min\"\n      [max]=\"max\"\n      [allowZeroStars]=\"allowZeroStars\"\n      [icon]=\"icon\"\n      [unselectedIcon]=\"unselectedIcon\"\n      [size]=\"size\"\n      [Change]=\"onChange\"\n      [Changed]=\"onChanged\"\n      [ariaLabelFormat]=\"ariaLabelFormat\"\n      [ariaLabelId]=\"ariaLabelId\"\n      [readOnly]=\"readOnly\"\n      [getAriaLabel]=\"getAriaLabel\"\n      [styles]=\"styles\"\n      [theme]=\"theme\"\n      [RenderStar]=\"renderStar && onRenderStar\"\n    ></Rating>\n  ",
                     styles: ['react-renderer']
                 }] }
     ];
@@ -80,9 +89,14 @@ var FabRatingComponent = /** @class */ (function (_super) {
         getAriaLabel: [{ type: Input }],
         styles: [{ type: Input }],
         theme: [{ type: Input }],
+        renderStar: [{ type: Input }],
         onRatingChange: [{ type: Output }],
         onRatingChanged: [{ type: Output }]
     };
+    __decorate([
+        passProp(),
+        __metadata("design:type", Function)
+    ], FabRatingComponent.prototype, "onRenderStar", void 0);
     return FabRatingComponent;
 }(ReactWrapperComponent));
 if (false) {
@@ -119,6 +133,10 @@ if (false) {
     FabRatingComponent.prototype.styles;
     /** @type {?} */
     FabRatingComponent.prototype.theme;
+    /** @type {?} */
+    FabRatingComponent.prototype.renderStar;
+    /** @type {?} */
+    FabRatingComponent.prototype.onRenderStar;
     /** @type {?} */
     FabRatingComponent.prototype.onRatingChange;
     /** @type {?} */

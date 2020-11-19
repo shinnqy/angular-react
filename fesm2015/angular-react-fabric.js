@@ -10719,6 +10719,12 @@ class FabRatingComponent extends ReactWrapperComponent {
         this.onChanged = this.onChanged.bind(this);
     }
     /**
+     * @return {?}
+     */
+    ngOnInit() {
+        this.onRenderStar = this.createRenderPropHandler(this.renderStar);
+    }
+    /**
      * @param {?=} ev
      * @param {?=} rating
      * @return {?}
@@ -10762,6 +10768,7 @@ FabRatingComponent.decorators = [
       [getAriaLabel]="getAriaLabel"
       [styles]="styles"
       [theme]="theme"
+      [RenderStar]="renderStar && onRenderStar"
     ></Rating>
   `,
                 styles: ['react-renderer']
@@ -10790,9 +10797,14 @@ FabRatingComponent.propDecorators = {
     getAriaLabel: [{ type: Input }],
     styles: [{ type: Input }],
     theme: [{ type: Input }],
+    renderStar: [{ type: Input }],
     onRatingChange: [{ type: Output }],
     onRatingChanged: [{ type: Output }]
 };
+__decorate([
+    passProp(),
+    __metadata("design:type", Function)
+], FabRatingComponent.prototype, "onRenderStar", void 0);
 if (false) {
     /**
      * @type {?}
@@ -10827,6 +10839,10 @@ if (false) {
     FabRatingComponent.prototype.styles;
     /** @type {?} */
     FabRatingComponent.prototype.theme;
+    /** @type {?} */
+    FabRatingComponent.prototype.renderStar;
+    /** @type {?} */
+    FabRatingComponent.prototype.onRenderStar;
     /** @type {?} */
     FabRatingComponent.prototype.onRatingChange;
     /** @type {?} */
